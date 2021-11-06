@@ -1,0 +1,90 @@
+.app{
+    width: 80%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    &__codigo{
+        &-imagen{
+            width: 130px;
+        }
+    }
+    &__contenedor__left{
+        width: 35%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    &__contenedor__right{
+        display: flex;
+        gap: 30px;
+        width: 65%;
+    }
+    &__titulo{
+        font-size: font('app-titulo');
+    }
+    &__contenedor-links{
+        display: flex;
+        gap: 15px;
+        margin-top: 25px;
+    }
+    &__play{
+        width: 180px;
+        height: 55px;
+        cursor: pointer;
+        @include transition;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    &__descripcion{
+        font-size: font('app-descripcion');
+        font-weight: lighter;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width: breakpoint('ipad-grande')){
+    .app{
+        width: 100%;
+        &__contenedor-links{
+            flex-direction: column;
+        }
+        &__contenedor__left{
+            width: auto;
+            margin-left: 20px;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+        }
+        &__contenedor__right{
+            display: flex;
+            gap: 30px;
+            width: 75%;
+            justify-content: center;
+        }
+        &__titulo{
+            font-size: 25px;
+            text-align: center;
+        }
+        &__descripcion{
+            font-size: 18px;
+            text-align: center;
+        }
+        &__play{
+            margin: auto;
+        }
+    }
+}
+@media(max-width: breakpoint('ipad-pequeña')){
+    .app{
+        flex-direction: column;
+        &__contenedor__left{
+            width: 100%;
+        }
+        &__contenedor__right{
+            width: 100%;
+        }
+    }
+}

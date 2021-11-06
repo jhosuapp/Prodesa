@@ -1,0 +1,26 @@
+@mixin flex ($d: flex, $jc: center, $ai: center){
+    display: $d;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin transition ($td: $transition-duration, $tp: all, $ti: ease){
+    transition: $td $tp $ti;
+}
+
+@mixin restart ($m: 0, $p: 0, $td: none){
+    margin: $m;
+    padding: $p;
+    text-decoration: $td;
+}
+
+@mixin restart-boton ($b: none, $ot: inherit){
+    border: $b;
+    outline: inherit;
+}
+
+@mixin border (){
+    background: linear-gradient(90.73deg, color('amarillo') 9.83%, color('naranja') 92.88%);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+

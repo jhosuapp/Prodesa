@@ -1,0 +1,113 @@
+.owl-carousel .owl-next span,
+.owl-carousel .owl-prev span{
+    display: none;
+}
+.owl-carousel .owl-dots{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 60px;
+}
+.owl-carousel .owl-dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background: color('gris-dots') !important;
+    opacity: 0.9;
+    &.active{
+        opacity: 1;
+        background: color('secundario') !important;
+    }
+}
+.owl-carousel .owl-next,
+.owl-carousel .owl-prev{
+    background-image:  url("../images/right-carousel.svg") !important;
+    background-repeat: no-repeat !important;
+    height: 30px;
+    width: 40px;
+    position: absolute;
+    background-color: transparent!important;
+    top: calc(50% - 15px);
+    &.disabled{
+        opacity: 0.7;
+    }
+}
+.owl{
+    &-prev{
+        left: -40px;
+    }
+    &-next{
+        right: -40px;
+        transform: rotate(180deg);
+    }
+}
+.owl-carousel{
+    position: relative;
+    // padding: 0 40px;
+    &__home .owl-next{
+        right: -40px;
+        transform: rotate(180deg);
+    }
+    &__home .owl-prev{
+        left: -40px;
+    }
+    &__comprar .owl-next{
+        right: 0px;
+    }
+    &__comprar .owl-prev{
+        left: 0;
+    }
+}
+//WHITE
+
+.owl-carousel-lanzamiento .owl-next,
+.owl-carousel-lanzamiento .owl-prev{
+    background-image:  url("../images/right-white.svg") !important;
+    background-repeat: no-repeat !important;
+    height: 30px;
+    width: 40px;
+    position: absolute;
+    background-color: transparent!important;
+    top: calc(50% - 45px);
+    &.disabled{
+        opacity: 0.7;
+    }
+}
+@media (max-width: breakpoint('ipad-pequeña')){
+    .owl-carousel{
+        position: relative;
+        padding: 40px 40px;
+        &__home .owl-next{
+            right: -20px;
+            transform: rotate(180deg);
+        }
+        &__home .owl-prev{
+            left: -20px;
+        }
+    }
+    .owl{
+        &-prev{
+            top: -15px !important;
+            left: 40% !important;
+        }
+        &-next{
+            top: -15px !important;
+            right: 40% !important;
+            transform: rotate(180deg);
+        }
+    }
+}
+@media (max-width: breakpoint('celular')){
+    .owl-carousel{
+        position: relative;
+        padding: 0;
+        padding-bottom: 20px;
+        padding-top: 30px;
+    }
+    .owl-carousel .owl-dots{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 35px;
+    }
+}

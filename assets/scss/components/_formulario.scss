@@ -1,0 +1,113 @@
+.formulario{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+    position: relative;
+    &__suscribete-flex{
+        display: flex;
+        max-width: 90%;
+        margin: auto;
+        gap: 30px;
+    }
+    &__left{
+        width: 45%;
+        &--descripcion{
+            font-size: font('suscribete-formulario');
+            font-weight: lighter;
+            color: color('primario');
+        }
+    }
+    &__rigth{
+        width: 55%;
+    }
+    &__contenedor{
+        width: 75%;
+    }
+    &__input{
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px;
+        border-radius: 10px;
+        border: none;
+        outline: inherit;
+        @include transition;
+        &:focus{
+            border: 2px solid color('naranja');
+        }
+    }
+    &__grupo-btn-enviar{
+        width: 25%;
+    }
+    &__btn{
+        width: 100%;
+        height: 40px;
+        font-size: font('suscribete-btn');
+        outline: inherit;
+        border: none;
+        border: 2px solid color('primario');
+        border-radius: 10px;
+        cursor: pointer;
+        background: color('naranja');
+        color: color('primario');
+        font-weight: bolder;
+        @include transition;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+    &__input-error{
+        color: color('primario');
+        font-size: 12px;
+        margin-bottom: 10px;
+        display: none;
+    }
+    &__label{
+        font-size: font('suscribete-politica');
+        color: color('primario');
+    }
+    &__grupo--checkbox{
+        margin-top: 10px;
+    }
+    &__link{
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &__grupo--incorrecto .formulario__input{
+        border: 3px solid color('danger');
+    }
+    &__grupo--incorrecto .formulario__input-error{
+        display: block;
+    }
+    &__mensaje-exito{
+        color: color('check');
+        font-weight: lighter;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: none;
+        &.active{
+            display: block;
+        }
+        &--color{
+            color: color('danger');
+        }
+    }
+}
+
+@media (max-width: breakpoint('celular')){
+    .formulario{
+        &__suscribete-flex{
+            flex-direction: column;
+        }
+        &__left{
+            width: 100%;
+        }
+        &__rigth{
+            width: 100%;
+        }
+    }
+}

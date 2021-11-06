@@ -1,0 +1,28 @@
+.orange{
+    color: color('naranja');
+    &__light{
+        font-weight: lighter;
+        color: color('naranja');
+    }
+}
+.white{
+    color: color('primario');
+    &__light{
+        font-weight: lighter;
+        color: color('primario');
+    }
+}
+.grey{
+    color: color('gris-oscuro');
+    &__light{
+        font-weight: lighter;
+        color: color('gris-oscuro');
+    }
+}
+.amarillo{
+    color: color('amarillo');
+    &__light{
+        font-weight: lighter;
+        color: color('amarillo');
+    }
+}

@@ -1,0 +1,280 @@
+.mosaico{
+    margin: 0 90px;
+    &__tab-contenedor{
+        display: flex;
+        gap: 15px;
+    }
+    &__grid{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        height: 450px;
+        grid-template-rows: repeat(3, 1fr);
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+    &__contenedor{
+        height: auto;
+        position: relative;
+        border: 1px solid color('primario');
+        &-imagen{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &-1{
+            grid-column: 1/2;
+            grid-row: 1/4;
+        }
+        &-2{
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+        &-3{
+            grid-column: 3/5;
+            grid-row: 1/3;
+        }
+        &-4{
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        &-5{
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+        &:hover .button--absolute{
+            opacity: 1;
+            pointer-events: all;
+        }
+        &:hover .mosaico__opacity{
+            height: 100%;
+        }
+    }
+    &__opacity{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 99;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        line-height: 50px;
+        height: 50px;
+        background: rgb(0, 0, 0, 0.55);
+        padding: 0 0 0 20px;
+        @include transition;
+        &:hover{
+            height: 100%;
+        }
+        &:hover .button--absolute{
+            opacity: 1;
+            pointer-events: all;
+        }
+        &--ofertas{
+            flex-direction: column;
+            justify-content: flex-start;
+            min-height: 25%;
+            padding: 0;
+            line-height: 1.2;
+            transition-duration: 0.8s;
+        }
+    }
+    &__parrafo{
+        color: color('primario');
+        font-size: font('mosaico-ciudad');
+        font-weight: lighter;
+        &--ofertas{
+            padding: 10px;
+            font-size: font('mosaico-ofertas');
+        }
+    }
+    &__resultados{
+
+        &-texto{
+            background: linear-gradient(to right, #f47920, #f38616, #f0940c, #eda002, #e8ad00);
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            padding: 5px 8px;
+            font-size: font('mosaico-resultados');
+            font-weight: bolder;
+            &--ofertas{
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                color: color('secundario');
+            }
+        }
+        &--ofertas{
+            margin: 20px 0;
+        }
+    }
+
+    //OFERTAS DE VIVIENDA
+
+    &-ofertas{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 100%;
+        height: 570px;
+        gap: 10px;
+    }
+
+    //BLOG
+
+    &__blog{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        height: 490px;
+        grid-row: repeat(5, 1fr);
+        gap: 10px;
+        &-1{
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        &-2{
+            grid-column: 2/3;
+            grid-row: 1/6;
+        }
+        &-3{
+            grid-column: 3/5;
+            grid-row: 1/2;
+        }
+        &-4{
+            grid-column: 1/2;
+            grid-row: 2/6;
+        }
+        &-5,
+        &-6{
+            grid-row: 2/6;
+        }
+    }
+    &--bottom{
+        padding-bottom: 100px;
+    }
+
+}
+
+@media (max-width: breakpoint('portatil')){
+    .mosaico{
+        margin: 0 40px;
+    }
+}
+@media(max-width: 1200px){
+    .mosaico{
+        &__opacity{
+            &--ofertas{
+                min-height: 30%;
+            }
+        }
+    }
+}
+@media (max-width: breakpoint('ipad-grande')){
+    .mosaico{
+        margin: auto;
+        max-width: 90%;
+        &__resultados{
+            display: block;
+        }
+        &__opacity{
+            &--ofertas{
+                min-height: 60%;
+            }
+        }
+        &__contenedor{
+
+            &-ofertas{
+                grid-column: 1/3;
+            }
+        }
+        &__blog{
+            grid-template-columns: repeat(2, 1fr);
+            height: auto;
+            grid-row: auto;
+            gap: 10px;
+            &-1{
+                grid-column: 1/2;
+                grid-row: auto;
+            }
+            &-2{
+                grid-column: 2/3;
+                grid-row: auto;
+            }
+            &-3{
+                grid-column: 1/2;
+                grid-row: auto;
+            }
+            &-4{
+                grid-column: 2/3;
+                grid-row: auto;
+            }
+            &-5,
+            &-6{
+                grid-row: 1/2;
+            }
+        }
+        //OFERTAS DE VIVIENDA
+
+        &-ofertas{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            height: 800px;
+            gap: 10px;
+        }
+    }
+}
+@media (max-width: breakpoint('ipad-pequeña')){
+    .mosaico{
+        &__grid{
+            height: auto;
+        }
+        &__tab-contenedor{
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__resultados{
+            display: block;
+        }
+        &__contenedor{
+            grid-column: 1/5;
+            grid-row: auto;
+            &--mobile{
+                min-height: 225px;
+            }
+        }
+        &-ofertas{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            height: auto;
+            gap: 10px;
+        }
+        &__opacity{
+            &--ofertas{
+                min-height: 70%;
+            }
+        }
+        &--bottom{
+            padding-bottom: 0;
+        }
+        &__blog{
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: breakpoint('celular')){
+    .mosaico{
+        &__opacity{
+            &--ofertas{
+                min-height: 100%;
+                justify-content: space-between;
+            }
+        }
+        &__resultados--ofertas{
+            margin: 20px 0;
+        }
+    }
+}

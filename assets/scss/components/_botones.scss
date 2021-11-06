@@ -1,0 +1,148 @@
+.button{
+    padding: 15px 35px;
+    background: color('gris-oscuro');
+    border-radius: 5px;
+    @include restart-boton;
+    @include transition;
+    cursor: pointer;
+    &:hover{
+        background: color('secundario');
+    }
+    &__link{
+        color: color('primario');
+        font-size: font('card-ubicacion');
+        font-weight: bolder;
+    }
+    &--margin{
+        margin-top: 5px;
+    }
+    &__with--icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    &__contenido--icon{
+        color: color('primario');
+    }
+    &--tab{
+        background: color('secundario');
+        border-radius: 5px;
+        border: 1px solid color('primario');
+        &:hover{
+            background: linear-gradient(to right, #f47920, #f38616, #f0940c, #eda002, #e8ad00);
+            @include transition;
+        }
+        &:focus{
+            background: linear-gradient(to right, #f47920, #f38616, #f0940c, #eda002, #e8ad00);
+        }
+        &.active{
+            background: linear-gradient(to right, #f47920, #f38616, #f0940c, #eda002, #e8ad00);
+        }
+    }
+    &--absolute{
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+        padding: 10px 20px;
+        background: color('gris-claro');
+        opacity: 0;
+        pointer-events: none;
+        &-color{
+            color: color('secundario');
+        }
+        &:hover .button--absolute-color{
+            color: color('primario');
+        }
+    }
+    &__flex{
+        flex: 1;
+    }
+    &--transparent{
+        background: transparent;
+        border: 1px solid color('primario');
+        min-width: 185px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-height: 45px;
+        &:hover{
+            background: color('naranja');
+        }
+        &:hover .button__link--hidden{
+            display: block;
+        }
+        &:hover .button__link--hover {
+            display: none;
+        }
+        &--background{
+            width: 100%;
+            max-width: 200px;
+            min-width: auto;
+            max-height: 100%;
+            padding: 8px 20px;
+            &:hover{
+                background: color('secundario');
+                border: 1px solid color('secundario');
+            }
+        }
+    }
+    &__link{
+        &--transparent{
+            color: color('primario');
+            font-size: font('invertir-proyecto');
+        }
+        &--hidden{
+            display: none;
+        }
+        &--grey{
+            color: color('secundario');
+            font-size: font('invertir-precio');
+            font-weight: lighter;
+        }
+        &--darken{
+            color: color('gris-oscuro');
+        }
+    }
+    &--grey{
+        background: color('gris-claro');
+    }
+    &--futuro{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 10px;
+        border: 1px solid color('gris-oscuro');
+        max-width: 290px;
+        &:hover{
+            background: color('gris-oscuro');
+        }
+        &:hover .button__link--darken{
+            color: color('primario');
+        }
+    }
+    &--border{
+        border: 1px solid color('gris-oscuro');
+        background: color('primario');
+        &:hover{
+            background: color('naranja');
+        }
+        &:hover .button__border-darken{
+            color: color('primario');
+        }
+    }
+    &__border-darken{
+        color: color('gris-oscuro');
+        font-weight: bolder;
+        font-size: font('card-ubicacion');
+    }
+}
+
+@media(max-width: breakpoint('celular')){
+    .button{
+        &--absolute--mobile{
+            opacity: 1;
+        }
+    }
+}

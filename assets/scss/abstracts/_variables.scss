@@ -1,0 +1,88 @@
+
+//PALETA DE COLORES
+
+$palette : (
+    'primario': #fff,
+    'secundario': #000,
+    'amarillo': #e8ad00,
+    'gris-oscuro': #58595b,
+    'naranja': #f47920,
+    'gris-claro': #e6e7e8,
+    'gris-clarito': #c4c4c4,
+    'gris-dots': #8B8B8B,
+    'grey-background': #f6f6f6,
+    'danger': #d33a3a,
+    'check': #42d642
+);   
+
+//FONT SIZE
+
+$fuente : (
+    'header': 14px,
+    'header-titulo': 42px,
+    'header-descripcion': 24px,
+    'header-opcion': 14px,
+    'header-numero': 11px,
+    'header-desplegable': 13px,
+    'titulos': 36px,
+    'descripcion': 18px,
+    'subitulos': 26px,
+    'card-titulo': 18px,
+    'card-proyecto': 13px,
+    'card-bono': 15px,
+    'card-ubicacion': 14px,
+    'card-metraje': 11px,
+    'card-precio': 20px,
+    'card-precio-anterior': 12px,
+    'lanzamiento-titulo': 24px,
+    'lanzamiento-descripcion': 14px,
+    'lanzamiento-destacado': 13px,
+    'vivir-subtitulo': 24px,
+    'app-titulo': 38px,
+    'app-descripcion': 24px,
+    'mosaico-ciudad': 24px,
+    'mosaico-resultados': 14px,
+    'mosaico-ofertas': 20px,
+    'inversionistas-titulo': 26px,
+    'inversionistas-descripcion': 14px,
+    'suscribete-formulario': 24px,
+    'suscribete-btn': 14px,
+    'suscribete-politica': 13px,
+    'footer-titulo': 24px,
+    'footer-ciudad': 14px,
+    'footer-lista': 13px,
+    'footer-precio': 18px,
+    'footer-ubicacion': 15px,
+    'invertir-ubicacion': 15px,
+    'invertir-apto': 24px,
+    'invertir-areas': 11px,
+    'invertir-proyecto': 14px,
+    'invertir-precio': 18px,
+    'futuro-titulo': 24px,
+    'futuro-descripcion': 14px,
+    'comprar-titulo': 26px,
+    'comprar-descripcion': 18px,
+    'comprar-nombre': 32px,
+    'comprar-lugar': 16px,
+    'comprar-resumen': 22px,
+    'blog-categoria': 13px,
+    'blog-titulo': 24px,
+    'blog-fecha': 14px,
+    'blog-descripcion': 14px,
+    'blog-leer': 14px
+);
+
+//BREAKPOINTS
+
+$breakpoints: (
+    'desktop': 1800px,
+    'portatil': 1600px,
+    'ipad-grande': 992px,
+    'ipad-pequeña': 768px,
+    'celular': 576px
+
+);
+
+//OTROS
+
+$transition-duration: .4s;

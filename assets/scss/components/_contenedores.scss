@@ -1,0 +1,107 @@
+.mi-content{
+    max-width: 90%;
+    margin: auto;
+    padding: 50px 0;
+    &--background{
+        background: color('grey-background');
+        padding-bottom: 60px;
+        &--grey{
+            background: color('gris-oscuro');
+            padding-bottom: 60px;
+        }
+        &--black{
+            background: color('secundario');
+            padding-bottom: 60px;
+        }
+        &--white{
+            background: color('primario');
+            padding-bottom: 60px;
+        }
+        &--padding{
+            padding-bottom: 100px;
+        }
+    }
+    &--imagen{
+        position: relative;
+        width: 100%;
+        min-height: 500px;
+        max-height: 500px;
+        height: 100;
+        z-index: -1;
+        @include flex;
+        &-banner{
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+        }
+        &-background{
+            position: absolute;
+            padding: 30px 0;
+            width: 70%;
+            text-align: center;
+            background: rgb(0, 0, 0, 0.55);
+            border-radius: 10px;
+
+        }
+        &-titulo{
+            font-size: 40px;
+        }
+        &-titulo-blog{
+            font-size: font('header-titulo');
+        }
+        &-descripcion{
+            color: color('primario');
+            font-size: font('header-descripcion');
+            max-width: 90%;
+            margin: auto;
+            margin-top: 5px;
+        }
+        &-blog{
+            position: absolute;
+            margin-top: 90px;
+            width: 100%;
+            max-width: 90%;
+            z-index: 99;
+        }
+        &-left{
+            justify-content: center;
+            text-align: left;
+            z-index: 1;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgb(0, 0, 0, .15);
+                z-index: 1;
+            }
+        }
+    }
+}
+
+@media (max-width: breakpoint('celular')){
+    .mi-content{
+        padding: 35px;
+        &--background{
+            padding-bottom: 25px;
+            &--grey{
+                padding-bottom: 25px;
+            }
+            &--black{
+                padding-bottom: 25px;
+            }
+            &--white{
+                padding-bottom: 25px;
+            }
+        }
+        &--imagen{
+            &-background{
+                width: 90%;
+    
+            }
+        }
+    }
+}
