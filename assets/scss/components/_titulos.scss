@@ -161,10 +161,14 @@
         &__vivir-texto{
             margin: 20px auto;
             width: 90%;
-
+            font-size: font_mobile('vivir-texto__mobile');
+        }
+        &__contenido{
+            font-size: font_mobile('titulos-mobile') !important;
         }
     }
     .subtitulo{
         margin: 20px auto;
+        font-size: font_mobile('subtitulos-mobile');
     }
 }

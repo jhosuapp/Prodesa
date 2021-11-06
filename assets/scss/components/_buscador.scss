@@ -198,5 +198,12 @@
 @media (max-width: breakpoint('celular')){
     .buscador{
         max-width: 90%;
+        bottom: auto;
+        &__titulo{
+            font-size: font_mobile('header-titulo-mobile');
+        }
+        &__descripcion{
+            font-size: font_mobile('header-descripcion-mobile');
+        }
     }
 }

@@ -79,12 +79,31 @@
                 z-index: 1;
             }
         }
+        &-left--background{
+            &::after{
+                background: rgb(0, 0, 0, 0);
+            }
+        }
+        &-flex{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
     }
 }
-
+@media (max-width: breakpoint('ipad-pequeña')){
+    .mi-content{
+        &--imagen{
+            &-flex{
+                justify-content: center;
+            }
+        }
+    }
+}
 @media (max-width: breakpoint('celular')){
     .mi-content{
-        padding: 35px;
+        // padding: 35px;
         &--background{
             padding-bottom: 25px;
             &--grey{

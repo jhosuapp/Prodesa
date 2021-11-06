@@ -84,7 +84,7 @@
         <a href="" class="header__bottom--link">Quiénes somos</a>
         <a href="" class="header__bottom--link">Invertir desde el exterior</a>
         <a href="./blog.php" class="header__bottom--link">Blog</a>
-        <a href="" class="header__bottom--link">Pagos en línea</a>
+        <a href="./pagos-linea.php" class="header__bottom--link">Pagos en línea</a>
         <a href="" class="header__bottom--link">Contáctanos</a>
     </div>
 </div>

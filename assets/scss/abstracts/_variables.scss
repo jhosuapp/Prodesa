@@ -72,6 +72,18 @@ $fuente : (
     'blog-leer': 14px
 );
 
+$fuente-mobile: (
+    'header-titulo-mobile': 24px,
+    'header-descripcion-mobile': 18px,
+    'titulos-mobile': 28px,
+    'subtitulos-mobile': 20px,
+    'vivir-texto__mobile': 20px,
+    'lanzamiento-titulo-mobile': 18px,
+    'card-precio-mobile': 18px,
+    'comprar-titulo-mobile': 20px,
+    'comprar-nombre-mobile': 24px,
+);
+
 //BREAKPOINTS
 
 $breakpoints: (

@@ -643,6 +643,13 @@ a {
 @media (max-width: 576px) {
   .buscador {
     max-width: 90%;
+    bottom: auto;
+  }
+  .buscador__titulo {
+    font-size: 24px;
+  }
+  .buscador__descripcion {
+    font-size: 18px;
   }
 }
 .orange {
@@ -761,11 +768,22 @@ a {
   background: rgba(0, 0, 0, 0.15);
   z-index: 1;
 }
+.mi-content--imagen-left--background::after {
+  background: rgba(0, 0, 0, 0);
+}
+.mi-content--imagen-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-@media (max-width: 576px) {
-  .mi-content {
-    padding: 35px;
+@media (max-width: 768px) {
+  .mi-content--imagen-flex {
+    justify-content: center;
   }
+}
+@media (max-width: 576px) {
   .mi-content--background {
     padding-bottom: 25px;
   }
@@ -1040,10 +1058,15 @@ a {
   .titulo__vivir-texto {
     margin: 20px auto;
     width: 90%;
+    font-size: 20px;
+  }
+  .titulo__contenido {
+    font-size: 28px !important;
   }
 
   .subtitulo {
     margin: 20px auto;
+    font-size: 20px;
   }
 }
 .card__contenedor-carousel {
@@ -1568,6 +1591,16 @@ a {
   }
   .lanzamientos__imagen {
     min-height: 190px;
+  }
+  .lanzamientos__titulo {
+    font-size: 18px;
+  }
+
+  .card__precio {
+    font-size: 18px;
+  }
+  .card__inversionistas--titulo, .card-futuro__titulo, .card-blog__titulo {
+    font-size: 20px;
   }
 }
 .button {
@@ -2161,6 +2194,9 @@ a {
   .formulario__rigth {
     width: 100%;
   }
+  .formulario__left--descripcion {
+    font-size: 20px;
+  }
 }
 .footer {
   width: 100%;
@@ -2490,6 +2526,17 @@ a {
     width: 100% !important;
     display: flex;
     justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  .comprar__titulo {
+    font-size: 20px;
+  }
+  .comprar__nombre {
+    font-size: 24px;
+  }
+  .comprar__resumen {
+    font-size: 18px;
   }
 }
 .blog-categorias {

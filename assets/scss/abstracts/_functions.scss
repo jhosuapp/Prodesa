@@ -6,6 +6,9 @@
     @return (map-get($map: $fuente, $key: $name));
 }
 
+@function font_mobile($name){
+    @return (map-get($map: $fuente-mobile, $key: $name));
+}
 //COLOR LIGHTEN
 @function colorLighten($name, $amount){
     @return lighten(color($name), $amount);

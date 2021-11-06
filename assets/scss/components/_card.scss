@@ -554,5 +554,18 @@
         &__imagen{
             min-height: 190px;
         }
+        &__titulo{
+            font-size: font_mobile('lanzamiento-titulo-mobile');
+        }
+    }
+    .card{
+        &__precio{
+            font-size: font_mobile('card-precio-mobile');
+        }
+        &__inversionistas--titulo,
+        &-futuro__titulo,
+        &-blog__titulo{
+            font-size: font_mobile('subtitulos-mobile');
+        }
     }
 }

@@ -114,3 +114,16 @@
         }
     }
 }
+@media (max-width: breakpoint('celular')){
+    .comprar{
+        &__titulo{
+            font-size: font_mobile('comprar-titulo-mobile');
+        }
+        &__nombre{
+            font-size: font_mobile('comprar-nombre-mobile');
+        }
+        &__resumen{
+            font-size: font_mobile('header-descripcion-mobile');
+        }
+    }
+}
