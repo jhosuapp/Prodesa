@@ -24,3 +24,7 @@
     transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
+@mixin transitionEmma () {
+    transition: border-radius 1s, height 1s, width 1s, bottom 1s, opacity 1s ease;
+}
+

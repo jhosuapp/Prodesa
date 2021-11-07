@@ -26,3 +26,11 @@
         color: color('amarillo');
     }
 }
+.black{
+    color: color('secundario');
+    font-weight: 600;
+    &__light{
+        color: color('secundario');
+        font-weight: lighter;
+    }
+}

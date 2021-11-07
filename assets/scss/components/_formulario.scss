@@ -98,6 +98,93 @@
     }
 }
 
+//emma
+
+.form__emma{
+    &-bloque{
+        line-height: 2;
+    }
+    &-contenedor{
+        position: absolute;
+        top: 40px;
+        left: 20px;
+        opacity: 0;
+        pointer-events: none;
+        &.active{
+            transition: all 1.5s ease;
+            opacity: 1;
+            pointer-events: all;
+        }
+        &.hidde-important{
+            opacity: 0 !important;
+            pointer-events: none;
+        }
+    }
+    &-titulo{
+        font-size: 20px;
+        color: color('secundario');
+        font-weight: 600;
+    }
+    &-descripcion{
+        font-size: 14px;
+        color: color('secundario');
+        font-weight: 100;
+        margin-top: 5px;
+        max-width: 240px;
+    }
+    &-input{
+        height: 30px;
+        line-height: 30px;
+        border: none;
+        border: 1px solid color('gris-clarito');
+        border-radius: 5px;
+        outline: inherit;
+        color: color('gris-oscuro');
+        margin-top: 10px;
+        padding-left: 10px;
+        @include transition;
+        &:focus{
+            border: 2px solid color('naranja');
+        }
+        &::placeholder { 
+            color: color('gris-oscuro');
+            font-weight: 600;
+            font-size: 11px;
+        }
+    }
+    &-validacion{
+        color: color('danger');
+        font-size: 11px;
+        display: none;
+    }
+    &-button{
+        border: none;
+        outline: inherit;
+        border: 1px solid color('primario');
+        border-radius: 5px;
+        font-size: 12px;
+        color: color('primario');
+        font-weight: 600;
+        padding: 8px 35px;
+        background: linear-gradient(90.73deg, #E8AD00 9.83%, #F47920 92.88%);
+        cursor: pointer;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+    //VALIDACION
+
+    &-bloque-incorrecto .form__emma-validacion{
+        display: block;
+    }
+    &-bloque-incorrecto .form__emma-input{
+        border: 2px solid color('danger');
+        &::placeholder{
+            color: color('danger');
+        }
+    }
+}
+
 @media (max-width: breakpoint('celular')){
     .formulario{
         &__suscribete-flex{
