@@ -32,6 +32,7 @@
                 background-position: 100% 25%;
             }
             &.zoom{
+                background-size: cover;
                 border-bottom-left-radius: 30px;
                 border-bottom-right-radius: 0;
                 border-top-left-radius: 30px;
@@ -42,6 +43,7 @@
         }
         &-contenedor{
             position: absolute;
+            pointer-events: none;
             top: 30px;
             left: 30px;
             &.active{
@@ -125,6 +127,32 @@
                 background: color('gris-oscuro');
                 color: color('primario');
             }
+        }
+    }
+}
+
+@media (max-width: breakpoint('celular')){
+    .emma{
+        &__primera-imagen.zoom{
+            max-width: 390px;
+            width: 94vw;
+        }
+        &__primera-imagen{
+            width: 207px;
+            height: 65px;
+        }
+        &__primera-titulo{
+            font-size: 17px;
+        }
+        &__primera-descripcion{
+            font-size: 10px;
+        }
+        &__primera-contenedor{
+            top: calc(50% - 22px);
+            left: calc(50% - 64px);
+        }
+        &__primera-close{
+            display: none;
         }
     }
 }
