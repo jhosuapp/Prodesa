@@ -10,7 +10,7 @@
                     <span class="button__link">Proyecto granateee</span>
                 </a>
                 <a class="button button--transparent button--transparent--background">
-                    <span class="button__link">Proyecto granateee</span>
+                    <span class="button__link">Proyecto granateeee</span>
                 </a>
                 <a class="button button--transparent button--transparent--background">
                     <span class="button__link">Proyecto granateeeeee</span>
