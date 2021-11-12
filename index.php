@@ -488,101 +488,275 @@
                 <p class="titulo__vivir-texto">¡Descubre el hogar perfecto en el lugar ideal para tu familia!</p>
             </div>
         </div>
-        <div class="mosaico">
-            <div class="mosaico__tab-contenedor">
-                <button class="button button--tab active" id="removeActive">
+        <div class="mosaico tab">
+            <div class="mosaico__tab-contenedor tab__controls">
+                <button class="button button--tab tab__button active">
                     <a class="button__link">Sabana de Bogotá</a>
                 </button>
-                <button class="button button--tab">
+                <button class="button button--tab tab__button">
                     <a class="button__link">Costa Atlática</a>
                 </button>
-                <button class="button button--tab">
+                <button class="button button--tab tab__button">
                     <a class="button__link">Tolima y Cundinamarca</a>
                 </button>
             </div>
-            <div class="mosaico__grid">
-                <div class="mosaico__contenedor mosaico__contenedor-1">
-                    <img src="assets/images/banner-home.png" alt="" class="mosaico__contenedor-imagen">
-                    <div class="mosaico__opacity">
-                        <p class="mosaico__parrafo">Bogotá</p>
-                        <div class="mosaico__resultados">
-                            <span class="mosaico__resultados-texto">16 resultados</span>
+            <div class="tab__contenedor">
+                <div class="mosaico__grid tab__item">
+                    <div class="mosaico__contenedor mosaico__contenedor-1">
+                        <img src="assets/images/banner-home.png" alt="" class="mosaico__contenedor-imagen">
+                        <div class="mosaico__opacity">
+                            <p class="mosaico__parrafo">Bogotá</p>
+                            <div class="mosaico__resultados">
+                                <span class="mosaico__resultados-texto">16 resultados</span>
+                            </div>
+                            <button class="button button--absolute">
+                                <a class="button__link button--absolute-color">Ver proyectos</a>
+                            </button>
                         </div>
-                        <button class="button button--absolute">
-                            <a class="button__link button--absolute-color">Ver proyectos</a>
-                        </button>
+                    </div>
+                    <div class="mosaico__contenedor mosaico__contenedor-2">
+                        <img src="assets/images/banner-home.png" alt="" class="mosaico__contenedor-imagen">
+                        <div class="mosaico__opacity">
+                            <p class="mosaico__parrafo">Bogotá</p>
+                            <div class="mosaico__resultados">
+                                <span class="mosaico__resultados-texto">16 resultados</span>
+                            </div>
+                            <button class="button button--absolute">
+                                <a class="button__link button--absolute-color">Ver proyectos</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mosaico__contenedor mosaico__contenedor-3">
+                        <img src="assets/images/banner-home.png" alt="" class="mosaico__contenedor-imagen">
+                        <div class="mosaico__opacity">
+                            <p class="mosaico__parrafo">Bogotá</p>
+                            <div class="mosaico__resultados">
+                                <span class="mosaico__resultados-texto">16 resultados</span>
+                            </div>
+                            <button class="button button--absolute">
+                                <a class="button__link button--absolute-color">Ver proyectos</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mosaico__contenedor mosaico__contenedor-4">
+                        <img src="assets/images/banner-home.png" alt="" class="mosaico__contenedor-imagen">
+                        <div class="mosaico__opacity">
+                            <p class="mosaico__parrafo">Bogotá</p>
+                            <div class="mosaico__resultados">
+                                <span class="mosaico__resultados-texto">16 resultados</span>
+                            </div>
+                            <button class="button button--absolute">
+                                <a class="button__link button--absolute-color">Ver proyectos</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mosaico__contenedor mosaico__contenedor-5">
+                        <img src="assets/images/banner-home.png" alt="" class="mosaico__contenedor-imagen">
+                        <div class="mosaico__opacity">
+                            <p class="mosaico__parrafo">Bogotá</p>
+                            <div class="mosaico__resultados">
+                                <span class="mosaico__resultados-texto">16 resultados</span>
+                            </div>
+                            <button class="button button--absolute">
+                                <a class="button__link button--absolute-color">Ver proyectos</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mosaico__contenedor mosaico__contenedor-6">
+                        <img src="assets/images/banner-home.png" alt="" class="mosaico__contenedor-imagen">
+                        <div class="mosaico__opacity">
+                            <p class="mosaico__parrafo">Bogotá</p>
+                            <div class="mosaico__resultados">
+                                <span class="mosaico__resultados-texto">16 resultados</span>
+                            </div>
+                            <button class="button button--absolute">
+                                <a class="button__link button--absolute-color">Ver proyectos</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mosaico__contenedor mosaico__contenedor-7">
+                        <img src="assets/images/banner-home.png" alt="" class="mosaico__contenedor-imagen">
+                        <div class="mosaico__opacity">
+                            <p class="mosaico__parrafo">Bogotá</p>
+                            <div class="mosaico__resultados">
+                                <span class="mosaico__resultados-texto">16 resultados</span>
+                            </div>
+                            <button class="button button--absolute">
+                                <a class="button__link button--absolute-color">Ver proyectos</a>
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <div class="mosaico__contenedor mosaico__contenedor-2">
-                    <img src="assets/images/banner-home.png" alt="" class="mosaico__contenedor-imagen">
-                    <div class="mosaico__opacity">
-                        <p class="mosaico__parrafo">Bogotá</p>
-                        <div class="mosaico__resultados">
-                            <span class="mosaico__resultados-texto">16 resultados</span>
+                <div class="mosaico__grid tab__item">
+                    <div class="mosaico__contenedor mosaico__contenedor-1">
+                        <img src="assets/images/banner-home.png" alt="" class="mosaico__contenedor-imagen">
+                        <div class="mosaico__opacity">
+                            <p class="mosaico__parrafo">Bogotá</p>
+                            <div class="mosaico__resultados">
+                                <span class="mosaico__resultados-texto">16 resultados</span>
+                            </div>
+                            <button class="button button--absolute">
+                                <a class="button__link button--absolute-color">Ver proyectos</a>
+                            </button>
                         </div>
-                        <button class="button button--absolute">
-                            <a class="button__link button--absolute-color">Ver proyectos</a>
-                        </button>
+                    </div>
+                    <div class="mosaico__contenedor mosaico__contenedor-2">
+                        <img src="assets/images/banner-home.png" alt="" class="mosaico__contenedor-imagen">
+                        <div class="mosaico__opacity">
+                            <p class="mosaico__parrafo">Bogotá</p>
+                            <div class="mosaico__resultados">
+                                <span class="mosaico__resultados-texto">16 resultados</span>
+                            </div>
+                            <button class="button button--absolute">
+                                <a class="button__link button--absolute-color">Ver proyectos</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mosaico__contenedor mosaico__contenedor-3">
+                        <img src="assets/images/banner-home.png" alt="" class="mosaico__contenedor-imagen">
+                        <div class="mosaico__opacity">
+                            <p class="mosaico__parrafo">Bogotá</p>
+                            <div class="mosaico__resultados">
+                                <span class="mosaico__resultados-texto">16 resultados</span>
+                            </div>
+                            <button class="button button--absolute">
+                                <a class="button__link button--absolute-color">Ver proyectos</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mosaico__contenedor mosaico__contenedor-4">
+                        <img src="assets/images/banner-home.png" alt="" class="mosaico__contenedor-imagen">
+                        <div class="mosaico__opacity">
+                            <p class="mosaico__parrafo">Bogotá</p>
+                            <div class="mosaico__resultados">
+                                <span class="mosaico__resultados-texto">16 resultados</span>
+                            </div>
+                            <button class="button button--absolute">
+                                <a class="button__link button--absolute-color">Ver proyectos</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mosaico__contenedor mosaico__contenedor-5">
+                        <img src="assets/images/banner-home.png" alt="" class="mosaico__contenedor-imagen">
+                        <div class="mosaico__opacity">
+                            <p class="mosaico__parrafo">Bogotá</p>
+                            <div class="mosaico__resultados">
+                                <span class="mosaico__resultados-texto">16 resultados</span>
+                            </div>
+                            <button class="button button--absolute">
+                                <a class="button__link button--absolute-color">Ver proyectos</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mosaico__contenedor mosaico__contenedor-6">
+                        <img src="assets/images/banner-home.png" alt="" class="mosaico__contenedor-imagen">
+                        <div class="mosaico__opacity">
+                            <p class="mosaico__parrafo">Bogotá</p>
+                            <div class="mosaico__resultados">
+                                <span class="mosaico__resultados-texto">16 resultados</span>
+                            </div>
+                            <button class="button button--absolute">
+                                <a class="button__link button--absolute-color">Ver proyectos</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mosaico__contenedor mosaico__contenedor-7">
+                        <img src="assets/images/banner-home.png" alt="" class="mosaico__contenedor-imagen">
+                        <div class="mosaico__opacity">
+                            <p class="mosaico__parrafo">Bogotá</p>
+                            <div class="mosaico__resultados">
+                                <span class="mosaico__resultados-texto">16 resultados</span>
+                            </div>
+                            <button class="button button--absolute">
+                                <a class="button__link button--absolute-color">Ver proyectos</a>
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <div class="mosaico__contenedor mosaico__contenedor-3">
-                    <img src="assets/images/banner-home.png" alt="" class="mosaico__contenedor-imagen">
-                    <div class="mosaico__opacity">
-                        <p class="mosaico__parrafo">Bogotá</p>
-                        <div class="mosaico__resultados">
-                            <span class="mosaico__resultados-texto">16 resultados</span>
+                <div class="mosaico__grid tab__item">
+                    <div class="mosaico__contenedor mosaico__contenedor-1">
+                        <img src="assets/images/banner-home.png" alt="" class="mosaico__contenedor-imagen">
+                        <div class="mosaico__opacity">
+                            <p class="mosaico__parrafo">Bogotá</p>
+                            <div class="mosaico__resultados">
+                                <span class="mosaico__resultados-texto">16 resultados</span>
+                            </div>
+                            <button class="button button--absolute">
+                                <a class="button__link button--absolute-color">Ver proyectos</a>
+                            </button>
                         </div>
-                        <button class="button button--absolute">
-                            <a class="button__link button--absolute-color">Ver proyectos</a>
-                        </button>
                     </div>
-                </div>
-                <div class="mosaico__contenedor mosaico__contenedor-4">
-                    <img src="assets/images/banner-home.png" alt="" class="mosaico__contenedor-imagen">
-                    <div class="mosaico__opacity">
-                        <p class="mosaico__parrafo">Bogotá</p>
-                        <div class="mosaico__resultados">
-                            <span class="mosaico__resultados-texto">16 resultados</span>
+                    <div class="mosaico__contenedor mosaico__contenedor-2">
+                        <img src="assets/images/banner-home.png" alt="" class="mosaico__contenedor-imagen">
+                        <div class="mosaico__opacity">
+                            <p class="mosaico__parrafo">Bogotá</p>
+                            <div class="mosaico__resultados">
+                                <span class="mosaico__resultados-texto">16 resultados</span>
+                            </div>
+                            <button class="button button--absolute">
+                                <a class="button__link button--absolute-color">Ver proyectos</a>
+                            </button>
                         </div>
-                        <button class="button button--absolute">
-                            <a class="button__link button--absolute-color">Ver proyectos</a>
-                        </button>
                     </div>
-                </div>
-                <div class="mosaico__contenedor mosaico__contenedor-5">
-                    <img src="assets/images/banner-home.png" alt="" class="mosaico__contenedor-imagen">
-                    <div class="mosaico__opacity">
-                        <p class="mosaico__parrafo">Bogotá</p>
-                        <div class="mosaico__resultados">
-                            <span class="mosaico__resultados-texto">16 resultados</span>
+                    <div class="mosaico__contenedor mosaico__contenedor-3">
+                        <img src="assets/images/banner-home.png" alt="" class="mosaico__contenedor-imagen">
+                        <div class="mosaico__opacity">
+                            <p class="mosaico__parrafo">Bogotá</p>
+                            <div class="mosaico__resultados">
+                                <span class="mosaico__resultados-texto">16 resultados</span>
+                            </div>
+                            <button class="button button--absolute">
+                                <a class="button__link button--absolute-color">Ver proyectos</a>
+                            </button>
                         </div>
-                        <button class="button button--absolute">
-                            <a class="button__link button--absolute-color">Ver proyectos</a>
-                        </button>
                     </div>
-                </div>
-                <div class="mosaico__contenedor mosaico__contenedor-6">
-                    <img src="assets/images/banner-home.png" alt="" class="mosaico__contenedor-imagen">
-                    <div class="mosaico__opacity">
-                        <p class="mosaico__parrafo">Bogotá</p>
-                        <div class="mosaico__resultados">
-                            <span class="mosaico__resultados-texto">16 resultados</span>
+                    <div class="mosaico__contenedor mosaico__contenedor-4">
+                        <img src="assets/images/banner-home.png" alt="" class="mosaico__contenedor-imagen">
+                        <div class="mosaico__opacity">
+                            <p class="mosaico__parrafo">Bogotá</p>
+                            <div class="mosaico__resultados">
+                                <span class="mosaico__resultados-texto">16 resultados</span>
+                            </div>
+                            <button class="button button--absolute">
+                                <a class="button__link button--absolute-color">Ver proyectos</a>
+                            </button>
                         </div>
-                        <button class="button button--absolute">
-                            <a class="button__link button--absolute-color">Ver proyectos</a>
-                        </button>
                     </div>
-                </div>
-                <div class="mosaico__contenedor mosaico__contenedor-7">
-                    <img src="assets/images/banner-home.png" alt="" class="mosaico__contenedor-imagen">
-                    <div class="mosaico__opacity">
-                        <p class="mosaico__parrafo">Bogotá</p>
-                        <div class="mosaico__resultados">
-                            <span class="mosaico__resultados-texto">16 resultados</span>
+                    <div class="mosaico__contenedor mosaico__contenedor-5">
+                        <img src="assets/images/banner-home.png" alt="" class="mosaico__contenedor-imagen">
+                        <div class="mosaico__opacity">
+                            <p class="mosaico__parrafo">Bogotá</p>
+                            <div class="mosaico__resultados">
+                                <span class="mosaico__resultados-texto">16 resultados</span>
+                            </div>
+                            <button class="button button--absolute">
+                                <a class="button__link button--absolute-color">Ver proyectos</a>
+                            </button>
                         </div>
-                        <button class="button button--absolute">
-                            <a class="button__link button--absolute-color">Ver proyectos</a>
-                        </button>
+                    </div>
+                    <div class="mosaico__contenedor mosaico__contenedor-6">
+                        <img src="assets/images/banner-home.png" alt="" class="mosaico__contenedor-imagen">
+                        <div class="mosaico__opacity">
+                            <p class="mosaico__parrafo">Bogotá</p>
+                            <div class="mosaico__resultados">
+                                <span class="mosaico__resultados-texto">16 resultados</span>
+                            </div>
+                            <button class="button button--absolute">
+                                <a class="button__link button--absolute-color">Ver proyectos</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mosaico__contenedor mosaico__contenedor-7">
+                        <img src="assets/images/banner-home.png" alt="" class="mosaico__contenedor-imagen">
+                        <div class="mosaico__opacity">
+                            <p class="mosaico__parrafo">Bogotá</p>
+                            <div class="mosaico__resultados">
+                                <span class="mosaico__resultados-texto">16 resultados</span>
+                            </div>
+                            <button class="button button--absolute">
+                                <a class="button__link button--absolute-color">Ver proyectos</a>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1193,15 +1367,22 @@
     buscadorCiudad.addEventListener('click', () =>{
         botonCiudad.classList.toggle('active');
     });
+    
+    const buttonTab = document.querySelectorAll('.tab__controls button');
 
-    const botonTab = document.querySelectorAll('.button--tab');
-    const removeActive = document.querySelector('#removeActive');
+    buttonTab.forEach((button) =>{
+        button.addEventListener('click', ()=>{
+            const parent = button.parentNode;
+            const grantParent = parent.parentNode;
+            const container = grantParent.querySelector('.tab__contenedor');
 
+            const childrenList = Array.from(parent.children);
+            const index = childrenList.indexOf(button);
+            container.style.transform =  `translatex(-${index * 100}%)`;
 
-    botonTab.forEach( (but) =>{
-        but.addEventListener('click' , () =>{
-            removeActive.classList.remove('active');
+            parent.querySelectorAll('button.active').forEach(activeBtn => activeBtn.classList.remove('active'));
+
+            button.classList.add('active');
         });
     });
-    
 </script>

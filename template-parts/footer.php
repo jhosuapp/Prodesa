@@ -239,40 +239,43 @@ const emmaForm = document.querySelector('#formulario_emma');
 const emmaEnd = document.querySelector('#emma__end');
 
 window.onload = () =>{
-    emmaPrimera.classList.add('active');
-    const EmmaFunction = () =>{
-        emmaImagen.classList.add('active');
-        emmaContenedor.classList.add('active');
-        emmaCloseGrey.classList.add('active');
-    }
+    var tiempo = setTimeout( () =>{
+        emmaPrimera.classList.add('active');
 
-    //FUNCION QUE DESACTIVA LA BIENVENIDA DESPUES DE 3 SEGUNDOS
-
-    setTimeout(() => {
-        EmmaFunction();
-    }, 3000);
-
-    emmaImagen.addEventListener('click', () =>{
-        emmaImagen.classList.add('zoom');
-        emmaClose.classList.add('active');
-        emmaForm.classList.add('active');
-        EmmaFunction();
-        if(validacion.links){
-            emmaEnd.classList.add('active');
+        const EmmaFunction = () =>{
+            emmaImagen.classList.add('active');
+            emmaContenedor.classList.add('active');
+            emmaCloseGrey.classList.add('active');
         }
-    });
-    emmaClose.addEventListener('click', () =>{
-        emmaImagen.classList.remove('zoom');
-        emmaClose.classList.remove('active');
-        emmaForm.classList.remove('active');
-        emmaEnd.classList.remove('active');
-        if(validacion.links){
+
+        //FUNCION QUE DESACTIVA LA BIENVENIDA DESPUES DE 3 SEGUNDOS
+
+        setTimeout(() => {
+            EmmaFunction();
+        }, 3000);
+
+        emmaImagen.addEventListener('click', () =>{
+            emmaImagen.classList.add('zoom');
+            emmaClose.classList.add('active');
+            emmaForm.classList.add('active');
+            EmmaFunction();
+            if(validacion.links){
+                emmaEnd.classList.add('active');
+            }
+        });
+        emmaClose.addEventListener('click', () =>{
+            emmaImagen.classList.remove('zoom');
+            emmaClose.classList.remove('active');
+            emmaForm.classList.remove('active');
             emmaEnd.classList.remove('active');
-        }
-    });
-    emmaCloseGrey.addEventListener('click', () =>{
-        EmmaFunction();
-    });
+            if(validacion.links){
+                emmaEnd.classList.remove('active');
+            }
+        });
+        emmaCloseGrey.addEventListener('click', () =>{
+            EmmaFunction();
+        });
+    },2000);
 }
 
 const validacion = {
