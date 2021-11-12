@@ -671,6 +671,7 @@ a {
 
 .grey {
   color: #58595b;
+  font-weight: bold;
 }
 .grey__light {
   font-weight: lighter;
@@ -2307,6 +2308,9 @@ a {
 .formulario__label {
   font-size: 13px;
   color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 .formulario__grupo--checkbox {
   margin-top: 10px;
@@ -3612,6 +3616,106 @@ a {
 }
 .tab__button.active {
   position: relative;
+}
+
+.pop-up {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s all ease;
+}
+.pop-up.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.pop-up__bloque {
+  width: 90%;
+  max-width: 950px;
+  padding: 80px;
+  background: #fff;
+  position: relative;
+}
+.pop-up__close {
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  cursor: pointer;
+}
+.pop-up__titulo {
+  color: #f47920;
+  font-size: 18px;
+  font-weight: lighter;
+}
+.pop-up__descripcion {
+  color: #58595b;
+  font-weight: lighter;
+  line-height: 1.6;
+  margin-top: 5px;
+  max-height: 400px;
+  overflow: auto;
+}
+.pop-up__button {
+  color: #58595b;
+  font-weight: bold;
+  border: 1px solid #58595b;
+  max-width: 400px;
+  text-align: center;
+  padding: 15px 25px;
+  cursor: pointer;
+}
+.pop-up__button:hover {
+  background: #58595b;
+  color: #fff;
+}
+.pop-up__contenedor {
+  width: 100%;
+  max-width: 90%;
+  margin: 40px auto;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.pop-up__terminos {
+  display: none;
+}
+.pop-up__terminos.active {
+  display: block;
+  pointer-events: none;
+  opacity: 0.7;
+}
+.pop-up__terminos.validado {
+  opacity: 1;
+  pointer-events: all;
+}
+
+@media (max-width: 992px) {
+  .pop-up__close {
+    right: -6px;
+  }
+}
+@media (max-width: 576px) {
+  .pop-up__contenedor {
+    margin: 40px auto;
+    margin-top: 30px;
+  }
+  .pop-up__bloque {
+    width: 90%;
+    max-width: 950px;
+    padding: 30px;
+    background: #fff;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

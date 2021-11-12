@@ -61,6 +61,31 @@
             </div>
         </div>
     </div>
+    <div class="pop-up__contenedor">
+        <a class="card-pagos__instrucciones pop-up__button" id="pop-up__button">Términos y Condiciones  uso Pagos en Línea Prodesa</a>
+        <form action="" class="formulario__pagos">
+            <label class="formulario__label">
+                <b class="grey__light">Al hacer click acepto los </b><a href="#" class="grey formulario__link">terminos y condiciones</a>
+                <input class="formulario__checkbox" id="terms-pagos" type="checkbox">
+            </label>
+        </form>
+        <button class="button card__button-top pop-up__terminos" id="pop-up__terminos">
+            <a href="./pagos-linea-interna.php" class="button__link">Continuar</a>
+        </button>
+    </div>
+
+    <!--Pop up -->
+
+    <div class="pop-up">
+        <div class="pop-up__bloque">
+            <img src="assets/images/close-white-p.png" alt="" class="pop-up__close">
+            <div class="pop-up__contenido">
+                <h3 class="pop-up__titulo">Términos y Condiciones uso Pagos en Línea Prodesa</h3>
+                <p class="pop-up__descripcion">De conformidad con lo previsto en la Ley 1581 de 2012, el Decreto 1377 de 2013 y el Decreto 1074 de 2015 y demás disposiciones complementarias, declaro que entrego a PRODESA Y CIA S.A.S. de forma libre, previa, expresa y voluntaria mis datos personales, para las siguientes finalidades: i) Disponer de la información personal suministrada por sus clientes potenciales y visitantes al momento del ingreso a las salas de ventas; ii) Realizar ofertas y promociones; iii) Realizar evaluaciones y/o encuestas relacionados con el nivel de satisfacción de sus clientes, en relación con los productos y servicios prestados; iv) Envío de comunicaciones de carácter legal y comercial relacionadas con los productos y servicios prestados; vi) Ejecución de análisis y perfilamiento de clientes y clientes potenciales que permita definir productos y servicios que se acomoden a sus necesidades; vii) Envío de comunicaciones sobre la realización de actividades y eventos organizados por PRODESA; viii)Desarrollo de investigaciones de mercado y hábitos de consumo, análisis estadísticos y reportes de comportamiento de clientes; ix) Para el normal desarrollo de la relación contractual o comercial. Asimismo, doy mi autorización autorizo para que mis Datos Personales sean recolectados y tratados de conformidad con la política de privacidad o política de tratamiento de la información de PRODESA, la cual está disponible en la página web www.prodesa.com. </p>
+            </div>
+        </div>
+    </div>
+     
 </section>
 
 <script>
@@ -77,6 +102,31 @@ function myFunctionPay() {
     }
 }
 myFunctionPay();
+
+// POP UP
+
+const buttonPopUp = document.querySelector('#pop-up__button');
+const popUp = document.querySelector('.pop-up');
+const popUpTerminos = document.querySelector('#pop-up__terminos');
+const popUpClose = document.querySelector('.pop-up__close');
+
+buttonPopUp.addEventListener('click', () =>{
+    popUp.classList.add('active');
+});
+
+popUpClose.addEventListener('click', () =>{
+    popUp.classList.remove('active');
+    popUpTerminos.classList.add('active');
+});
+
+//VALIDACION TERMINOS
+
+const terminosCheck = document.querySelector('#terms-pagos');
+
+terminosCheck.addEventListener('click', () =>{
+    popUpTerminos.classList.toggle('validado');
+})
+
 
 </script>
 

@@ -1,0 +1,102 @@
+.pop-up{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    opacity: 0;
+    pointer-events: none;
+    @include transition;
+    &.active{
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    &__bloque{
+        width: 90%;
+        max-width: 950px;
+        padding: 80px;
+        background: color('primario');
+        position: relative;
+    }
+    &__close{
+        position: absolute;
+        top: -60px;
+        right: -60px;
+        cursor: pointer;
+    }
+    &__titulo{
+        color: color('naranja');
+        font-size: font('comprar-descripcion');
+        font-weight: lighter;
+    }
+    &__descripcion{
+        color: color('gris-oscuro');
+        font-weight: lighter;
+        line-height: 1.6;
+        margin-top: 5px;
+        max-height: 400px;
+        overflow: auto;
+    }
+
+    &__button{
+        color: color('gris-oscuro');
+        font-weight: bold;
+        border: 1px solid color('gris-oscuro');
+        max-width: 400px;
+        text-align: center;
+        padding: 15px 25px;
+        cursor: pointer;
+        &:hover{
+            background: color('gris-oscuro');
+            color: color('primario');
+        }
+    }
+    &__contenedor{
+        width: 100%;
+        max-width: 90%;
+        margin: 40px auto;
+        margin-top: 80px;
+        @include flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    &__terminos{
+        display: none;
+        &.active{
+            display: block;
+            pointer-events: none;
+            opacity: .7;
+        }
+        &.validado{
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+}
+@media(max-width: breakpoint('ipad-grande')){
+    .pop-up{
+        &__close{
+            right: -6px;
+        }
+    }
+}
+@media(max-width: breakpoint('celular')){
+    .pop-up{
+        &__contenedor{
+            margin: 40px auto;
+            margin-top: 30px;
+        }
+        &__bloque{
+            width: 90%;
+            max-width: 950px;
+            padding: 30px;
+            background: color('primario')
+        }
+    }
+}

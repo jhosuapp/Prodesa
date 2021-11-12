@@ -66,6 +66,9 @@
     &__label{
         font-size: font('suscribete-politica');
         color: color('primario');
+        display: flex;
+        align-items: center;
+        gap: 5px
     }
     &__grupo--checkbox{
         margin-top: 10px;

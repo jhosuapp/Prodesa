@@ -205,7 +205,7 @@
                     <div class="form__emma-bloque" id="form__emma-terminos">
                         <label class="formulario__label">
                             <b class="black__light">Al hacer click acepto los </b><a href="#" class="black formulario__link">terminos y condiciones</a>
-                            <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                            <input class="formulario__checkbox terminos" type="checkbox">
                         </label>
                     </div>
 
