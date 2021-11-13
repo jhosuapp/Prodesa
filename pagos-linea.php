@@ -161,7 +161,7 @@
             <div class="preguntas-pagos__botones">
                 <a href="#" class="preguntas-pagos__boton">Ir a preguntas frecuentes</a>
                 <a href="#" class="preguntas-pagos__boton">Ir a preguntas frecuentes</a>
-            </div>
+            </div> 
         </div>
     </div>
 </section>

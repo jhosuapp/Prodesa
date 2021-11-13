@@ -1,0 +1,33 @@
+.macro{
+
+    &-banner{
+        width: 100%;
+        position: relative;
+        &:after{
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: rgb(0, 0, 0, .35);
+            top: 0;
+            left: 0;
+        }
+        &__imagen{
+            width: 100%;
+            min-height: 540px;
+            max-height: 540px;
+            object-fit: cover;
+        }
+        &__contenedor{
+            z-index: 9;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding: 100px
+        }
+        &__subtitulo{
+            font-size: font('');
+            color: color('primario');
+        }
+    }
+}

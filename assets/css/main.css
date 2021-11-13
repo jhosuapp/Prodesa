@@ -3859,5 +3859,34 @@ html {
     background: #fff;
   }
 }
+.macro-banner {
+  width: 100%;
+  position: relative;
+}
+.macro-banner:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  top: 0;
+  left: 0;
+}
+.macro-banner__imagen {
+  width: 100%;
+  min-height: 540px;
+  max-height: 540px;
+  object-fit: cover;
+}
+.macro-banner__contenedor {
+  z-index: 9;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 100px;
+}
+.macro-banner__subtitulo {
+  color: #fff;
+}
 
 /*# sourceMappingURL=main.css.map */
