@@ -1,0 +1,116 @@
+.pasos{
+
+
+    &__contenedor{
+        display: flex;
+        width: 100%;
+        margin: 40px 0;
+    }
+    &__left{
+        width: 35%;
+        display: flex;
+        gap: 20px;
+    }
+    &__right{
+        width: 65%;
+    }
+    &__numero{
+        color: color('naranja');
+        font-size: font('pagos-pasos');
+    }
+    &__descripcion{
+        color: color('primario');
+        font-size: font('mosaico-ofertas');
+        font-weight: bold;
+        margin-top: 20px;
+    }
+}
+.preguntas-pagos{
+    background-image: url("../images/preguntas-pagos.jpg");
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    @include flex;
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 400px;
+        background: rgb(0, 0, 0, 0.55);
+    }
+    &__top{
+        z-index: 99;
+        max-width: 90%;
+        margin: auto;
+    }
+    &__titulo{
+        font-size: font('header-titulo');
+        color: color('primario');
+        font-weight: lighter;
+        text-align: center;
+    }
+    &__boton{
+        padding: 12px 25px;
+        border-radius: 5px;
+        border: 1px solid color('primario');
+        color: color('primario');
+        font-weight: bold;
+        font-size: font('comprar-resumen');
+        background: linear-gradient(90.73deg, #E8AD00 9.83%, #F47920 92.88%);
+        cursor: pointer;
+        &:hover{
+            background: color('gris-oscuro');
+        }
+    }
+    &__botones{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
+}
+@media(max-width: breakpoint('ipad-grande')){
+    .pasos{
+        &__contenedor{
+            flex-direction: column;
+        }
+        &__left,
+        &__right{
+            width: 100%;
+        }
+        &__left{
+            margin-bottom: 20px;
+        }
+    }
+}
+@media(max-width: breakpoint('ipad-pequeña')){
+    .pasos{
+        &__contenedor{
+            margin: 0;
+        }
+    }
+    .preguntas-pagos{
+        &__botones{
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+        &__boton{
+            max-width: 350px;
+            text-align: center;
+        }
+    }
+}
+@media(max-width: breakpoint('celular')){
+    .preguntas-pagos{
+        &__botones{
+            flex-direction: column;
+        }
+        &__titulo{
+            font-size: font_mobile('titulos-mobile');
+        }
+    }
+}

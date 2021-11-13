@@ -43,7 +43,7 @@
                 <div class="card-pagos__contenedor-end">
                     <img src="assets/images/pay-down.svg" alt="" class="card-pagos__icono">
                 </div>
-                <a href="#" class="card-pagos__instrucciones">Leer instrucciones de pago</a>
+                <a href="#pago-mensual" id="boton-mensuales" class="card-pagos__instrucciones">Leer instrucciones de pago</a>
             </div>
         </div>
         <div class="card-pagos__contenedor" id="container">
@@ -56,7 +56,7 @@
                     <img src="assets/images/pay-down.svg" alt="" class="card-pagos__icono">
                 </div>
                 <div class="card-pagos__contenedor-end">
-                    <a href="#" class="card-pagos__instrucciones">Leer instrucciones de pago</a>
+                    <a href="#pago-separacion" id="boton-separacion" class="card-pagos__instrucciones">Leer instrucciones de pago</a>
                 </div>
             </div>
         </div>
@@ -65,7 +65,7 @@
         <a class="card-pagos__instrucciones pop-up__button" id="pop-up__button">Términos y Condiciones  uso Pagos en Línea Prodesa</a>
         <form action="" class="formulario__pagos">
             <label class="formulario__label">
-                <b class="grey__light">Al hacer click acepto los </b><a href="#" class="grey formulario__link">terminos y condiciones</a>
+                <b class="grey__light">Al hacer click acepto los </b><a class="grey formulario__link" id="pop-up__button">terminos y condiciones</a>
                 <input class="formulario__checkbox" id="terms-pagos" type="checkbox">
             </label>
         </form>
@@ -88,6 +88,85 @@
      
 </section>
 
+<!-- PASOS -->
+
+<section class="mi-content--background--grey mi-content--hidden">
+    <div class="titulo" id="pago-mensual">
+        <div class="titulo__contenedor titulo__padding-left">
+            <h2 class="titulo__contenido"><b class="white__light">¿Cómo hacer el pago mensual </b> <b class="orange">de tu cuota inicial?</b></h2>
+        </div>
+        <div class="titulo__derecha titulo__derecha--width titulo__flex"></div>
+    </div>
+    <div class="card__contenedor-carousel card__contenedor-carousel--width">
+        <div class="owl-carousel owl-carousel-lanzamiento-top">
+            <div class="pasos__contenedor">
+                <div class="pasos__left">
+                    <p class="pasos__numero">1</p>
+                    <p class="pasos__descripcion">Ingrese a la página oficial de Fiduoccidente www.fiduoccidente.com</p>
+                </div>
+                <div class="pasos__right">
+                    <img src="assets/images/pasos-pagos.jpg" alt="" class="pasos__imagen">
+                </div>
+            </div>
+            <div class="pasos__contenedor">
+                <div class="pasos__left">
+                    <p class="pasos__numero">2</p>
+                    <p class="pasos__descripcion">Ingrese a la página oficial de Fiduoccidente www.fiduoccidente.com</p>
+                </div>
+                <div class="pasos__right">
+                    <img src="assets/images/pasos-pagos.jpg" alt="" class="pasos__imagen">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mi-content--background--grey mi-content--hidden-pagos">
+    <div class="titulo" id="pago-separacion">
+        <div class="titulo__contenedor titulo__padding-left">
+            <h2 class="titulo__contenido"><b class="white__light">¿Cómo hacer el pago</b> <b class="orange"> de tu separación?</b></h2>
+        </div>
+        <div class="titulo__derecha titulo__derecha--width titulo__flex"></div>
+    </div>
+    <div class="card__contenedor-carousel card__contenedor-carousel--width">
+        <div class="owl-carousel owl-carousel-lanzamiento-top">
+            <div class="pasos__contenedor">
+                <div class="pasos__left">
+                    <p class="pasos__numero">1</p>
+                    <p class="pasos__descripcion">Ingrese a la página oficial de Fiduoccidente www.fiduoccidente.com</p>
+                </div>
+                <div class="pasos__right">
+                    <img src="assets/images/pasos-pagos-2.jpg" alt="" class="pasos__imagen">
+                </div>
+            </div>
+            <div class="pasos__contenedor">
+                <div class="pasos__left">
+                    <p class="pasos__numero">2</p>
+                    <p class="pasos__descripcion">Ingrese a la página oficial de Fiduoccidente www.fiduoccidente.com</p>
+                </div>
+                <div class="pasos__right">
+                    <img src="assets/images/pasos-pagos-2.jpg" alt="" class="pasos__imagen">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- DUDAS Y PREGUNTAS -->
+
+<section class="preguntas-pagos__background">
+    <div class="preguntas-pagos">
+        <div class="preguntas-pagos__top">
+            <h2 class="preguntas-pagos__titulo">¿Dudas o preguntas <b class="orange">con respecto al proceso?</b></h2>
+            <div class="preguntas-pagos__botones">
+                <a href="#" class="preguntas-pagos__boton">Ir a preguntas frecuentes</a>
+                <a href="#" class="preguntas-pagos__boton">Ir a preguntas frecuentes</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <script>
 
 function myFunctionPay() {
@@ -105,13 +184,15 @@ myFunctionPay();
 
 // POP UP
 
-const buttonPopUp = document.querySelector('#pop-up__button');
+const buttonPopUp = document.querySelectorAll('#pop-up__button');
 const popUp = document.querySelector('.pop-up');
 const popUpTerminos = document.querySelector('#pop-up__terminos');
 const popUpClose = document.querySelector('.pop-up__close');
 
-buttonPopUp.addEventListener('click', () =>{
-    popUp.classList.add('active');
+buttonPopUp.forEach((b) =>{
+        b.addEventListener('click', () =>{
+        popUp.classList.add('active');
+    });
 });
 
 popUpClose.addEventListener('click', () =>{
@@ -127,7 +208,21 @@ terminosCheck.addEventListener('click', () =>{
     popUpTerminos.classList.toggle('validado');
 })
 
+//PASOS PAGOS
 
+const botonMensuales = document.querySelector('#boton-mensuales');
+const sectionMensual = document.querySelector('.mi-content--hidden');
+const botonSeparacion = document.querySelector('#boton-separacion');
+const sectionSeparacion = document.querySelector('.mi-content--hidden-pagos');
+
+botonMensuales.addEventListener('click', () =>{
+    sectionMensual.classList.add('active');
+    sectionSeparacion.classList.remove('active');
+});
+botonSeparacion.addEventListener('click', () =>{
+    sectionSeparacion.classList.add('active');
+    sectionMensual.classList.remove('active');
+});
 </script>
 
 

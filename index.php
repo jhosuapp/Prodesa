@@ -339,7 +339,7 @@
         <div class="titulo__derecha titulo__flex"></div>
     </div>
     <div class="card__contenedor-carousel card__contenedor-carousel--width">
-        <div class="owl-carousel owl-carousel-lanzamiento">
+        <div class="owl-carousel owl-carousel-lanzamiento owl-carousel-lanzamiento-white">
             <div class="lanzamientos">
                 <div class="lanzamientos__flex">
                     <div class="lanzamientos__left">

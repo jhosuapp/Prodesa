@@ -2,6 +2,18 @@
     max-width: 90%;
     margin: auto;
     padding: 50px 0;
+    &--hidden{
+        display: none;
+        &.active{
+            display: block;
+        }
+    }
+    &--hidden-pagos{
+        display: none;
+        &.active{
+            display: block;
+        }
+    }
     &--background{
         background: color('grey-background');
         padding-bottom: 60px;

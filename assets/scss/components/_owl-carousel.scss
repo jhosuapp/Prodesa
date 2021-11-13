@@ -60,8 +60,8 @@
 }
 //WHITE
 
-.owl-carousel-lanzamiento .owl-next,
-.owl-carousel-lanzamiento .owl-prev{
+.owl-carousel-lanzamiento-white .owl-next,
+.owl-carousel-lanzamiento-white .owl-prev{
     background-image:  url("../images/right-white.svg") !important;
     background-repeat: no-repeat !important;
     height: 30px;
@@ -69,6 +69,18 @@
     position: absolute;
     background-color: transparent!important;
     top: calc(50% - 45px);
+    &.disabled{
+        opacity: 0.7;
+    }
+}
+.owl-carousel-lanzamiento-top .owl-next,
+.owl-carousel-lanzamiento-top .owl-prev{
+    background-image:  url("../images/right-white.svg") !important;
+    background-repeat: no-repeat !important;
+    height: 30px;
+    width: 40px;
+    position: absolute;
+    background-color: transparent!important;
     &.disabled{
         opacity: 0.7;
     }
