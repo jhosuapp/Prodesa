@@ -26,8 +26,139 @@
             padding: 100px
         }
         &__subtitulo{
-            font-size: font('');
+            font-size: font('header-titulo');
             color: color('primario');
+            margin: 5px 0;
+            font-weight: lighter;
+        }
+        &__ubicacion{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.promo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    &-contenedor{
+        display: flex;
+        max-width: 90%;
+        margin: auto;
+        justify-content: space-between;
+        z-index: 99;
+        margin-top: -60px;
+    }
+    &-descripcion{
+        padding: 40px;
+        border: 1px solid color('gris-clarito');
+        border-radius: 5px;
+        width: 60%;
+        background: color('primario');
+    }
+    &-descripcion__titulo{
+        color: color('secundario');
+        font-weight: bold;
+        font-size: font('footer-ubicacion');
+        margin-bottom: 10px;
+    }
+    &-descripcion__contenido{
+        color: color('secundario');
+        font-size: font('comprar-lugar');
+        font-weight: lighter;
+    }
+    &-right{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    &-botones{
+        position: absolute;
+        bottom: -40px;
+        left: calc(50% - 137.5px);
+        display: flex;
+        gap: 30px;
+    }
+    &-boton{
+        padding: 10px 20px;
+        border: 1px solid color('gris-oscuro');
+        border-radius: 5px;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        outline: inherit;
+        background: color('primario');
+        cursor: pointer;
+        @include transition;
+        &:hover{
+            box-shadow: inset 1px 2px 5px 0px #58595b;
+        }
+    }
+    &-texto{
+        color: color('gris-oscuro');
+        font-weight: bold;
+        font-size: font('blog-descripcion');
+    }
+}
+@media(max-width: breakpoint('ipad-grande')){
+    .promo{
+        &-descripcion,
+        &-right{
+            flex: 1;
+        }
+        &__imagen{
+            object-fit: contain;
+        }
+    }
+}
+@media(max-width: breakpoint('ipad-pequeña')){
+    .promo{
+        &-descripcion,
+        &-right{
+            flex: auto;
+        }
+        &-descripcion{
+            width: 45%;
+        }
+        &-right{
+            width: 55%;
+        }
+        &-botones{
+            bottom: 0;
+        }
+    }
+}
+@media(max-width: breakpoint('celular')){
+    .macro{
+
+        &-banner{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &__contenedor{
+                left: auto;
+                bottom: auto;
+                padding: 0;
+                max-width: 90%;
+            }
+        }
+    }
+    .promo{
+        padding-bottom: 20px;
+        &-contenedor{
+            flex-direction: column;
+        }
+        &-descripcion,
+        &-right{
+            width: 100%;
+        }
+        &-botones{
+            bottom: -30px;
+        }
+        &__imagen{
+            width: 100%;
         }
     }
 }
