@@ -65,6 +65,9 @@
         margin-top: 5px;
         font-weight: bolder;
     }
+    &__descripcion--size{
+        font-size: font('app-descripcion');
+    }
     &__vivir{
         width: 100%;
         &-texto{

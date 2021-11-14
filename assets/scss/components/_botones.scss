@@ -25,6 +25,23 @@
     &__contenido--icon{
         color: color('primario');
     }
+    &--white{
+        background: color('primario');
+        border: 1px solid color('naranja');
+        flex: 1;
+        @include transition;
+        &:hover{
+            background: color('primario');
+            box-shadow: inset 1px 2px 5px 0px #58595b;
+        }
+    }
+    &--white-width{
+        width: 370px;
+        max-width: 370px;
+    }
+    &__link--white{
+        color: color('gris-oscuro');
+    }
     &--tab{
         background: color('secundario');
         border-radius: 5px;

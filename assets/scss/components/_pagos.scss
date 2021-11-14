@@ -109,6 +109,9 @@
         &__botones{
             flex-direction: column;
         }
+        &__boton{
+            font-size: font_mobile('card-precio-mobile');
+        }
         &__titulo{
             font-size: font_mobile('titulos-mobile');
         }

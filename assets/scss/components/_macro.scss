@@ -102,6 +102,41 @@
         font-size: font('blog-descripcion');
     }
 }
+
+.contacto-macro{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: 20px auto;
+    &__cotizacion{
+        display: flex;
+        align-items: center;
+        padding: 40px 80px;
+        gap: 30px;
+        background: color('secundario');
+        border-radius: 5px;
+        border: 2px solid color('amarillo');
+        width: 90%;
+        max-width: 1100px;
+        position: absolute;
+        top: -65px;
+    }
+    &__titulo,
+    &__boton{
+        flex: 1;
+    }
+    &__titulo{
+        color: color('primario');
+        font-weight: lighter;
+        font-size: font('titulos');
+    }
+    &__boton{
+        max-width: 400px;
+        text-align: center;
+    }
+}
 @media(max-width: breakpoint('ipad-grande')){
     .promo{
         &-descripcion,
@@ -127,6 +162,14 @@
         }
         &-botones{
             bottom: 0;
+        }
+    }
+    .contacto-macro{
+        flex-direction: column;
+        align-items: center;
+        &__cotizacion{
+            flex-direction: column;
+            padding: 40px 10px;
         }
     }
 }
@@ -159,6 +202,11 @@
         }
         &__imagen{
             width: 100%;
+        }
+    }
+    .contacto-macro{
+        &__titulo{
+            font-size: font_mobile('header-titulo-mobile');
         }
     }
 }

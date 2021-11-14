@@ -116,6 +116,19 @@
             transform: rotate(180deg);
         }
     }
+    .owl-carousel--macro .owl-next{
+        background-image:  url("../images/icon_arrow-left2.svg") !important;
+        right: 5px !important;
+        top: calc(50% - 15px) !important;
+    }
+    .owl-carousel--macro .owl-prev{
+        background-image:  url("../images/icon_arrow-left2.svg") !important;
+        left: 5px !important;
+        top: calc(50% - 15px) !important;
+    }
+    .owl-carousel--macro{
+        padding: 0;
+    }
 }
 @media (max-width: breakpoint('celular')){
     .owl-carousel{

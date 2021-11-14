@@ -18,3 +18,104 @@
         position: relative;
     }
 }
+.tab-macro{
+    overflow: hidden;
+    &__item {
+        width: 100%;
+        flex-shrink: 0;
+        padding: 50px 45px;
+        background: color('primario');
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    &__contenedor {
+        display: flex;
+        flex-wrap: nowrap;
+        transform: translateX(0);
+        transition: all 0.3s ease-in;
+    }
+    &__limit{
+        max-width: 90%;
+        margin: auto;
+    }
+    &__firts-block{
+        width: 25%;
+    }
+    &__second-block{
+        width: 70%;
+    }
+    &__controls {
+        display: flex;
+    }
+    &__multimedia{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__descripcion{
+        color: color('gris-oscuro');
+        line-height: 1.5;
+        font-weight: lighter;
+    }
+    &__legales{
+        margin-top: 30px;
+        color: color('gris-oscuro');
+        font-weight: bold;
+        text-align: right;
+        font-size: font('suscribete-politica');
+    }
+    &__button {
+        width: auto;
+        padding: 18px 40px;
+        color: color('primario');
+        background-color: color('gris-oscuro');
+        font-size: 17px;
+        font-weight: 600;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        outline: inherit;
+        border: none;
+        margin-right: 2px;
+        cursor: pointer;
+        @include transition;
+        &:hover{
+            background: color('naranja');
+        }
+    }
+    
+    &__button.active {
+        background: color('naranja');
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: calc(50% - 12.5px);
+            width: 0;
+            height: 0;
+            border-width: 10px 10px 0px;
+            border-style: solid;
+            border-color: color('naranja') transparent transparent;
+            z-index: 99;
+        }
+    }
+}
+
+@media(max-width: breakpoint('ipad-pequeña')){
+    .tab-macro{
+        &__multimedia{
+            flex-direction: column;
+            gap: 20px;
+        }
+        &__firts-block,
+        &__second-block{
+            width: 100%;
+        }
+    }
+}
+@media(max-width: breakpoint('celular')){
+    .tab-macro{
+        &__item {
+           padding: 50px 20px;
+        }
+    }
+}
