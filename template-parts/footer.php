@@ -1,12 +1,8 @@
 <!-- scripts y librerias -->
 <script src="lib/jquery/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
 <script src="lib/owlCarousel/dist/owl.carousel.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
 <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
 <script src="assets/js/mainscript.js"></script>
 <footer class="footer">
     <div class="footer__top">
@@ -347,4 +343,10 @@ emmaForm.addEventListener('submit', (e) =>{
             }, 4000);
         }
     });
+</script>
+
+<script>
+$( function() {
+$( "#accordion" ).accordion();
+} );
 </script>
