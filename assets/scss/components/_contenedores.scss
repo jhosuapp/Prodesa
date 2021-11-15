@@ -39,6 +39,9 @@
             align-items: center;
             padding-top: 100px;
         }
+        &--grey-degradado{
+            background: linear-gradient(180deg, #3F4040 0%, #58595B 51.21%);
+        }
     }
     &--imagen{
         position: relative;

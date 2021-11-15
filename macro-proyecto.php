@@ -288,7 +288,7 @@
 
 <!-- Contacto del macro -->
 
-<section class="mi-content--background--grey">
+<section class="mi-content--background--grey mi-content--background--grey-degradado">
     <div class="titulo">
         <div class="titulo__contenedor titulo__flex">
             <h2 class="titulo__contenido"><b class="white__light">¿Interesado en este</b> <b class="orange">macroproyecto?</b></h2>
@@ -398,7 +398,7 @@
 
 <!--NOTICIA-->
 
-<section class="mi-content--background--grey">
+<section class="mi-content--background--grey mi-content--background--grey-degradado">
     <div class="titulo">
         <div class="noticia-macro">
             <div class="noticia-macro__left">
@@ -688,6 +688,413 @@
             <h2 class="titulo__contenido"><b class="white">Urbanismo</b></h2>
         </div>
         <div class="titulo__derecha titulo__flex"></div>
+    </div>
+    <div class="urbanismo">
+        <div class="urbanismo__bloque">
+            <img src="assets/images/urbanismo_banner.jpg" alt="" class="urbanismo__imagen">
+            <p class="tab-macro__legales tab-macro__legales--white">* Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes</p>
+        </div>
+        <div class="urbanismo__grid">
+            <div class="urbanismo__grid-item">
+                <img src="assets/images/urbanismo_position.svg" alt="" class="urbanismo__icono">
+                <p class="urbanismo__texto">Portería</p>
+            </div>
+            <div class="urbanismo__grid-item">
+                <img src="assets/images/urbanismo_position.svg" alt="" class="urbanismo__icono">
+                <p class="urbanismo__texto">Portería</p>
+            </div>
+            <div class="urbanismo__grid-item">
+                <img src="assets/images/urbanismo_position.svg" alt="" class="urbanismo__icono">
+                <p class="urbanismo__texto">Portería</p>
+            </div>
+            <div class="urbanismo__grid-item">
+                <img src="assets/images/urbanismo_position.svg" alt="" class="urbanismo__icono">
+                <p class="urbanismo__texto">Portería</p>
+            </div>
+            <div class="urbanismo__grid-item">
+                <img src="assets/images/urbanismo_position.svg" alt="" class="urbanismo__icono">
+                <p class="urbanismo__texto">Portería</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ZONAS DE INTERES -->
+
+<section class="mi-content--background mi-content--background--black">
+    <div class="mi-content--limit">
+        <div class="titulo">
+            <div class="titulo__contenedor titulo__contenedor--width">
+                <h2 class="titulo__contenido"><b class="white__light">Zonas de</b> <b class="orange">interés</b></h2>
+            </div>
+            <div class="titulo__derecha titulo__derecha--width titulo__flex"></div>
+        </div>
+    </div>
+    <div class="zona-interes">
+        <div class="zona-interes__contenedor">
+            <div class="zona-interes__left">
+                <div class="urbanismo__grid-item urbanismo__grid-item--margin">
+                    <img src="assets/images/urbanismo_position.svg" alt="" class="urbanismo__icono">
+                    <p class="urbanismo__texto">Portería</p>
+                </div>
+                <div class="urbanismo__grid-item urbanismo__grid-item--margin">
+                    <img src="assets/images/urbanismo_position.svg" alt="" class="urbanismo__icono">
+                    <p class="urbanismo__texto">Portería</p>
+                </div>
+                <div class="urbanismo__grid-item urbanismo__grid-item--margin">
+                    <img src="assets/images/urbanismo_position.svg" alt="" class="urbanismo__icono">
+                    <p class="urbanismo__texto">Portería</p>
+                </div>
+                <div class="urbanismo__grid-item urbanismo__grid-item--margin">
+                    <img src="assets/images/urbanismo_position.svg" alt="" class="urbanismo__icono">
+                    <p class="urbanismo__texto">Portería</p>
+                </div>
+            </div>
+            <div class="zona-interes__right">
+                <img src="assets/images/google-maps.png" alt="" class="zona-interes__mapa">
+            </div>
+        </div>
+        <div class="zona-interes__bottom">
+            <div class="zona-interes__bottom-left">
+                <img src="assets/images/location-macro.svg" alt="" class="zona-interes__bottom-icono">
+                <div class="zona-interes__bottom-flex">
+                    <p class="zona-interes__bottom-titulo">Ubicación sala de ventas</p>
+                    <p class="zona-interes__bottom-direccion">CRA. 919 # 990 - 10  Barrio zona</p>
+                </div>
+            </div>
+            <div class="zona-interes__bottom-right">
+                <a class="promo-boton zona-interes__bottom-button">
+                    <img src="assets/images/icon_f-waze.png" alt="" class="promo-icono">
+                    <span class="promo-texto  zona-interes__bottom-texto">Waze</span>
+                </a>
+                <a class="promo-boton zona-interes__bottom-button">
+                    <img src="assets/images/icon_f-location.png" alt="" class="promo-icono">
+                    <span class="promo-texto  zona-interes__bottom-texto">Maps</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EQUIPO DE VENTAS -->
+
+<section class="mi-content--background">
+    <div class="titulo">
+        <div class="titulo__izquierda titulo__flex"></div>
+        <div class="titulo__contenedor titulo__flex">
+            <h2 class="titulo__contenido"><b class="grey__light">Equipo de</b><b class="orange">ventas</b></h2>
+            <p class="titulo__descripcion">Descubre nuestro equipo de sala de ventas</p>
+        </div>
+        <div class="titulo__derecha titulo__flex"></div>
+    </div>
+    <div class="equipo-ventas">
+        <div class="equipo-ventas__grid">
+            <div class="equipo-ventas__grid-item">
+                <img src="assets/images/alejandra-prodesa.jpeg" alt="" class="equipo-ventas__imagen">
+                <div class="equipo-ventas__bloque">
+                    <h3 class="equipo-ventas__nombre">Alejandra<br>Puerto</h3>
+                    <p class="equipo-ventas__puesto">Promotor</p>
+                </div>
+            </div>
+            <div class="equipo-ventas__grid-item">
+                <img src="assets/images/alejandra-prodesa.jpeg" alt="" class="equipo-ventas__imagen">
+                <div class="equipo-ventas__bloque">
+                    <h3 class="equipo-ventas__nombre">Alejandra<br>Puerto</h3>
+                    <p class="equipo-ventas__puesto">Promotor</p>
+                </div>
+            </div>
+            <div class="equipo-ventas__grid-item">
+                <img src="assets/images/alejandra-prodesa.jpeg" alt="" class="equipo-ventas__imagen">
+                <div class="equipo-ventas__bloque">
+                    <h3 class="equipo-ventas__nombre">Alejandra<br>Puerto</h3>
+                    <p class="equipo-ventas__puesto">Promotor</p>
+                </div>
+            </div>
+            <div class="equipo-ventas__grid-item">
+                <img src="assets/images/alejandra-prodesa.jpeg" alt="" class="equipo-ventas__imagen">
+                <div class="equipo-ventas__bloque">
+                    <h3 class="equipo-ventas__nombre">Alejandra<br>Puerto</h3>
+                    <p class="equipo-ventas__puesto">Promotor</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACTO -->
+
+<section class="mi-content--background--grey-degradado mi-content--background--grey">
+    <div class="titulo">
+        <div class="titulo__contenedor titulo__flex">
+            <h2 class="titulo__contenido"><b class="white__light">¿Interesado en este</b> <b class="orange">macroproyecto?</b></h2>
+            <p class="titulo__descripcion titulo__descripcion--size"><b class="white">Contáctanos</b></p>
+            <div class="contacto-macro">
+                <button class="button button--white button--white-width button--margin">
+                    <a href="#" class="button__link button__link--white">Quiero recibir una llamada de un asesor</a>
+                </button>
+                <button class="button button--white button--white-width button--margin">
+                    <a href="#" class="button__link button__link--white">Quiero hablar con un asesor por WattsApp</a>
+                </button>
+                <button class="button button--white button--white-width button--margin">
+                    <a href="#" class="button__link button__link--white">Prefiero agendar una cita con una asesoría</a>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- APARTAMENTOS RECOMENDADOS -->
+
+<section class="mi-content--background titulo--grey mi-content--background--relative">
+    <div class="contacto-macro__cotizacion">
+        <h2 class="contacto-macro__titulo">¿Listo para comprar?</h2>
+        <a href="#" class="preguntas-pagos__boton contacto-macro__boton">Ir a preguntas frecuentes</a>
+    </div>
+    <div class="titulo">
+        <div class="titulo__izquierda titulo__izquierda--blog titulo__flex"></div>
+        <div class="titulo__contenedor titulo__flex">
+            <h2 class="titulo__contenido"><b class="grey__light">¡Descrubre nuestros</b> <b class="orange">apartamento recomendados!</b></h2>
+        </div>
+        <div class="titulo__derecha titulo__derecha--blog titulo__flex"></div>
+    </div>
+    <div class="card__contenedor-carousel">
+        <div class="owl-carousel owl-carousel-card">
+            <div class="card item">
+                <div class="card__top">
+                    <h2 class="card__titulo">Apartamento 65m2</h2>
+                    <img src="assets/images/promo.png" alt="" class="card__logo">
+                </div>
+                <div class="card__middle">
+                    <div class="card__background">
+                        <p class="card__proyecto">Proyecto Cerezo</p>
+                    </div>
+                    <a class="card__background-imagen">
+                        <img src="assets/images/banner-home.png" alt="" class="card__imagen">
+                    </a>
+                    <div class="card__bono">
+                        <p class="card__bono-descripcion">Bono navideño $5m</p>
+                    </div>
+                    <div class="card__redes">
+                        <!-- <img src="" alt="" class="card__redes-imagen"> -->
+                    </div>
+                </div>
+                <div class="card__semi-bottom">
+                    <div class="card__contenedor-ubicacion">
+                        <img src="assets/images/ubicacion.svg" alt="" class="card__ubicacion-imagen">
+                        <p class="card__ubicacion">Bogotá</p>
+                    </div>
+                    <div class="card__contenedor-descripcion">
+                        <p class="card__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut blanditiis, perspiciatis pariatur possimus distinctio  alias animi amet accusamus omnis sequi at consectetur, quis illo officiis eius obcaecati aut quos.</p>
+                        <div class="card__bloque-descripcion">
+                            <img src="assets/images/icon_area.svg" alt="" class="card__metraje-icono">
+                            <div class="card__contenedor-metraje">
+                                <p class="card__metraje">Areá privada desde 20m2</p>
+                                <p class="card__metraje">Areá construida desde 20m2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__bottom">
+                    <div class="card__bottom-top">
+                        <div class="card__precios">
+                            <p class="card__precio-anterior">$990.000.000</p>
+                            <p class="card__precio">$900.000.000</p>
+                        </div>
+                        <button class="button card__button-top">
+                            <a class="button__link">Ver más</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card item">
+                <div class="card__top">
+                    <h2 class="card__titulo">Apartamento 65m2</h2>
+                    <img src="assets/images/promo.png" alt="" class="card__logo">
+                </div>
+                <div class="card__middle">
+                    <div class="card__background">
+                        <p class="card__proyecto">Proyecto Cerezo</p>
+                    </div>
+                    <a class="card__background-imagen">
+                        <img src="assets/images/banner-home.png" alt="" class="card__imagen">
+                    </a>
+                    <div class="card__bono">
+                        <p class="card__bono-descripcion">Bono navideño $5m</p>
+                    </div>
+                    <div class="card__redes">
+                        <!-- <img src="" alt="" class="card__redes-imagen"> -->
+                    </div>
+                </div>
+                <div class="card__semi-bottom">
+                    <div class="card__contenedor-ubicacion">
+                        <img src="assets/images/ubicacion.svg" alt="" class="card__ubicacion-imagen">
+                        <p class="card__ubicacion">Bogotá</p>
+                    </div>
+                    <div class="card__contenedor-descripcion">
+                        <p class="card__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut blanditiis, perspiciatis pariatur possimus distinctio  alias animi amet accusamus omnis sequi at consectetur, quis illo officiis eius obcaecati aut quos.</p>
+                        <div class="card__bloque-descripcion">
+                            <img src="assets/images/icon_area.svg" alt="" class="card__metraje-icono">
+                            <div class="card__contenedor-metraje">
+                                <p class="card__metraje">Areá privada desde 20m2</p>
+                                <p class="card__metraje">Areá construida desde 20m2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__bottom">
+                    <div class="card__bottom-top">
+                        <div class="card__precios">
+                            <p class="card__precio-anterior">$990.000.000</p>
+                            <p class="card__precio">$900.000.000</p>
+                        </div>
+                        <button class="button card__button-top">
+                            <a class="button__link">Ver más</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card item">
+                <div class="card__top">
+                    <h2 class="card__titulo">Apartamento 65m2</h2>
+                    <img src="assets/images/promo.png" alt="" class="card__logo">
+                </div>
+                <div class="card__middle">
+                    <div class="card__background">
+                        <p class="card__proyecto">Proyecto Cerezo</p>
+                    </div>
+                    <a class="card__background-imagen">
+                        <img src="assets/images/banner-home.png" alt="" class="card__imagen">
+                    </a>
+                    <div class="card__bono">
+                        <p class="card__bono-descripcion">Bono navideño $5m</p>
+                    </div>
+                    <div class="card__redes">
+                        <!-- <img src="" alt="" class="card__redes-imagen"> -->
+                    </div>
+                </div>
+                <div class="card__semi-bottom">
+                    <div class="card__contenedor-ubicacion">
+                        <img src="assets/images/ubicacion.svg" alt="" class="card__ubicacion-imagen">
+                        <p class="card__ubicacion">Bogotá</p>
+                    </div>
+                    <div class="card__contenedor-descripcion">
+                        <p class="card__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut blanditiis, perspiciatis pariatur possimus distinctio  alias animi amet accusamus omnis sequi at consectetur, quis illo officiis eius obcaecati aut quos.</p>
+                        <div class="card__bloque-descripcion">
+                            <img src="assets/images/icon_area.svg" alt="" class="card__metraje-icono">
+                            <div class="card__contenedor-metraje">
+                                <p class="card__metraje">Areá privada desde 20m2</p>
+                                <p class="card__metraje">Areá construida desde 20m2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__bottom">
+                    <div class="card__bottom-top">
+                        <div class="card__precios">
+                            <p class="card__precio-anterior">$990.000.000</p>
+                            <p class="card__precio">$900.000.000</p>
+                        </div>
+                        <button class="button card__button-top">
+                            <a class="button__link">Ver más</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card item">
+                <div class="card__top">
+                    <h2 class="card__titulo">Apartamento 65m2</h2>
+                    <img src="assets/images/promo.png" alt="" class="card__logo">
+                </div>
+                <div class="card__middle">
+                    <div class="card__background">
+                        <p class="card__proyecto">Proyecto Cerezo</p>
+                    </div>
+                    <a class="card__background-imagen">
+                        <img src="assets/images/banner-home.png" alt="" class="card__imagen">
+                    </a>
+                    <div class="card__bono">
+                        <p class="card__bono-descripcion">Bono navideño $5m</p>
+                    </div>
+                    <div class="card__redes">
+                        <!-- <img src="" alt="" class="card__redes-imagen"> -->
+                    </div>
+                </div>
+                <div class="card__semi-bottom">
+                    <div class="card__contenedor-ubicacion">
+                        <img src="assets/images/ubicacion.svg" alt="" class="card__ubicacion-imagen">
+                        <p class="card__ubicacion">Bogotá</p>
+                    </div>
+                    <div class="card__contenedor-descripcion">
+                        <p class="card__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut blanditiis, perspiciatis pariatur possimus distinctio  alias animi amet accusamus omnis sequi at consectetur, quis illo officiis eius obcaecati aut quos.</p>
+                        <div class="card__bloque-descripcion">
+                            <img src="assets/images/icon_area.svg" alt="" class="card__metraje-icono">
+                            <div class="card__contenedor-metraje">
+                                <p class="card__metraje">Areá privada desde 20m2</p>
+                                <p class="card__metraje">Areá construida desde 20m2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__bottom">
+                    <div class="card__bottom-top">
+                        <div class="card__precios">
+                            <p class="card__precio-anterior">$990.000.000</p>
+                            <p class="card__precio">$900.000.000</p>
+                        </div>
+                        <button class="button card__button-top">
+                            <a class="button__link">Ver más</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card item">
+                <div class="card__top">
+                    <h2 class="card__titulo">Apartamento 65m2</h2>
+                    <img src="assets/images/promo.png" alt="" class="card__logo">
+                </div>
+                <div class="card__middle">
+                    <div class="card__background">
+                        <p class="card__proyecto">Proyecto Cerezo</p>
+                    </div>
+                    <a class="card__background-imagen">
+                        <img src="assets/images/banner-home.png" alt="" class="card__imagen">
+                    </a>
+                    <div class="card__bono">
+                        <p class="card__bono-descripcion">Bono navideño $5m</p>
+                    </div>
+                    <div class="card__redes">
+                        <!-- <img src="" alt="" class="card__redes-imagen"> -->
+                    </div>
+                </div>
+                <div class="card__semi-bottom">
+                    <div class="card__contenedor-ubicacion">
+                        <img src="assets/images/ubicacion.svg" alt="" class="card__ubicacion-imagen">
+                        <p class="card__ubicacion">Bogotá</p>
+                    </div>
+                    <div class="card__contenedor-descripcion">
+                        <p class="card__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut blanditiis, perspiciatis pariatur possimus distinctio  alias animi amet accusamus omnis sequi at consectetur, quis illo officiis eius obcaecati aut quos.</p>
+                        <div class="card__bloque-descripcion">
+                            <img src="assets/images/icon_area.svg" alt="" class="card__metraje-icono">
+                            <div class="card__contenedor-metraje">
+                                <p class="card__metraje">Areá privada desde 20m2</p>
+                                <p class="card__metraje">Areá construida desde 20m2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__bottom">
+                    <div class="card__bottom-top">
+                        <div class="card__precios">
+                            <p class="card__precio-anterior">$990.000.000</p>
+                            <p class="card__precio">$900.000.000</p>
+                        </div>
+                        <button class="button card__button-top">
+                            <a class="button__link">Ver más</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
