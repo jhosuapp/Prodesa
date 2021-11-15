@@ -137,6 +137,40 @@
         text-align: center;
     }
 }
+.noticia-macro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    width: 90%;
+    margin: auto;
+    &__imagen{
+        width: 100%;
+        object-fit: cover;
+        border: 1px solid color('primario');
+        border-radius: 5px;
+        min-height: 250px;
+    }
+    &__left{
+        width: 25%;
+    }
+    &__right{
+        width: 70%;
+        text-align: left;
+    }
+    &__titulo{
+        font-size: font('titulos');
+        color: color('primario');
+        font-weight: lighter;
+    }
+    &__descripcion{
+        font-size: font('mosaico-ofertas');
+        color: color('primario');
+        font-weight: bold;
+        margin: 15px 0 25px 0;
+    }
+}
+
 @media(max-width: breakpoint('ipad-grande')){
     .promo{
         &-descripcion,
@@ -170,6 +204,14 @@
         &__cotizacion{
             flex-direction: column;
             padding: 40px 10px;
+        }
+    }
+    .noticia-macro{
+        flex-direction: column;
+        gap: 20px;
+        &__left,
+        &__right{
+            width: 100%;
         }
     }
 }
@@ -207,6 +249,15 @@
     .contacto-macro{
         &__titulo{
             font-size: font_mobile('header-titulo-mobile');
+        }
+    }
+    .noticia-macro{
+        &__titulo{
+            font-size: font_mobile('header-titulo-mobile');
+        }
+        &__descripcion{
+            font-weight: lighter;
+            font-size: font_mobile('header-descripcion-mobile');
         }
     }
 }

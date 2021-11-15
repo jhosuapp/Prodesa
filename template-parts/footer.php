@@ -349,4 +349,7 @@ emmaForm.addEventListener('submit', (e) =>{
 $( function() {
 $( "#accordion" ).accordion();
 } );
+$( function() {
+$( "#accordion-macro" ).accordion();
+} );
 </script>

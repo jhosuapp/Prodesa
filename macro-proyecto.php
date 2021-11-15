@@ -336,7 +336,7 @@
                             <p class="tab-macro__descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab a, repudiandae exercitationem odit nam nostrum quae perspiciatis neque asperiores dicta omnis explicabo ducimus architecto nobis at quisquam aperiam error iusto aut. Quo nisi blanditiis quisquam rem similique reiciendis eum? Vitae, esse repudiandae excepturi temporibus saepe sit nostrum quis ipsum delectus?</p>
                         </div>
                         <div class="tab-macro__second-block">
-                            <iframe width="100%" height="500" src="https://www.youtube.com/embed/f1-jV9Qwwf0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <img src="assets/images/reproductor-youtube.png" width="100%" height="500px" alt="" class="tab-macro__imagen">
                             <p class="tab-macro__legales">* Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes</p>
                         </div>
                     </div>
@@ -347,7 +347,7 @@
                             <p class="tab-macro__descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab a, repudiandae exercitationem odit nam nostrum quae perspiciatis neque asperiores dicta omnis explicabo ducimus architecto nobis at quisquam aperiam error iusto aut. Quo nisi blanditiis quisquam rem similique reiciendis eum? Vitae, esse repudiandae excepturi temporibus saepe sit nostrum quis ipsum delectus?</p>
                         </div>
                         <div class="tab-macro__second-block">
-                            <iframe width="100%" height="500" src="https://www.youtube.com/embed/f1-jV9Qwwf0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <img src="assets/images/reproductor-youtube.png" width="100%" height="500px" alt="" class="tab-macro__imagen">
                             <p class="tab-macro__legales">* Textos legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes</p>
                         </div>
                     </div>
@@ -358,9 +358,37 @@
                             <p class="tab-macro__descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab a, repudiandae exercitationem odit nam nostrum quae perspiciatis neque asperiores dicta omnis explicabo ducimus architecto nobis at quisquam aperiam error iusto aut. Quo nisi blanditiis quisquam rem similique reiciendis eum? Vitae, esse repudiandae excepturi temporibus saepe sit nostrum quis ipsum delectus?</p>
                         </div>
                         <div class="tab-macro__second-block">
-                            <iframe width="100%" height="500" src="https://www.youtube.com/embed/f1-jV9Qwwf0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <img src="assets/images/reproductor-youtube.png" width="100%" height="500px" alt="" class="tab-macro__imagen">
                             <p class="tab-macro__legales">* Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-macro">
+        <div id="accordion">
+            <h3 class="accordion-macro__section">Section 1</h3>
+            <div class="accordion-macro__background">
+                <div class="tab-macro__multimedia">
+                    <div class="tab-macro__firts-block">
+                        <p class="tab-macro__descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab a, repudiandae exercitationem odit nam nostrum quae perspiciatis neque asperiores dicta omnis explicabo ducimus architecto nobis at quisquam aperiam error iusto aut. Quo nisi blanditiis quisquam rem similique reiciendis eum? Vitae, esse repudiandae excepturi temporibus saepe sit nostrum quis ipsum delectus?</p>
+                    </div>
+                    <div class="tab-macro__second-block">
+                        <img src="assets/images/reproductor-youtube.png" width="100%" height="500px" alt="" class="tab-macro__imagen">
+                        <p class="tab-macro__legales">* Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes</p>
+                    </div>
+                </div>
+            </div>
+            <h3 class="accordion-macro__section">Section 2</h3>
+            <div class="accordion-macro__background">
+                <div class="tab-macro__multimedia">
+                    <div class="tab-macro__firts-block">
+                        <p class="tab-macro__descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab a, repudiandae exercitationem odit nam nostrum quae perspiciatis neque asperiores dicta omnis explicabo ducimus architecto nobis at quisquam aperiam error iusto aut. Quo nisi blanditiis quisquam rem similique reiciendis eum? Vitae, esse repudiandae excepturi temporibus saepe sit nostrum quis ipsum delectus?</p>
+                    </div>
+                    <div class="tab-macro__second-block">
+                        <img src="assets/images/reproductor-youtube.png" width="100%" height="500px" alt="" class="tab-macro__imagen">
+                        <p class="tab-macro__legales">* Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes</p>
                     </div>
                 </div>
             </div>
@@ -372,67 +400,296 @@
 
 <section class="mi-content--background--grey">
     <div class="titulo">
+        <div class="noticia-macro">
+            <div class="noticia-macro__left">
+                <img src="assets/images/banner-home.png" alt="" class="noticia-macro__imagen">
+            </div>
+            <div class="noticia-macro__right">
+                <h3 class="noticia-macro__titulo"><b class="orange">Una Iglesia y un colegio,</b> harán parte de Hacienda Alcalá el proyecto campestre.</h3>
+                <p class="noticia-macro__descripcion">Una Iglesia y el colegio bilingüe Innova Schools con capacidad para 1400 estudiantes harán parte de Hacienda Alcalá el proyecto campestre de Prodesa en Mosquera, que tendrá todo lo que tú y tu familia necesitan para vivir</p>
+                <a href="#" class="button-macro">
+                    Ver más
+                </a>
+            </div>
+        </div>
     </div>
 </section>
 
+<!-- DESCRIPCION DETALLADA -->
 
- 
-<div id="accordion">
-  <h3>Section 1</h3>
-  <div>
-    <p>
-    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-    </p>
-  </div>
-  <h3>Section 2</h3>
-  <div>
-    <p>
-    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-    suscipit faucibus urna.
-    </p>
-  </div>
-  <h3>Section 3</h3>
-  <div>
-    <p>
-    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-    </p>
-    <ul>
-      <li>List item one</li>
-      <li>List item two</li>
-      <li>List item three</li>
-    </ul>
-  </div>
-  <h3>Section 4</h3>
-  <div>
-    <p>
-    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-    mauris vel est.
-    </p>
-    <p>
-    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-    inceptos himenaeos.
-    </p>
-  </div>
-</div>
+<section class="mi-content--background">
+    <div class="titulo titulo--grey">
+        <div class="titulo__izquierda titulo__flex"></div>
+        <div class="titulo__contenedor titulo__flex">
+            <h2 class="titulo__contenido"><b class="grey__light">Descripción detallada</b> <b class="orange">macroproyecto</b></h2>
+        </div>
+        <div class="titulo__derecha titulo__flex"></div>
+    </div>
+    <div class="tab-macro__limit">
+        <div class="tab-macro">
+            <div class="tab-macro__controls">
+                <button class="tab-macro__button tab-macro__button--flex active">
+                    <img src="assets/images/amenidad-tab.png" alt="" class="tab-macro-amenidades__icono">
+                    <span class="tab-macro__texto tab-macro__texto--color">Gimnasio</span>
+                </button>
+                <button class="tab-macro__button tab-macro__button--flex">
+                    <img src="assets/images/amenidad-tab.png" alt="" class="tab-macro-amenidades__icono">
+                    <span class="tab-macro__texto tab-macro__texto--color">Gimnasio</span>
+                </button>
+            </div>
+            <div class="tab-macro__contenedor">
+                <div class="tab-macro__item tab-macro__item--border">
+                    <div class="tab-macro__multimedia">
+                        <div class="tab-macro-amenidades__firts-block">
+                            <div class="tab-macro-amenidades__contenedor tab-macro-amenidades__contenedor--start">
+                                <img src="assets/images/amenidad-degradado.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto tab-macro-amenidades__texto--color">Gimansio</p>
+                            </div>
+                            <p class="tab-macro__descripcion tab-macro-amenidades__descripcion--margin">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab a, repudiandae exercitationem odit nam nostrum quae perspiciatis neque asperiores dicta omnis explicabo ducimus architecto nobis at quisquam aperiam error iusto aut. Quo nisi blanditiis quisquam rem similique reiciendis eum? Vitae, esse repudiandae excepturi temporibus saepe sit nostrum quis ipsum delectus?</p>
+                        </div>
+                        <div class="tab-macro-amenidades__second-block">
+                            <div class="owl-carousel owl-carousel--padding">
+                                <div class="item">
+                                    <img src="assets/images/reproductor-youtube.png" alt="" class="tab-macro-amenidades__imagen">
+                                    <p class="tab-macro__legales tab-macro__legales--black">* Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes</p>
+                                </div>
+                                <div class="item">
+                                    <img src="assets/images/reproductor-youtube.png" alt="" class="tab-macro-amenidades__imagen">
+                                    <p class="tab-macro__legales tab-macro__legales--black">* Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-macro-amenidades">
+                        <h3 class="tab-macro-amenidades__titulo">Este proyecto además cuenta con</h3>
+                        <div class="tab-macro-amenidades__grid">
+                            <div class="tab-macro-amenidades__contenedor">
+                                <img src="assets/images/amenidad.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto">Otra amenidad</p>
+                            </div>
+                            <div class="tab-macro-amenidades__contenedor">
+                                <img src="assets/images/amenidad.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto">Otra amenidad</p>
+                            </div>
+                            <div class="tab-macro-amenidades__contenedor">
+                                <img src="assets/images/amenidad.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto">Otra amenidad</p>
+                            </div>
+                            <div class="tab-macro-amenidades__contenedor">
+                                <img src="assets/images/amenidad.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto">Otra amenidad</p>
+                            </div>
+                            <div class="tab-macro-amenidades__contenedor">
+                                <img src="assets/images/amenidad.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto">Otra amenidad</p>
+                            </div>
+                            <div class="tab-macro-amenidades__contenedor">
+                                <img src="assets/images/amenidad.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto">Otra amenidad</p>
+                            </div>
+                            <div class="tab-macro-amenidades__contenedor">
+                                <img src="assets/images/amenidad.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto">Otra amenidad</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-macro__item tab-macro__item--border">
+                    <div class="tab-macro__multimedia">
+                        <div class="tab-macro-amenidades__firts-block">
+                            <div class="tab-macro-amenidades__contenedor tab-macro-amenidades__contenedor--start">
+                                <img src="assets/images/amenidad-degradado.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto tab-macro-amenidades__texto--color">Gimansio</p>
+                            </div>
+                            <p class="tab-macro__descripcion tab-macro-amenidades__descripcion--margin">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab a, repudiandae exercitationem odit nam nostrum quae perspiciatis neque asperiores dicta omnis explicabo ducimus architecto nobis at quisquam aperiam error iusto aut. Quo nisi blanditiis quisquam rem similique reiciendis eum? Vitae, esse repudiandae excepturi temporibus saepe sit nostrum quis ipsum delectus?</p>
+                        </div>
+                        <div class="tab-macro-amenidades__second-block">
+                            <div class="owl-carousel owl-carousel--padding">
+                                <div class="item">
+                                    <img src="assets/images/reproductor-youtube.png" alt="" class="tab-macro-amenidades__imagen">
+                                    <p class="tab-macro__legales tab-macro__legales--black">* Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes</p>
+                                </div>
+                                <div class="item">
+                                    <img src="assets/images/reproductor-youtube.png" alt="" class="tab-macro-amenidades__imagen">
+                                    <p class="tab-macro__legales tab-macro__legales--black">* Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-macro-amenidades">
+                        <h3 class="tab-macro-amenidades__titulo">Este proyecto además cuenta con</h3>
+                        <div class="tab-macro-amenidades__grid">
+                            <div class="tab-macro-amenidades__contenedor">
+                                <img src="assets/images/amenidad.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto">Otra amenidad</p>
+                            </div>
+                            <div class="tab-macro-amenidades__contenedor">
+                                <img src="assets/images/amenidad.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto">Otra amenidad</p>
+                            </div>
+                            <div class="tab-macro-amenidades__contenedor">
+                                <img src="assets/images/amenidad.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto">Otra amenidad</p>
+                            </div>
+                            <div class="tab-macro-amenidades__contenedor">
+                                <img src="assets/images/amenidad.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto">Otra amenidad</p>
+                            </div>
+                            <div class="tab-macro-amenidades__contenedor">
+                                <img src="assets/images/amenidad.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto">Otra amenidad</p>
+                            </div>
+                            <div class="tab-macro-amenidades__contenedor">
+                                <img src="assets/images/amenidad.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto">Otra amenidad</p>
+                            </div>
+                            <div class="tab-macro-amenidades__contenedor">
+                                <img src="assets/images/amenidad.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto">Otra amenidad</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOGGLE MOBILE -->
+
+    <div class="accordion-macro">
+        <div id="accordion-macro">
+            <h3 class="accordion-macro__section">Gimnasio</h3>
+            <div class="accordion-macro__background">
+                <div class="tab-macro__item tab-macro__item--border">
+                    <div class="tab-macro__multimedia">
+                        <div class="tab-macro-amenidades__firts-block">
+                            <div class="tab-macro-amenidades__contenedor tab-macro-amenidades__contenedor--start">
+                                <img src="assets/images/amenidad-degradado.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto tab-macro-amenidades__texto--color">Gimansio</p>
+                            </div>
+                            <p class="tab-macro__descripcion tab-macro-amenidades__descripcion--margin">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab a, repudiandae exercitationem odit nam nostrum quae perspiciatis neque asperiores dicta omnis explicabo ducimus architecto nobis at quisquam aperiam error iusto aut. Quo nisi blanditiis quisquam rem similique reiciendis eum? Vitae, esse repudiandae excepturi temporibus saepe sit nostrum quis ipsum delectus?</p>
+                        </div>
+                        <div class="tab-macro-amenidades__second-block">
+                            <div class="owl-carousel owl-carousel--padding">
+                                <div class="item">
+                                    <img src="assets/images/reproductor-youtube.png" alt="" class="tab-macro-amenidades__imagen">
+                                    <p class="tab-macro__legales tab-macro__legales--black">* Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes</p>
+                                </div>
+                                <div class="item">
+                                    <img src="assets/images/reproductor-youtube.png" alt="" class="tab-macro-amenidades__imagen">
+                                    <p class="tab-macro__legales tab-macro__legales--black">* Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-macro-amenidades">
+                        <h3 class="tab-macro-amenidades__titulo">Este proyecto además cuenta con</h3>
+                        <div class="tab-macro-amenidades__grid">
+                            <div class="tab-macro-amenidades__contenedor">
+                                <img src="assets/images/amenidad.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto">Otra amenidad</p>
+                            </div>
+                            <div class="tab-macro-amenidades__contenedor">
+                                <img src="assets/images/amenidad.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto">Otra amenidad</p>
+                            </div>
+                            <div class="tab-macro-amenidades__contenedor">
+                                <img src="assets/images/amenidad.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto">Otra amenidad</p>
+                            </div>
+                            <div class="tab-macro-amenidades__contenedor">
+                                <img src="assets/images/amenidad.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto">Otra amenidad</p>
+                            </div>
+                            <div class="tab-macro-amenidades__contenedor">
+                                <img src="assets/images/amenidad.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto">Otra amenidad</p>
+                            </div>
+                            <div class="tab-macro-amenidades__contenedor">
+                                <img src="assets/images/amenidad.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto">Otra amenidad</p>
+                            </div>
+                            <div class="tab-macro-amenidades__contenedor">
+                                <img src="assets/images/amenidad.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto">Otra amenidad</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="accordion-macro__section">Gimnasio 2</h3>
+            <div class="accordion-macro__background">
+                <div class="tab-macro__item tab-macro__item--border">
+                    <div class="tab-macro__multimedia">
+                        <div class="tab-macro-amenidades__firts-block">
+                            <div class="tab-macro-amenidades__contenedor tab-macro-amenidades__contenedor--start">
+                                <img src="assets/images/amenidad-degradado.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto tab-macro-amenidades__texto--color">Gimansio</p>
+                            </div>
+                            <p class="tab-macro__descripcion tab-macro-amenidades__descripcion--margin">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab a, repudiandae exercitationem odit nam nostrum quae perspiciatis neque asperiores dicta omnis explicabo ducimus architecto nobis at quisquam aperiam error iusto aut. Quo nisi blanditiis quisquam rem similique reiciendis eum? Vitae, esse repudiandae excepturi temporibus saepe sit nostrum quis ipsum delectus?</p>
+                        </div>
+                        <div class="tab-macro-amenidades__second-block">
+                            <div class="owl-carousel owl-carousel--padding">
+                                <div class="item">
+                                    <img src="assets/images/reproductor-youtube.png" alt="" class="tab-macro-amenidades__imagen">
+                                    <p class="tab-macro__legales tab-macro__legales--black">* Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes</p>
+                                </div>
+                                <div class="item">
+                                    <img src="assets/images/reproductor-youtube.png" alt="" class="tab-macro-amenidades__imagen">
+                                    <p class="tab-macro__legales tab-macro__legales--black">* Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-macro-amenidades">
+                        <h3 class="tab-macro-amenidades__titulo">Este proyecto además cuenta con</h3>
+                        <div class="tab-macro-amenidades__grid">
+                            <div class="tab-macro-amenidades__contenedor">
+                                <img src="assets/images/amenidad.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto">Otra amenidad</p>
+                            </div>
+                            <div class="tab-macro-amenidades__contenedor">
+                                <img src="assets/images/amenidad.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto">Otra amenidad</p>
+                            </div>
+                            <div class="tab-macro-amenidades__contenedor">
+                                <img src="assets/images/amenidad.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto">Otra amenidad</p>
+                            </div>
+                            <div class="tab-macro-amenidades__contenedor">
+                                <img src="assets/images/amenidad.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto">Otra amenidad</p>
+                            </div>
+                            <div class="tab-macro-amenidades__contenedor">
+                                <img src="assets/images/amenidad.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto">Otra amenidad</p>
+                            </div>
+                            <div class="tab-macro-amenidades__contenedor">
+                                <img src="assets/images/amenidad.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto">Otra amenidad</p>
+                            </div>
+                            <div class="tab-macro-amenidades__contenedor">
+                                <img src="assets/images/amenidad.png" alt="" class="tab-macro-amenidades__icono">
+                                <p class="tab-macro-amenidades__texto">Otra amenidad</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Urbanismo -->
+<section class="mi-content--background--grey">
+    <div class="titulo">
+        <div class="titulo__izquierda titulo__flex"></div>
+        <div class="titulo__contenedor titulo__flex">
+            <h2 class="titulo__contenido"><b class="white">Urbanismo</b></h2>
+        </div>
+        <div class="titulo__derecha titulo__flex"></div>
+    </div>
+</section>
 
 <?php 
     include 'template-parts/footer.php';

@@ -25,8 +25,12 @@
         flex-shrink: 0;
         padding: 50px 45px;
         background: color('primario');
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        &--border{
+            border: 1px solid color('gris-clarito');
+            padding: 50px 70px;
+        }
     }
     &__contenedor {
         display: flex;
@@ -35,8 +39,9 @@
         transition: all 0.3s ease-in;
     }
     &__limit{
-        max-width: 90%;
+        max-width: 1300px;
         margin: auto;
+        width: 90%;
     }
     &__firts-block{
         width: 25%;
@@ -62,6 +67,9 @@
         font-weight: bold;
         text-align: right;
         font-size: font('suscribete-politica');
+        &--black{
+            color: color('secundario');
+        }
     }
     &__button {
         width: auto;
@@ -79,6 +87,11 @@
         @include transition;
         &:hover{
             background: color('naranja');
+        }
+        &--flex{
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
     }
     
@@ -98,8 +111,62 @@
             z-index: 99;
         }
     }
+    &-amenidades{
+        margin-top: 30px;
+        &__titulo{
+            font-size: font('comprar-titulo');
+            color: color('gris-oscuro');
+        }
+        &__grid{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 20px;
+        }
+        &__contenedor{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-top: 30px;
+        }
+        &__texto{
+            font-size: font('footer-ubicacion');
+            color: color('gris-oscuro');
+            font-weight: 600;
+        }
+        &__firts-block{
+            width: 35%;
+        }
+        &__second-block{
+            width: 55%;
+        }
+        &__imagen{
+            width: 100%;
+            height: 440px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        &__contenedor--start{
+            align-items: flex-end;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        &__texto--color{
+            color: color('naranja');
+            font-size: font('header-titulo');
+            font-weight: lighter;
+        }
+    }
 }
-
+@media(max-width: breakpoint('ipad-grande')){
+    .tab-macro{
+        &-amenidades{
+            
+            &__grid{
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    }
+}
 @media(max-width: breakpoint('ipad-pequeña')){
     .tab-macro{
         &__multimedia{
@@ -111,11 +178,41 @@
             width: 100%;
         }
     }
+    .tab-macro{
+        &__item--border{
+            padding: 45px 40px;
+        }
+        &-amenidades{
+            &__grid{
+                grid-template-columns: repeat(3, 1fr);
+            }
+            &__firts-block,
+            &__second-block{
+                width: 100%;
+            }
+            &__descripcion--margin{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    
 }
 @media(max-width: breakpoint('celular')){
     .tab-macro{
-        &__item {
-           padding: 50px 20px;
+        &__limit{
+            display: none;
+        }
+        &__item--border{
+            padding: 0;
+            border: none;
+        }
+    }
+    .tab-macro{
+        &-amenidades{
+            
+            &__grid{
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
     }
 }

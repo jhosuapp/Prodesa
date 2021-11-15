@@ -1,0 +1,42 @@
+.accordion-macro{
+    max-width: 90%;
+    margin: auto;
+    display: none;
+    &__section{
+        height: 60px;
+        line-height: 60px;
+        background: color('gris-oscuro');
+        text-align: center;
+        color: color('primario');
+        cursor: pointer;
+        position: relative;
+    }
+    &__background{
+        background: color('primario');
+        margin-bottom: 10px;
+        padding: 50px 20px;
+    }
+}
+.accordion-macro .ui-state-active{
+    background: color('naranja');
+    margin-top: 10px;
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: calc(50% - 12.5px);
+        width: 0;
+        height: 0;
+        border-width: 10px 10px 0px;
+        border-style: solid;
+        border-color: #f47920 transparent transparent;
+        z-index: 99;
+    }
+}
+
+@media(max-width: breakpoint('celular')){
+    .accordion-macro{
+        display: block;
+    }
+}
+
