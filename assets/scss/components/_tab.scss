@@ -18,6 +18,9 @@
         position: relative;
     }
 }
+.item{
+    position: relative;
+}
 .tab-macro{
     overflow: hidden;
     &__item {
@@ -30,6 +33,21 @@
         &--border{
             border: 1px solid color('gris-clarito');
             padding: 50px 70px;
+        }
+    }
+    &__zoom{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 30px !important;
+        height: 30px;
+        background: color('gris-claro');
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        @include transition;
+        &:hover{
+            box-shadow: inset 1px 2px 5px 0px #58595b;
         }
     }
     &__contenedor {

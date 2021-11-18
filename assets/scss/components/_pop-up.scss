@@ -24,11 +24,18 @@
         background: color('primario');
         position: relative;
     }
+    &__bloque--macro{
+        padding: 0;
+    }
     &__close{
         position: absolute;
         top: -60px;
         right: -60px;
         cursor: pointer;
+    }
+    &__contenido--macro{
+        max-height: 450px;
+        overflow: auto;
     }
     &__titulo{
         color: color('naranja');
@@ -65,6 +72,9 @@
         @include flex;
         flex-direction: column;
         gap: 30px;
+    }
+    &__imagen-macro{
+        width: 100%;
     }
     &__terminos{
         display: none;

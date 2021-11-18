@@ -450,11 +450,13 @@
                         <div class="tab-macro-amenidades__second-block">
                             <div class="owl-carousel owl-carousel--padding">
                                 <div class="item">
+                                    <img src="assets/images/icon_fscreen-black.svg" alt="" class="tab-macro__zoom zoom">
                                     <img src="assets/images/reproductor-youtube.png" alt="" class="tab-macro-amenidades__imagen">
                                     <p class="tab-macro__legales tab-macro__legales--black">* Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes</p>
                                 </div>
                                 <div class="item">
-                                    <img src="assets/images/reproductor-youtube.png" alt="" class="tab-macro-amenidades__imagen">
+                                    <img src="assets/images/icon_fscreen-black.svg" alt="" class="tab-macro__zoom zoom">
+                                    <img src="assets/images/banner-home.png" alt="" class="tab-macro-amenidades__imagen">
                                     <p class="tab-macro__legales tab-macro__legales--black">* Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes</p>
                                 </div>
                             </div>
@@ -690,7 +692,8 @@
         <div class="titulo__derecha titulo__flex"></div>
     </div>
     <div class="urbanismo">
-        <div class="urbanismo__bloque">
+        <div class="urbanismo__bloque item">
+            <img src="assets/images/icon_fscreen-black.svg" alt="" class="tab-macro__zoom zoom">
             <img src="assets/images/urbanismo_banner.jpg" alt="" class="urbanismo__imagen">
             <p class="tab-macro__legales tab-macro__legales--white">* Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes</p>
         </div>
@@ -1098,10 +1101,42 @@
     </div>
 </section>
 
+<!-- Pop up para todos -->
+
+<div class="pop-up">
+    <div class="pop-up__bloque pop-up__bloque--macro">
+        <img src="assets/images/close-white-p.png" alt="" class="pop-up__close">
+        <div class="pop-up__contenido pop-up__contenido--macro" id="modal-imagen">
+            <img id="setImagen">
+        </div>
+    </div>
+</div>
+
 <?php 
     include 'template-parts/footer.php';
 ?>
 
+<!-- POP UP REUUTILIZABLE -->
+
+<script>
+var acc = document.getElementsByClassName("zoom");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    var panel = this.nextElementSibling;
+    const tomarImagen = panel.getAttribute('src');
+    const closeModal = document.querySelector('.pop-up__close');
+    
+    document.querySelector('#setImagen').setAttribute('src', tomarImagen);
+    const traerModal = document.querySelector('.pop-up')
+    traerModal.classList.add('active');
+    closeModal.addEventListener('click', () =>{
+        traerModal.classList.remove('active');
+    })
+  });
+}
+</script>
 <script>
     const buttonTab = document.querySelectorAll('.tab-macro__controls button');
 

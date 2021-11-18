@@ -3921,6 +3921,10 @@ html {
   position: relative;
 }
 
+.item {
+  position: relative;
+}
+
 .tab-macro {
   overflow: hidden;
 }
@@ -3935,6 +3939,21 @@ html {
 .tab-macro__item--border {
   border: 1px solid #c4c4c4;
   padding: 50px 70px;
+}
+.tab-macro__zoom {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px !important;
+  height: 30px;
+  background: #e6e7e8;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s all ease;
+}
+.tab-macro__zoom:hover {
+  box-shadow: inset 1px 2px 5px 0px #58595b;
 }
 .tab-macro__contenedor {
   display: flex;
@@ -4129,11 +4148,18 @@ html {
   background: #fff;
   position: relative;
 }
+.pop-up__bloque--macro {
+  padding: 0;
+}
 .pop-up__close {
   position: absolute;
   top: -60px;
   right: -60px;
   cursor: pointer;
+}
+.pop-up__contenido--macro {
+  max-height: 450px;
+  overflow: auto;
 }
 .pop-up__titulo {
   color: #f47920;
@@ -4171,6 +4197,9 @@ html {
   align-items: center;
   flex-direction: column;
   gap: 30px;
+}
+.pop-up__imagen-macro {
+  width: 100%;
 }
 .pop-up__terminos {
   display: none;
