@@ -692,7 +692,7 @@
         <div class="titulo__derecha titulo__flex"></div>
     </div>
     <div class="urbanismo">
-        <div class="urbanismo__bloque item">
+        <div class="urbanismo__bloque">
             <img src="assets/images/icon_fscreen-black.svg" alt="" class="tab-macro__zoom zoom">
             <img src="assets/images/urbanismo_banner.jpg" alt="" class="urbanismo__imagen">
             <p class="tab-macro__legales tab-macro__legales--white">* Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes</p>
@@ -1121,6 +1121,13 @@
 <script>
 var acc = document.getElementsByClassName("zoom");
 var i;
+var accEach = document.querySelectorAll('.zoom');
+
+accEach.forEach((z) =>{
+    const traerPadre = z.parentNode;
+    traerPadre.style.position = 'relative';
+});
+
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
