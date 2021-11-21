@@ -37,6 +37,73 @@ nav.addEventListener('click', () => {
 });
 $(document).ready(function(){
 
+    $(".owl-carousel--hito").owlCarousel({
+        items : 3, //NUMERO DE ITEMS
+        // loop: true, // HACE AL CAROUSEL INFINITO
+        margin: 30, //MARGEN ENTRE ELEMENTOS
+        nav: true, //AGREGAR FLECHITAS
+        // navText: ["anterior", "siguiente"], //CAMBIAR TEXTO DEL SIGUIENTE Y ANTERIOR
+        autoplay: true, //AGREGAR AUTOPLAY
+        autoplayTimeout: 5000, //TIEMPO DEL AUTOPLAY
+        dots: false, //PARA OCULTAR O MOSTRAR LOS DOTS
+        responsive: { //RESPONSIVE
+            0:{
+                items: 1
+            },
+            360:{
+                items: 1
+            },
+            560:{
+                items: 3
+            },
+            980:{
+                items: 3
+            },
+            1300: {
+                items: 4
+            },
+        }
+    });
+    
+    
+    
+});
+$(document).ready(function(){
+
+    $(".owl-carousel--quienes").owlCarousel({
+        items : 3, //NUMERO DE ITEMS
+        // loop: true, // HACE AL CAROUSEL INFINITO
+        margin: 30, //MARGEN ENTRE ELEMENTOS
+        nav: true, //AGREGAR FLECHITAS
+        // navText: ["anterior", "siguiente"], //CAMBIAR TEXTO DEL SIGUIENTE Y ANTERIOR
+        autoplay: true, //AGREGAR AUTOPLAY
+        autoplayTimeout: 5000, //TIEMPO DEL AUTOPLAY
+        dots: false, //PARA OCULTAR O MOSTRAR LOS DOTS
+        responsive: { //RESPONSIVE
+            0:{
+                items: 1
+            },
+            360:{
+                items: 2
+            },
+            560:{
+                items: 3
+            },
+            980:{
+                items: 3
+            },
+            1300: {
+                items: 3
+            },
+        }
+    });
+    
+    
+    
+});
+
+$(document).ready(function(){
+
     $(".owl-carousel--blog").owlCarousel({
         items : 3, //NUMERO DE ITEMS
         // loop: true, // HACE AL CAROUSEL INFINITO

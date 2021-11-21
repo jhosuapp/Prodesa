@@ -93,6 +93,36 @@
     background-image:  url("../images/icon_arrow-left2.svg") !important;
     left: 5px;
 }
+.owl-carousel--firts .owl-next{
+    right: 0;
+}
+.owl-carousel--firts .owl-prev{
+    left: 0;
+}
+.owl-carousel--quienes .owl-stage-outer{
+    padding: 50px 0;
+}
+.owl-carousel--quienes .owl-next,
+.owl-carousel--quienes .owl-prev{
+    background-image:  url("../images/icon-rigth-quienes.svg") !important;
+    &.disabled{
+        opacity: 1;
+        background-image:  url("../images/icon-rigth-quienes-grey.svg") !important;
+    }
+}
+.owl-carousel--hito .owl-next,
+.owl-carousel--hito .owl-prev{
+    background-image:  url("../images/right-white.svg") !important;
+    background-repeat: no-repeat !important;
+    height: 30px;
+    width: 40px;
+    position: absolute;
+    background-color: transparent!important;
+    top: calc(50% - 45px);
+    &.disabled{
+        opacity: 0.7;
+    }
+}
 @media (max-width: breakpoint('ipad-pequeña')){
     .owl-carousel{
         position: relative;
@@ -132,6 +162,14 @@
     .owl-carousel--padding{
         padding: 30px 0 0 0 ;
     }
+    .owl-carousel--firts .owl-next{
+        right: 0 !important;
+        top: calc(50% - 15px) !important;
+    }
+    .owl-carousel--firts .owl-prev{
+        left: 0 !important;
+        top: calc(50% - 15px) !important;
+    }
 }
 @media (max-width: breakpoint('celular')){
     .owl-carousel{
@@ -145,5 +183,9 @@
         gap: 10px;
         justify-content: center;
         margin-top: 35px;
+    }
+    .owl-carousel-no-padding{
+        padding-bottom: 0 !important;
+        padding-top: 0 !important;
     }
 }

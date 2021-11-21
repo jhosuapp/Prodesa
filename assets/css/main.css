@@ -940,6 +940,43 @@ html {
   left: 5px;
 }
 
+.owl-carousel--firts .owl-next {
+  right: 0;
+}
+
+.owl-carousel--firts .owl-prev {
+  left: 0;
+}
+
+.owl-carousel--quienes .owl-stage-outer {
+  padding: 50px 0;
+}
+
+.owl-carousel--quienes .owl-next,
+.owl-carousel--quienes .owl-prev {
+  background-image: url("../images/icon-rigth-quienes.svg") !important;
+}
+.owl-carousel--quienes .owl-next.disabled,
+.owl-carousel--quienes .owl-prev.disabled {
+  opacity: 1;
+  background-image: url("../images/icon-rigth-quienes-grey.svg") !important;
+}
+
+.owl-carousel--hito .owl-next,
+.owl-carousel--hito .owl-prev {
+  background-image: url("../images/right-white.svg") !important;
+  background-repeat: no-repeat !important;
+  height: 30px;
+  width: 40px;
+  position: absolute;
+  background-color: transparent !important;
+  top: calc(50% - 45px);
+}
+.owl-carousel--hito .owl-next.disabled,
+.owl-carousel--hito .owl-prev.disabled {
+  opacity: 0.7;
+}
+
 @media (max-width: 768px) {
   .owl-carousel {
     position: relative;
@@ -982,6 +1019,16 @@ html {
   .owl-carousel--padding {
     padding: 30px 0 0 0;
   }
+
+  .owl-carousel--firts .owl-next {
+    right: 0 !important;
+    top: calc(50% - 15px) !important;
+  }
+
+  .owl-carousel--firts .owl-prev {
+    left: 0 !important;
+    top: calc(50% - 15px) !important;
+  }
 }
 @media (max-width: 576px) {
   .owl-carousel {
@@ -996,6 +1043,11 @@ html {
     gap: 10px;
     justify-content: center;
     margin-top: 35px;
+  }
+
+  .owl-carousel-no-padding {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
   }
 }
 .titulo {
@@ -4078,6 +4130,84 @@ html {
   font-weight: lighter;
 }
 
+.tab__quienes {
+  overflow: hidden;
+}
+.tab__quienes-controls {
+  position: relative;
+}
+.tab__quienes-controls::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  left: 0;
+  top: calc(50% - 1px);
+  z-index: -1;
+}
+.tab__quienes-boton {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  background: #f47920;
+  margin: auto;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  outline: inherit;
+  border: none;
+}
+.tab__quienes-boton--amarillo {
+  background: #e8ad00;
+}
+.tab__quienes-boton--amarillo > .tab__quienes-fecha {
+  color: #e8ad00;
+}
+.tab__quienes-boton--grey {
+  background: #58595b;
+}
+.tab__quienes-boton--grey > .tab__quienes-fecha {
+  color: #58595b;
+}
+.tab__quienes-fecha {
+  font-size: 18px;
+  color: #f47920;
+  position: absolute;
+  text-align: center;
+  top: -40px;
+  width: 100px;
+  left: calc(50% - 50px);
+}
+.tab__quienes-item {
+  width: 100%;
+  flex-shrink: 0;
+  padding: 0 10%;
+}
+.tab__quienes-titulo {
+  background: #f47920;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: lighter;
+}
+.tab__quienes-imagen {
+  min-height: 300px;
+  object-fit: cover;
+}
+.tab__quienes-contenedor {
+  display: flex;
+  flex-wrap: nowrap;
+  transform: translateX(0);
+  transition: all 0.3s ease-in;
+}
+.tab__quienes-descripcion {
+  color: #000;
+  border: 1px solid #000;
+  padding: 10px 10px 20px 10px;
+  font-size: 18px;
+}
+
 @media (max-width: 992px) {
   .tab-macro-amenidades__grid {
     grid-template-columns: repeat(4, 1fr);
@@ -4116,6 +4246,10 @@ html {
 
   .tab-macro-amenidades__grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tab__quienes-item {
+    padding: 0;
   }
 }
 .pop-up {
@@ -4699,6 +4833,154 @@ html {
 @media (max-width: 576px) {
   .accordion-macro {
     display: block;
+  }
+}
+.historia {
+  padding-bottom: 60px;
+}
+.historia__contenedor {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  margin-top: 0;
+}
+.historia__left {
+  width: 35%;
+}
+.historia__right {
+  width: 60%;
+}
+.historia__descripcion {
+  font-size: 18px;
+  color: #58595b;
+  font-weight: lighter;
+}
+.historia__titulo {
+  font-weight: bold;
+}
+
+.trayectoria__background {
+  background-image: url("../images/preguntas-pagos.jpg");
+  height: 530px;
+  width: 100%;
+  height: 550px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trayectoria__background::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 1;
+}
+.trayectoria__hito {
+  color: #f47920;
+  font-size: 24px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+.trayectoria__descripcion {
+  font-size: 14px;
+  color: #fff;
+}
+.trayectoria__item {
+  position: relative;
+  margin-left: 20px;
+}
+.trayectoria__item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  height: 100%;
+  width: 2.5px;
+  background: linear-gradient(90.73deg, #E8AD00 9.83%, #F47920 92.88%);
+}
+.trayectoria__index {
+  z-index: 99;
+  width: 100%;
+  max-width: 90%;
+  margin: auto;
+}
+.trayectoria__titulo {
+  font-size: 42px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.trayectoria__button {
+  padding: 10px 25px;
+  border: 1px solid #fff;
+}
+.trayectoria__button:hover {
+  border: 1px solid #000;
+}
+.trayectoria__flex-end {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+
+.politica {
+  padding-bottom: 40px;
+}
+.politica__contenedor {
+  width: 90%;
+  max-width: 1450px;
+  margin: auto;
+}
+.politica__top {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+.politica__left {
+  width: 40%;
+}
+.politica__right {
+  width: 55%;
+}
+.politica__imagen {
+  width: 100%;
+  border-radius: 5px;
+}
+.politica__titulo {
+  color: #f47920;
+  font-size: 26px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+.politica__descripcion {
+  color: #58595b;
+  font-weight: lighter;
+  font-size: 18px;
+}
+.politica__bottom {
+  display: flex;
+  gap: 30px;
+  margin-top: 100px;
+}
+.politica__flex {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .historia__contenedor {
+    flex-direction: column;
+  }
+  .historia__left, .historia__right {
+    width: 100%;
   }
 }
 
