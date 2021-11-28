@@ -179,7 +179,69 @@
     </div>
 </section>
 
+<!-- Premios y certificaciones -->
+
+<section class="mi-content--background--grey">
+    <div class="titulo titulo--not-padding">
+        <div class="titulo__izquierda titulo__flex"></div>
+        <div class="titulo__contenedor titulo__flex">
+            <h2 class="titulo__contenido"><b class="white__light">Premios y</b> <b class="white">reconocimientos</b></h2>
+        </div>
+        <div class="titulo__derecha titulo__flex"></div>
+    </div>
+    <div class="accordion-premios__bloque">
+        <div class="accordion-premios__container">
+            <button class="accordion-premios">
+                <div class="accordion-premios__left">
+                    <img src="assets/images/premios-quienes.png" alt="" class="accordion-premios__imagen">
+                </div>
+                <div class="accordion-premios__right">
+                    <span class="accordion-premios__titulo">Fiabci</span>
+                    <p class="accordion-premios__descripcion">Fiabci es la sigla francesa que identifica a la Federación Internacional Inmobiliaria, que es una red mundial de propiedad raíz y que agrupa a más de 100 asociaciones profesionales similares en más de 50 países. El premio es muy exigente porque se evalúa desde la fase preparatoria del proyecto hasta el impacto que finalmente produjo la obra en el medio ambiente y en la comunidad que lo usa.</p>
+                </div>
+            </button>
+            <button class="accordion-premios__button">
+                <img src="assets/images/down-quienes.svg" alt="" class="accordion-premios__icono">
+                <span class="accordion-premios__ver">Ver premios</span>
+            </button>
+            <div class="accordion-premios__panel">
+                <div class="accordion-premios__line">
+                    <p class="accordion-premios__text">Finalista categoría Vivienda de Interés Social</p>
+                    <p class="accordion-premios__text--orange">Alicante de Sub</p>
+                    <p class="accordion-premios__time">2007</p>
+                </div>
+                <div class="accordion-premios__line">
+                    <p class="accordion-premios__text">Finalista categoría Vivienda de Interés Social</p>
+                    <p class="accordion-premios__text--orange">Alicante de Sub</p>
+                    <p class="accordion-premios__time">2007</p>
+                </div>
+                <div class="accordion-premios__line">
+                    <p class="accordion-premios__text">Finalista categoría Vivienda de Interés Social</p>
+                    <p class="accordion-premios__text--orange">Alicante de Sub</p>
+                    <p class="accordion-premios__time">2007</p>
+                </div>
+                <div class="accordion-premios__line">
+                    <p class="accordion-premios__text">Finalista categoría Vivienda de Interés Social</p>
+                    <p class="accordion-premios__text--orange">Alicante de Sub</p>
+                    <p class="accordion-premios__time">2007</p>
+                </div>
+                <div class="accordion-premios__line">
+                    <p class="accordion-premios__text">Finalista categoría Vivienda de Interés Social</p>
+                    <p class="accordion-premios__text--orange">Alicante de Sub</p>
+                    <p class="accordion-premios__time">2007</p>
+                </div>
+            </div>
+            <div class="accordion-premios__absolute">
+                <div class="accordion-premios__row"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <script>
+
+    //TAB + SLIDER
     const buttonTab = document.querySelectorAll('.tab__quienes-boton');
 
 
@@ -199,22 +261,27 @@
         })
     });
 
-//     buttonTab.forEach((button) =>{
-//     button.addEventListener('click', ()=>{
-//         const parent = button.parentNode;
-//         console.log(parent);
-//         const grantParent = parent.parentNode;
-//         const container = grantParent.querySelector('.tab__quienes-contenedor');
+    //TOGGLE PREMIOS
+    var acc = document.getElementsByClassName("accordion-premios__button");
+    var iconAcc = document.querySelector('.accordion-premios__icono');
+    var i;
 
-//         const childrenList = Array.from(parent.children);
-//         const index = childrenList.indexOf(button);
-//         container.style.transform =  `translatex(-${index * 100}%)`;
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        var panel = this.nextElementSibling;
+        var parentToggle = this.parentNode;
 
-//         parent.querySelectorAll('button.active').forEach(activeBtn => activeBtn.classList.remove('active'));
-
-//         button.classList.add('active');
-//     });
-// });
+        parentToggle.classList.toggle('active');
+        iconAcc.classList.toggle('active');
+        if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        panel.classList.remove('active');
+        } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        panel.classList.add('active');
+        } 
+    });
+    }
 
 </script>
 

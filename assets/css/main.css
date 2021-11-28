@@ -1059,6 +1059,9 @@ html {
   flex-wrap: wrap;
   padding: 100px 0 60px 0;
 }
+.titulo--not-padding {
+  padding: 60px 0;
+}
 .titulo__izquierda, .titulo__derecha {
   height: 1.5px;
   max-width: 30%;
@@ -4828,6 +4831,119 @@ html {
   border-style: solid;
   border-color: #f47920 transparent transparent;
   z-index: 99;
+}
+
+.accordion-premios {
+  padding: 35px 35px 70px 35px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  transition: 0.3s;
+  border-radius: 5px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 20px;
+}
+.accordion-premios__bloque {
+  width: 90%;
+  margin: auto;
+}
+.accordion-premios__container {
+  position: relative;
+  margin-bottom: 20px;
+}
+.accordion-premios__container.active .accordion-premios__row::before {
+  height: 0;
+}
+.accordion-premios__panel {
+  padding: 0 35px;
+  background-color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  margin-top: -5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transition: 0.4s;
+  display: flex;
+  flex-wrap: wrap;
+}
+.accordion-premios__panel.active {
+  padding-bottom: 125px;
+}
+.accordion-premios.active {
+  background-color: #fff;
+}
+.accordion-premios__titulo {
+  font-size: 24px;
+  font-weight: lighter;
+  color: #f47920;
+}
+.accordion-premios__descripcion {
+  font-size: 18px;
+  color: #58595b;
+  font-weight: lighter;
+  margin-top: 10px;
+}
+.accordion-premios__button {
+  display: flex;
+  gap: 10px;
+  padding: 15px 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background: #f47920;
+  max-width: 160px;
+  outline: inherit;
+  border: none;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.accordion-premios__button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.accordion-premios__ver {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+.accordion-premios__line {
+  position: relative;
+  margin-left: 10px;
+  min-width: 23%;
+  flex: 1;
+}
+.accordion-premios__line::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(90.73deg, #E8AD00 9.83%, #F47920 92.88%);
+}
+.accordion-premios__text {
+  font-size: 15px;
+  color: #58595b;
+  font-weight: bold;
+}
+.accordion-premios__text--orange {
+  color: #f47920;
+  font-weight: lighter;
+  margin-top: 5px;
+}
+.accordion-premios__time {
+  color: #f47920;
+  margin-top: 10px;
+  font-size: 24px;
+}
+.accordion-premios__icono.active {
+  transform: rotateX(180deg);
 }
 
 @media (max-width: 576px) {

@@ -34,6 +34,128 @@
     }
 }
 
+//ACC PREMIOS Y CERTIFICAIONES
+
+.accordion-premios {
+    padding: 35px  35px 70px 35px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    transition: .3s;
+    border-radius: 5px;
+    background: color('primario');
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+    &__bloque{
+        width: 90%;
+        margin: auto;
+    }
+    &__container{  
+        position: relative;
+        margin-bottom: 20px;
+    }
+    &__container.active .accordion-premios__row{
+        &::before{
+            height: 0;
+        }
+    }
+
+    &__panel {
+        padding: 0 35px;
+        background-color: color('primario');
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .3s ease-out;
+        margin-top: -5px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        transition: 0.4s;
+        display: flex;
+        flex-wrap: wrap;
+        &.active{
+            padding-bottom: 125px;
+        }
+    }
+    &.active {
+        background-color: color('primario');
+    }
+    &__titulo{
+        font-size: font('vivir-subtitulo');
+        font-weight: lighter;
+        color: color('naranja');
+    }
+    &__descripcion{
+        font-size: font('invertir-precio');
+        color: color('gris-oscuro');
+        font-weight: lighter;
+        margin-top: 10px;
+    }
+    &__button{
+        display: flex;
+        gap: 10px;
+        padding: 15px 10px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        background: color('naranja');
+        max-width: 160px;
+        outline: inherit;
+        border: none;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        &:hover{
+            opacity: 0.7;
+            cursor: pointer;
+        }
+    }
+    &__ver{
+        color: color('primario');
+        font-size: font('inversionistas-descripcion');
+        font-weight: bold;
+    }
+    &__line{
+        position: relative;
+        margin-left: 10px;
+        min-width: 23%;
+        flex: 1;
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -10px;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(90.73deg, #E8AD00 9.83%, #F47920 92.88%);
+        }
+    }
+    &__text{
+        font-size: font('invertir-ubicacion');
+        color: color('gris-oscuro');
+        font-weight: bold;
+        &--orange{
+            color: color('naranja');
+            font-weight: lighter;
+            margin-top: 5px;
+        }
+    }
+    &__time{
+        color: color('naranja');
+        margin-top: 10px;
+        font-size: font('footer-titulo');
+    }
+    &__icono{
+        &.active{
+            transform: rotateX(180deg);
+        }
+    }
+  }
+  
+ 
+  
 @media(max-width: breakpoint('celular')){
     .accordion-macro{
         display: block;

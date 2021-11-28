@@ -574,10 +574,12 @@
                         <div class="tab-macro-amenidades__second-block">
                             <div class="owl-carousel owl-carousel--padding">
                                 <div class="item">
+                                <img src="assets/images/icon_fscreen-black.svg" alt="" class="tab-macro__zoom zoom">
                                     <img src="assets/images/reproductor-youtube.png" alt="" class="tab-macro-amenidades__imagen">
                                     <p class="tab-macro__legales tab-macro__legales--black">* Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes</p>
                                 </div>
                                 <div class="item">
+                                <img src="assets/images/icon_fscreen-black.svg" alt="" class="tab-macro__zoom zoom">
                                     <img src="assets/images/reproductor-youtube.png" alt="" class="tab-macro-amenidades__imagen">
                                     <p class="tab-macro__legales tab-macro__legales--black">* Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes</p>
                                 </div>
@@ -633,10 +635,12 @@
                         <div class="tab-macro-amenidades__second-block">
                             <div class="owl-carousel owl-carousel--padding">
                                 <div class="item">
+                                <img src="assets/images/icon_fscreen-black.svg" alt="" class="tab-macro__zoom zoom">
                                     <img src="assets/images/reproductor-youtube.png" alt="" class="tab-macro-amenidades__imagen">
                                     <p class="tab-macro__legales tab-macro__legales--black">* Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes</p>
                                 </div>
                                 <div class="item">
+                                <img src="assets/images/icon_fscreen-black.svg" alt="" class="tab-macro__zoom zoom">
                                     <img src="assets/images/reproductor-youtube.png" alt="" class="tab-macro-amenidades__imagen">
                                     <p class="tab-macro__legales tab-macro__legales--black">* Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes Texto legal de las imágenes</p>
                                 </div>
