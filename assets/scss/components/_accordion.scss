@@ -55,7 +55,7 @@
     }
     &__container{  
         position: relative;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
     &__container.active .accordion-premios__row{
         &::before{
@@ -73,8 +73,9 @@
         border-bottom-right-radius: 5px;
         border-bottom-left-radius: 5px;
         transition: 0.4s;
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
         &.active{
             padding-bottom: 125px;
         }
@@ -107,9 +108,10 @@
         position: absolute;
         bottom: 10px;
         right: 10px;
+        cursor: pointer;
+        @include transition;
         &:hover{
-            opacity: 0.7;
-            cursor: pointer;
+            background: color('gris-oscuro');
         }
     }
     &__ver{
@@ -120,8 +122,7 @@
     &__line{
         position: relative;
         margin-left: 10px;
-        min-width: 23%;
-        flex: 1;
+        margin-bottom: 30px;
         &::after{
             content: "";
             position: absolute;
@@ -147,18 +148,27 @@
         margin-top: 10px;
         font-size: font('footer-titulo');
     }
-    &__icono{
-        &.active{
-            transform: rotateX(180deg);
+}
+.accordion-premios__button.active   .accordion-premios__icono{
+    transform: rotateX(180deg);
+}
+@media(max-width: breakpoint('ipad-pequeña')){
+    .accordion-premios{
+        flex-direction: column;
+        &__panel{
+            grid-template-columns: repeat(3, 1fr);
         }
     }
-  }
-  
- 
+}
   
 @media(max-width: breakpoint('celular')){
     .accordion-macro{
         display: block;
+    }
+    .accordion-premios{
+        &__panel{
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 }
 

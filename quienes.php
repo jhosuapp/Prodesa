@@ -235,9 +235,115 @@
                 <div class="accordion-premios__row"></div>
             </div>
         </div>
+        <div class="accordion-premios__container">
+            <button class="accordion-premios">
+                <div class="accordion-premios__left">
+                    <img src="assets/images/premios-quienes.png" alt="" class="accordion-premios__imagen">
+                </div>
+                <div class="accordion-premios__right">
+                    <span class="accordion-premios__titulo">Fiabci</span>
+                    <p class="accordion-premios__descripcion">Fiabci es la sigla francesa que identifica a la Federación Internacional Inmobiliaria, que es una red mundial de propiedad raíz y que agrupa a más de 100 asociaciones profesionales similares en más de 50 países. El premio es muy exigente porque se evalúa desde la fase preparatoria del proyecto hasta el impacto que finalmente produjo la obra en el medio ambiente y en la comunidad que lo usa.</p>
+                </div>
+            </button>
+            <button class="accordion-premios__button">
+                <img src="assets/images/down-quienes.svg" alt="" class="accordion-premios__icono">
+                <span class="accordion-premios__ver">Ver premios</span>
+            </button>
+            <div class="accordion-premios__panel">
+                <div class="accordion-premios__line">
+                    <p class="accordion-premios__text">Finalista categoría Vivienda de Interés Social</p>
+                    <p class="accordion-premios__text--orange">Alicante de Sub</p>
+                    <p class="accordion-premios__time">2007</p>
+                </div>
+                <div class="accordion-premios__line">
+                    <p class="accordion-premios__text">Finalista categoría Vivienda de Interés Social</p>
+                    <p class="accordion-premios__text--orange">Alicante de Sub</p>
+                    <p class="accordion-premios__time">2007</p>
+                </div>
+                <div class="accordion-premios__line">
+                    <p class="accordion-premios__text">Finalista categoría Vivienda de Interés Social</p>
+                    <p class="accordion-premios__text--orange">Alicante de Sub</p>
+                    <p class="accordion-premios__time">2007</p>
+                </div>
+                <div class="accordion-premios__line">
+                    <p class="accordion-premios__text">Finalista categoría Vivienda de Interés Social</p>
+                    <p class="accordion-premios__text--orange">Alicante de Sub</p>
+                    <p class="accordion-premios__time">2007</p>
+                </div>
+                <div class="accordion-premios__line">
+                    <p class="accordion-premios__text">Finalista categoría Vivienda de Interés Social</p>
+                    <p class="accordion-premios__text--orange">Alicante de Sub</p>
+                    <p class="accordion-premios__time">2007</p>
+                </div>
+            </div>
+            <div class="accordion-premios__absolute">
+                <div class="accordion-premios__row"></div>
+            </div>
+        </div>
     </div>
 </section>
 
+<section class="titulo--grey">
+    <div class="titulo titulo--not-padding">
+        <div class="titulo__izquierda titulo__izquierda--blog titulo__flex"></div>
+        <div class="titulo__contenedor titulo__flex">
+            <h2 class="titulo__contenido"><b class="grey__light">Conoce la experiencia</b> <b class="orange">de nuestros compradores</b></h2>
+        </div>
+        <div class="titulo__derecha titulo__derecha--blog titulo__flex"></div>
+    </div>
+    <div class="quienes__testimonios">
+        <div class="owl-carousel owl-carousel__quienes-somos owl-carousel-card">
+            <div class="flex">
+                <h2 class="comprar__nombre">Andrés y Mariana</h2>
+                <p class="comprar__compra">Compradores Ciprés de la Florida</p>
+                <img src="assets/images/banner-home.png" alt="" class="comprar__imagen">
+                <p class="comprar__resumen">"...Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, minima?..."</p>
+                <button class="button button--video ver-video" src="https://www.youtube.com/embed/OYBvJQAQ0ec">
+                    <a class="button__link">Ver video</a>
+                </button>
+            </div>
+            <div class="flex">
+                <h2 class="comprar__nombre">Andrés y Mariana</h2>
+                <p class="comprar__compra">Compradores Ciprés de la Florida</p>
+                <img src="assets/images/banner-home.png" alt="" class="comprar__imagen">
+                <p class="comprar__resumen">"...Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, minima?..."</p>
+                <button class="button button--video ver-video" src="">
+                    <a class="button__link">Ver video</a>
+                </button>
+            </div>
+            <div class="flex">
+                <h2 class="comprar__nombre">Andrés y Mariana</h2>
+                <p class="comprar__compra">Compradores Ciprés de la Florida</p>
+                <img src="assets/images/banner-home.png" alt="" class="comprar__imagen">
+                <p class="comprar__resumen">"...Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, minima?..."</p>
+                <button class="button button--video ver-video">
+                    <a class="button__link">Ver video</a>
+                </button>
+            </div>
+            <div class="flex">
+                <h2 class="comprar__nombre">Andrés y Mariana</h2>
+                <p class="comprar__compra">Compradores Ciprés de la Florida</p>
+                <img src="assets/images/banner-home.png" alt="" class="comprar__imagen">
+                <p class="comprar__resumen">"...Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, minima?..."</p>
+                <button class="button button--video ver-video"  src="https://www.youtube.com/embed/8ofCZObsnOo">
+                    <a class="button__link">Ver video</a>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="">
+    <img width="100%" src="assets/images/Quienes-end.png" alt="">
+</section>
+<div class="pop-up">
+    <div class="pop-up__bloque pop-up__bloque--macro">
+    <img src="assets/images/close-white-p.png" alt="" class="pop-up__close">
+        <div class="pop-up__contenido pop-up__contenido--macro" id="modal-imagen">
+        <iframe id="traerVideo" width="100%" height="450px" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
 
 <script>
 
@@ -263,16 +369,16 @@
 
     //TOGGLE PREMIOS
     var acc = document.getElementsByClassName("accordion-premios__button");
-    var iconAcc = document.querySelector('.accordion-premios__icono');
+    var iconAcc = document.getElementsByClassName('accordion-premios__icono');
     var i;
 
     for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
         var panel = this.nextElementSibling;
         var parentToggle = this.parentNode;
+        this.classList.toggle('active');
 
         parentToggle.classList.toggle('active');
-        iconAcc.classList.toggle('active');
         if (panel.style.maxHeight) {
         panel.style.maxHeight = null;
         panel.classList.remove('active');
@@ -282,6 +388,27 @@
         } 
     });
     }
+
+    //MOSTRAR VIDEO REEUTILIZABLE
+    const video = document.getElementsByClassName("ver-video");
+    const traerVideo = document.getElementById('traerVideo');
+
+    for (i = 0; i < video.length; i++) {
+        video[i].addEventListener("click", function() {
+            var obternetVideoAttribute = this.getAttribute('src');
+            traerVideo.setAttribute('src', obternetVideoAttribute);
+
+            const traerModal = document.querySelector('.pop-up');
+            const closeModal = document.querySelector('.pop-up__close');
+            traerModal.classList.add('active');
+            closeModal.addEventListener('click', () =>{
+                traerModal.classList.remove('active');
+            });
+
+        });
+
+    }
+
 
 </script>
 

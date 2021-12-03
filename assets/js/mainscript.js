@@ -30,6 +30,42 @@ myFunction();
 const nav = document.querySelector('#hamburger');
 const mainLeft = document.querySelector('#main-list');
 
+nav.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    mainLeft.classList.toggle('active')
+});
+$(document).ready(function(){
+
+    $(".owl-carousel__quienes-somos").owlCarousel({
+        items : 3, //NUMERO DE ITEMS
+        // loop: true, // HACE AL CAROUSEL INFINITO
+        margin: 30, //MARGEN ENTRE ELEMENTOS
+        nav: true, //AGREGAR FLECHITAS
+        // navText: ["anterior", "siguiente"], //CAMBIAR TEXTO DEL SIGUIENTE Y ANTERIOR
+        autoplay: false, //AGREGAR AUTOPLAY
+        dots: true, //PARA OCULTAR O MOSTRAR LOS DOTS
+        responsive: { //RESPONSIVE
+            0:{
+                items: 1
+            },
+            360:{
+                items: 1
+            },
+            560:{
+                items: 2
+            },
+            980:{
+                items: 3
+            },
+            1300: {
+                items: 3
+            },
+        }
+    });
+    
+    
+    
+});
 
 nav.addEventListener('click', () => {
     nav.classList.toggle('open');
@@ -54,7 +90,7 @@ $(document).ready(function(){
                 items: 1
             },
             560:{
-                items: 3
+                items: 2
             },
             980:{
                 items: 3
