@@ -24,16 +24,17 @@ function myFunction() {
 myFunction();
 
 
-
-
 //MENU HAMBURGUESA
-const nav = document.querySelector('#hamburger');
+const navTwo = document.querySelector('#hamburger');
 const mainLeft = document.querySelector('#main-list');
 
-nav.addEventListener('click', () => {
-    nav.classList.toggle('open');
+navTwo.addEventListener('click', () => {
+    navTwo.classList.toggle('open');
     mainLeft.classList.toggle('active')
 });
+
+
+
 $(document).ready(function(){
 
     $(".owl-carousel__quienes-somos").owlCarousel({
@@ -67,10 +68,6 @@ $(document).ready(function(){
     
 });
 
-nav.addEventListener('click', () => {
-    nav.classList.toggle('open');
-    mainLeft.classList.toggle('active')
-});
 $(document).ready(function(){
 
     $(".owl-carousel--hito").owlCarousel({
