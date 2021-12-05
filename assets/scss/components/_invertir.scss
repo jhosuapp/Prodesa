@@ -1,0 +1,155 @@
+.invertir-header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::after{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgb(0, 0, 0, 0.55);
+    }
+    &__imagen{
+        width: 100%;
+        min-height: 600px;
+        max-height: 600px;
+        object-fit: cover;
+    }
+    &__contenedor{
+        position: absolute;
+        max-width: 65%;
+        z-index: 99;
+        display: flex;
+    }
+    &__left{
+        width: 35%;
+        position: relative;
+        margin-right: 40px;
+        &::after{
+            position: absolute;
+            content: "";
+            width: 2px;
+            height: calc(100% + 40px);
+            top: -20px;
+            right: -20px;
+            background: color('primario');
+        }
+    }
+    &__right{
+        width: 65%;
+    }
+    &__titulo{
+        font-size: font('titulos');
+        color: color('primario');
+        font-weight: lighter;
+    }
+    &__descripcion{
+        font-size: font('card-precio');
+        font-weight: lighter;
+        color: color('primario');
+    }
+    
+}
+.ap-recomendado{
+    &__contenedor{
+        width: 90%;
+        margin: auto;
+    }
+    &__left{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        width: 60%;
+    }
+}
+.eq-ventas{
+
+    &__contenedor{
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+    }
+    &__right{
+        margin-left: 40px;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            width: 2px;
+            height: calc(100% + 20px);
+            top: -20px;
+            left: -20px;
+            background: linear-gradient(90.73deg, #E8AD00 9.83%, #F47920 92.88%);
+        }
+    }
+    &__nombre{
+        color: color('naranja');
+        font-weight: lighter;
+        font-size: font('comprar-titulo');
+    }
+    &__cargo{
+        font-size: font('comprar-descripcion');
+        color: color('gris-oscuro');
+        font-weight: bolder;
+        margin: 15px 0;
+    }
+    &__iconos{
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    &__email{
+        color: color('gris-oscuro');
+    }
+}
+
+@media (max-width: breakpoint('ipad-grande')){
+    .invertir-header{
+        &__contenedor{
+            max-width: 90%;
+        }
+    }
+}
+
+@media(max-width: breakpoint('celular')){
+    .invertir-header{
+        &__contenedor{
+            flex-direction: column;
+        }
+        &__left,
+        &__right{
+            width: 100%;
+        }
+        &__left{
+            margin: 0;
+            margin-bottom: 40px;
+            &::after{
+                width: 100%;
+                height: 2px;
+                left: 0;
+                bottom: -20px;
+                top: inherit;
+            }
+        }
+    }
+    .eq-ventas{
+        &__contenedor{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__right{
+            margin: 0;
+            margin-top: 20px;
+            &::after{
+                width: 100%;
+                height: 2px;
+                top: -10px;
+                left: inherit;
+            }
+        }
+    }
+}

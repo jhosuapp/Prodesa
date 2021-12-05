@@ -1285,6 +1285,12 @@ html {
   position: relative;
   margin-bottom: 17.5px;
 }
+.card__top--margin {
+  margin: 0;
+}
+.card__torre {
+  margin: 5px 0;
+}
 .card__titulo {
   font-size: 18px;
   color: #58595b;
@@ -1454,6 +1460,28 @@ html {
 }
 .card__precio--color {
   color: #58595b;
+}
+.card__info {
+  display: flex;
+  padding: 10px 0;
+  border-top: 1px solid #c4c4c4;
+  margin-top: 10px;
+}
+.card__info-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex: 1;
+}
+.card__info-contenedor--border {
+  border-left: 1px solid #c4c4c4;
+  border-right: 1px solid #c4c4c4;
+}
+.card__info-numero {
+  color: #58595b;
+  font-weight: bolder;
+  font-size: 20px;
 }
 .card__inversionistas {
   display: flex;
@@ -3983,6 +4011,35 @@ html {
 .tab__button.active {
   position: relative;
 }
+.tab-pasos {
+  width: 100%;
+  padding: 60px 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+.tab-pasos__left {
+  width: 30%;
+}
+.tab-pasos__right {
+  width: 65%;
+}
+.tab-pasos__imagen {
+  width: 100%;
+  min-height: 230px;
+  object-fit: cover;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+.tab-pasos__titulo {
+  font-size: 36px;
+  color: #f47920;
+}
+.tab-pasos__item {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 15px;
+}
 
 .tab-macro {
   overflow: hidden;
@@ -4220,6 +4277,22 @@ html {
 }
 
 @media (max-width: 992px) {
+  .tab-pasos {
+    padding: 40px 0;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+  .tab-pasos__left, .tab-pasos__right {
+    width: 90%;
+    margin: auto;
+  }
+  .tab-pasos__imagen {
+    width: 90%;
+    margin: auto;
+    display: flex;
+  }
+
   .tab-macro-amenidades__grid {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -4327,6 +4400,11 @@ html {
 .pop-up__button:hover {
   background: #58595b;
   color: #fff;
+}
+.pop-up__button--width {
+  max-width: 270px;
+  grid-column: 1/3;
+  margin: auto;
 }
 .pop-up__contenedor {
   width: 100%;
@@ -5117,6 +5195,65 @@ html {
   width: 90%;
   margin: auto;
 }
+.quienes__testimonios--padding {
+  padding-bottom: 60px;
+}
+
+.trabaja-prodesa {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.trabaja-prodesa::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+.trabaja-prodesa__imagen {
+  width: 100%;
+  max-height: 550px;
+  min-height: 550px;
+  object-fit: cover;
+}
+.trabaja-prodesa__contenedor {
+  z-index: 9;
+  position: absolute;
+  max-width: 550px;
+  margin: 0 100px;
+}
+.trabaja-prodesa__titulo {
+  color: #fff;
+  font-size: 36px;
+}
+.trabaja-prodesa__descripcion {
+  color: #fff;
+  font-weight: lighter;
+  font-size: 18px;
+  margin-top: 15px;
+}
+.trabaja-prodesa__flex {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+.trabaja-prodesa__link {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 32px;
+  background: linear-gradient(90.73deg, #E8AD00 9.83%, #F47920 92.88%);
+  background-image: #f47920;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-weight: bolder;
+  transition: 0.4s all ease;
+}
+.trabaja-prodesa__link:hover {
+  background: #f47920;
+}
 
 @media (max-width: 768px) {
   .historia__contenedor {
@@ -5134,6 +5271,158 @@ html {
   }
   .politica__bottom {
     flex-wrap: wrap;
+  }
+
+  .quienes__testimonios--padding {
+    padding-bottom: 10px;
+  }
+
+  .trabaja-prodesa__contenedor {
+    margin: 0 30px;
+  }
+}
+.invertir-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.invertir-header::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+.invertir-header__imagen {
+  width: 100%;
+  min-height: 600px;
+  max-height: 600px;
+  object-fit: cover;
+}
+.invertir-header__contenedor {
+  position: absolute;
+  max-width: 65%;
+  z-index: 99;
+  display: flex;
+}
+.invertir-header__left {
+  width: 35%;
+  position: relative;
+  margin-right: 40px;
+}
+.invertir-header__left::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: calc(100% + 40px);
+  top: -20px;
+  right: -20px;
+  background: #fff;
+}
+.invertir-header__right {
+  width: 65%;
+}
+.invertir-header__titulo {
+  font-size: 36px;
+  color: #fff;
+  font-weight: lighter;
+}
+.invertir-header__descripcion {
+  font-size: 20px;
+  font-weight: lighter;
+  color: #fff;
+}
+
+.ap-recomendado__contenedor {
+  width: 90%;
+  margin: auto;
+}
+.ap-recomendado__left {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  width: 60%;
+}
+
+.eq-ventas__contenedor {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+.eq-ventas__right {
+  margin-left: 40px;
+  position: relative;
+}
+.eq-ventas__right::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: calc(100% + 20px);
+  top: -20px;
+  left: -20px;
+  background: linear-gradient(90.73deg, #E8AD00 9.83%, #F47920 92.88%);
+}
+.eq-ventas__nombre {
+  color: #f47920;
+  font-weight: lighter;
+  font-size: 26px;
+}
+.eq-ventas__cargo {
+  font-size: 18px;
+  color: #58595b;
+  font-weight: bolder;
+  margin: 15px 0;
+}
+.eq-ventas__iconos {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.eq-ventas__email {
+  color: #58595b;
+}
+
+@media (max-width: 992px) {
+  .invertir-header__contenedor {
+    max-width: 90%;
+  }
+}
+@media (max-width: 576px) {
+  .invertir-header__contenedor {
+    flex-direction: column;
+  }
+  .invertir-header__left, .invertir-header__right {
+    width: 100%;
+  }
+  .invertir-header__left {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  .invertir-header__left::after {
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -20px;
+    top: inherit;
+  }
+
+  .eq-ventas__contenedor {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .eq-ventas__right {
+    margin: 0;
+    margin-top: 20px;
+  }
+  .eq-ventas__right::after {
+    width: 100%;
+    height: 2px;
+    top: -10px;
+    left: inherit;
   }
 }
 

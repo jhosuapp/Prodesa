@@ -283,7 +283,7 @@
     </div>
 </section>
 
-<section class="titulo--grey">
+<section class="quienes__testimonios--padding titulo--grey">
     <div class="titulo titulo--not-padding">
         <div class="titulo__izquierda titulo__izquierda--blog titulo__flex"></div>
         <div class="titulo__contenedor titulo__flex">
@@ -333,8 +333,17 @@
     </div>
 </section>
 
-<section class="">
-    <img width="100%" src="assets/images/Quienes-end.png" alt="">
+<section class="trabaja-prodesa">
+    <img class="trabaja-prodesa__imagen" src="assets/images/Quienes-end.png" alt="">
+    <div class="trabaja-prodesa__contenedor">
+        <h2 class="trabaja-prodesa__titulo">Trabaja en <b class="orange">Prodesa</b></h2>
+        <p class="trabaja-prodesa__descripcion">¿Quieres ser parte de nuestro equipo de trabajo? Únete a un grupo de colaboradores a la vanguardia y comienza a consolidar tu trayectoria profesional.</p>
+        <div class="trabaja-prodesa__flex">
+            <a href="" class="trabaja-prodesa__link">
+                Aplicar
+            </a>
+        </div>
+    </div>
 </section>
 <div class="pop-up">
     <div class="pop-up__bloque pop-up__bloque--macro">

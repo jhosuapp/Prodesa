@@ -60,6 +60,12 @@
         width: 100%;
         position: relative;
         margin-bottom: 17.5px;
+        &--margin{
+            margin: 0;
+        }
+    }
+    &__torre{
+        margin: 5px 0;
     }
     &__titulo{
         font-size: font('card-titulo');
@@ -232,6 +238,34 @@
     }
     &__precio--color{
         color: color('gris-oscuro');
+    }
+
+    //INFORMACION ADICIONAL
+
+    &__info{
+        display: flex;
+        padding: 10px 0;
+        border-top: 1px solid color('gris-clarito');
+        margin-top: 10px;
+        &-contenedor{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            flex: 1;
+        }
+        &-contenedor--border{
+            border-left: 1px solid color('gris-clarito');
+            border-right: 1px solid color('gris-clarito');
+        }
+        &-icono{
+
+        }
+        &-numero{
+            color: color('gris-oscuro');
+            font-weight: bolder;
+            font-size: font('card-precio');
+        }
     }
 
     //INVERSIONISTAS

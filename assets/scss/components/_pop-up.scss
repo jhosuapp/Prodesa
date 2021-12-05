@@ -63,6 +63,11 @@
             background: color('gris-oscuro');
             color: color('primario');
         }
+        &--width{
+            max-width: 270px;
+            grid-column: 1/3;
+            margin: auto;
+        }
     }
     &__contenedor{
         width: 100%;

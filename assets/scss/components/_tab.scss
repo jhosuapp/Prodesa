@@ -17,6 +17,40 @@
     &__button.active {
         position: relative;
     }
+
+
+    //PASOS INVERTIR
+
+    &-pasos{
+        width: 100%;
+        padding: 60px 100px;
+        display: flex;
+        justify-content: space-between;
+        flex-shrink: 0;
+        &__left{
+            width: 30%;
+        }
+        &__right{
+            width: 65%;
+        }
+        &__imagen{
+            width: 100%;
+            min-height: 230px;
+            object-fit: cover;
+            border: 1px solid color('primario');
+            border-radius: 5px;
+        }
+        &__titulo{
+            font-size: font('titulos');
+            color: color('naranja');
+        }
+        &__item{
+            font-size: font('card-precio');
+            color: color('primario');
+            margin-top: 15px;
+        }
+    }
+
 }
 .tab-macro{
     overflow: hidden;
@@ -254,6 +288,24 @@
     }
 }
 @media(max-width: breakpoint('ipad-grande')){
+    .tab{
+        &-pasos{
+            padding: 40px 0;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+            &__left,
+            &__right{
+                width: 90%;
+                margin: auto;
+            }
+            &__imagen{
+                width: 90%;
+                margin: auto;
+                display: flex;
+            }
+        }
+    }
     .tab-macro{
         &-amenidades{
             
