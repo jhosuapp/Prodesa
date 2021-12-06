@@ -188,6 +188,163 @@
     }
 }
 
+.form-ap{
+    margin-top: 30px;
+    &__label{
+        color: color('primario');
+        font-size: font('suscribete-politica');
+        font-weight: bolder;
+        cursor: pointer;
+        margin: 0 0 10px 5px;
+    }
+    &__contenedor{
+        position: relative;
+    }
+    &__bloque{
+        margin: 15px 0;
+    }
+    &__input{
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        color: color('gris-oscuro');
+        border-radius: 5px;
+        padding: 0 10px;
+        outline: inherit;
+        border: none;
+        transition: .2s all ease;
+        background: color('primario');
+        &:focus{
+            border: 2px solid color('naranja');
+
+        }
+        &--mensaje{
+            height: 80px;
+            line-height: 20px;
+        }
+    }
+    &__validacion{
+        color: color('primario');
+        font-size: font('suscribete-politica');
+        margin: 5px 0 10px 0;
+        display: none;
+    }
+    &__enviar{
+        display: flex;
+        justify-content: center;
+    }
+    &__submit{
+        outline: inherit;
+        border: none;
+        color: color('primario');
+        background: color('naranja');
+        border: 1px solid color('primario');
+        border-radius: 5px;
+        padding: 10px 45px;
+        cursor: pointer;
+        @include transition;
+        &:hover{
+            background: colorDarken('naranja', 8);
+        }
+    }
+    &__icono{
+        position: absolute;
+        color: color('check');
+        font-size: 15px;
+        top: calc(50% - 7.5px);
+        right: 15px;
+        opacity: 0;
+    }
+    &__mensaje{
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding: 10px 20px;
+        background: color('danger');
+        margin-bottom: 20px;
+        display: none;
+    }
+    &__mensaje-contenido{
+        color: color('primario');
+        font-size: font('card-bono');
+    }
+    &__mensaje-icono{
+        color: color('primario');
+    }
+    &__mensaje.active{
+        display: flex;
+    }
+    &__enviado{
+        text-align: center;
+    }
+    &__mensaje-contenido--verde{
+        color: color('check');
+        display: none;
+        margin-bottom: 20px;
+    }
+    &__mensaje-contenido--verde.active{
+        display: block;
+    }
+    &__radio-contenedor{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    &__radio-texto{
+        color: color('primario');
+        font-weight: lighter;
+        font-size: font('comprar-lugar');
+    }
+    &__radio-right{
+        display: flex;
+        gap: 10px;
+    }
+    &__radio-input{
+        display: none;
+    }
+    &__radio-label{
+        color: color('gris-oscuro');
+        background: color('primario');
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        padding: 10px 30px;
+        border-radius: 5px;
+        cursor: pointer;
+        @include transition;
+        &:hover{
+            box-shadow:  inset 1px 2px 5px 0px #58595b;
+        }
+        &.active{
+            box-shadow:  inset 1px 2px 5px 0px #58595b;
+            background: color('naranja');
+            color: color('primario');
+        }
+    }
+
+
+    //VALIDACION
+
+    &__bloque-bien .form-ap__icono{
+        opacity: 1;
+    }
+    &__bloque-bien .form-ap__input{
+        border: 2px solid color('check');
+    }
+
+    &__bloque-mal .form-ap__input{
+        border: 2px solid color('danger');
+    }
+    &__bloque-mal .form-ap__label{
+        color: color('danger');
+    }
+    &__bloque-mal .form-ap__validacion{
+        display: block;
+    }
+
+}
+
 @media (max-width: breakpoint('celular')){
     .formulario{
         &__suscribete-flex{

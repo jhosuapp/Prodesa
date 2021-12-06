@@ -13,7 +13,6 @@ desplegable.addEventListener('click', () =>{
 function myFunction() {
     var x, i;
     var desplegarMobile; 
-    console.log(desplegarMobile)
     x = document.querySelectorAll("#desplegableMobile");
     for (i = 0; i < x.length; i++) {
         x[i].onclick = function() {
@@ -156,8 +155,8 @@ $(document).ready(function(){
             560:{
                 items: 1
             },
-            980:{
-                items: 2
+            768:{
+                items:2
             },
             1300: {
                 items: 3

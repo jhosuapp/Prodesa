@@ -392,129 +392,103 @@
                     </div>
                 </div>
             </div>
-            <div class="card item">
-                <div class="card__top card__top--margin">
-                    <h2 class="card__titulo">Apartamento 65m2</h2>
-                    <img src="assets/images/promo.png" alt="" class="card__logo">
-                </div>
-                <div class="card__torre">
-                    <p class="card__ubicacion"><b>Torre 1</b></p>
-                </div>
-                <div class="card__contenedor-ubicacion">
-                    <img src="assets/images/ubicacion.svg" alt="" class="card__ubicacion-imagen">
-                    <p class="card__ubicacion">Bogotá</p>
-                </div>
-                <div class="card__middle">
-                    <a class="card__background-imagen">
-                        <img src="assets/images/banner-home.png" alt="" class="card__imagen">
-                    </a>
-                    <div class="card__bono">
-                        <p class="card__bono-descripcion">Aplica subsidio</p>
-                    </div>
-                    <div class="card__redes">
-                        <!-- <img src="" alt="" class="card__redes-imagen"> -->
-                    </div>
-                </div>
-                <div class="card__semi-bottom">
-                    <div class="card__contenedor-descripcion">
-                        <div class="card__bloque-descripcion card__bloque-descripcion--margin">
-                            <img src="assets/images/icon_area.svg" alt="" class="card__metraje-icono">
-                            <div class="card__contenedor-metraje">
-                                <p class="card__metraje">Areá privada desde 20m2</p>
-                                <p class="card__metraje">Areá construida desde 20m2</p>
-                            </div>
-                        </div>
-                        <p class="card__descripcion">Lorem ipsum dolor, alias animi amet accusamus omnis sequi at consectetur, quis illo officiis eius obcaecati aut quos.</p>
-                    </div>
-                </div>
-                <div class="card__info">
-                    <div class="card__info-contenedor">
-                        <img src="assets/images/icon_feature-bed.svg" alt="" class="card__info-icono">
-                        <div class="card__info-numero">1</div>
-                    </div>
-                    <div class="card__info-contenedor card__info-contenedor--border">
-                        <img src="assets/images/icon_feature-bath.svg" alt="" class="card__info-icono">
-                        <div class="card__info-numero">1</div>
-                    </div>
-                    <div class="card__info-contenedor">
-                        <img src="assets/images/icon_feature-car.svg" alt="" class="card__info-icono">
-                        <div class="card__info-numero">1</div>
-                    </div>
-                </div>
-                <div class="card__bottom">
-                    <div class="card__bottom-top">
-                        <div class="card__precios">
-                            <p class="card__precio-anterior">$990.000.000</p>
-                            <p class="card__precio">$900.000.000</p>
-                        </div>
-                        <button class="button card__button-top">
-                            <a class="button__link">Ver más</a>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="card item">
-                <div class="card__top card__top--margin">
-                    <h2 class="card__titulo">Apartamento 65m2</h2>
-                    <img src="assets/images/promo.png" alt="" class="card__logo">
-                </div>
-                <div class="card__torre">
-                    <p class="card__ubicacion"><b>Torre 1</b></p>
-                </div>
-                <div class="card__contenedor-ubicacion">
-                    <img src="assets/images/ubicacion.svg" alt="" class="card__ubicacion-imagen">
-                    <p class="card__ubicacion">Bogotá</p>
-                </div>
-                <div class="card__middle">
-                    <a class="card__background-imagen">
-                        <img src="assets/images/banner-home.png" alt="" class="card__imagen">
-                    </a>
-                    <div class="card__bono">
-                        <p class="card__bono-descripcion">Aplica subsidio</p>
-                    </div>
-                    <div class="card__redes">
-                        <!-- <img src="" alt="" class="card__redes-imagen"> -->
-                    </div>
-                </div>
-                <div class="card__semi-bottom">
-                    <div class="card__contenedor-descripcion">
-                        <div class="card__bloque-descripcion card__bloque-descripcion--margin">
-                            <img src="assets/images/icon_area.svg" alt="" class="card__metraje-icono">
-                            <div class="card__contenedor-metraje">
-                                <p class="card__metraje">Areá privada desde 20m2</p>
-                                <p class="card__metraje">Areá construida desde 20m2</p>
-                            </div>
-                        </div>
-                        <p class="card__descripcion">Lorem ipsum dolor, alias animi amet accusamus omnis sequi at consectetur, quis illo officiis eius obcaecati aut quos.</p>
-                    </div>
-                </div>
-                <div class="card__info">
-                    <div class="card__info-contenedor">
-                        <img src="assets/images/icon_feature-bed.svg" alt="" class="card__info-icono">
-                        <div class="card__info-numero">1</div>
-                    </div>
-                    <div class="card__info-contenedor card__info-contenedor--border">
-                        <img src="assets/images/icon_feature-bath.svg" alt="" class="card__info-icono">
-                        <div class="card__info-numero">1</div>
-                    </div>
-                    <div class="card__info-contenedor">
-                        <img src="assets/images/icon_feature-car.svg" alt="" class="card__info-icono">
-                        <div class="card__info-numero">1</div>
-                    </div>
-                </div>
-                <div class="card__bottom">
-                    <div class="card__bottom-top">
-                        <div class="card__precios">
-                            <p class="card__precio-anterior">$990.000.000</p>
-                            <p class="card__precio">$900.000.000</p>
-                        </div>
-                        <button class="button card__button-top">
-                            <a class="button__link">Ver más</a>
-                        </button>
-                    </div>
-                </div>
-            </div>
             <a class="card-pagos__instrucciones pop-up__button pop-up__button--width" id="pop-up__button">Ver toda la oferta de vivienda</a>
+        </div>
+        <div class="ap-recomendado__right">
+            <h2 class="ap-recomendado__titulo">Contáctanos</h2>
+            <form action="" class="form-ap" id="form-ap">
+
+                <!-- BLOQUE NOMBRE -->
+
+                <div class="form-ap__bloque form-ap__bloque-nombre">
+                    <label for="nombre" class="form-ap__label">Nombre*</label>
+                    <div class="form-ap__contenedor">
+                        <input type="text" id="nombre" name="nombre" class="form-ap__input" placeholder="Nombre">
+                        <i class="fas fa-check-circle form-ap__icono"></i>
+                    </div>
+                    <p class="form-ap__validacion">Escribe al menos 3 carecteres usando caracteres permitidos</p>
+                </div>
+
+                <!-- BLOQUE APELLIDO -->
+
+                <div class="form-ap__bloque form-ap__bloque-apellido">
+                    <label for="apellido" class="form-ap__label">Apellido*</label>
+                    <div class="form-ap__contenedor">
+                        <input type="text" id="apellido" name="apellido" class="form-ap__input" placeholder="Apellido">
+                        <i class="fas fa-check-circle form-ap__icono"></i>
+                    </div>
+                    <p class="form-ap__validacion">Escriba al menos 3 carecteres usando caracteres permitidos</p>
+                </div>
+
+                <!-- BLOQUE CELULAR -->
+
+                <div class="form-ap__bloque form-ap__bloque-telefono">
+                    <label for="telefono" class="form-ap__label">Telefono*</label>
+                    <div class="form-ap__contenedor">
+                        <input type="text" id="telefono" name="telefono" class="form-ap__input" placeholder="1111111">
+                        <i class="fas fa-check-circle form-ap__icono"></i>
+                    </div>
+                    <p class="form-ap__validacion">Escriba de 7 - 14 caracteres, solo use numeros</p>
+                </div>
+
+                <!-- BLOQUE EMAIL -->
+
+                <div class="form-ap__bloque form-ap__bloque-email">
+                    <label for="email" class="form-ap__label">e-mail*</label>
+                    <div class="form-ap__contenedor">
+                        <input type="email" id="email" name="email" class="form-ap__input" placeholder="micorreo@gamil.com">
+                        <i class="fas fa-check-circle form-ap__icono"></i>
+                    </div>
+                    <p class="form-ap__validacion">El correo solo puede contener, letras, numeros, puntos y guin bajo</p>
+                </div>
+                
+                <!-- RADIO BUTTON RESIDE EN COLOMBIA -->
+
+                <div class="form-ap__radio-contenedor">
+                    <div class="form-ap__radio-left">
+                        <p class="form-ap__radio-texto">¿Reside fuera de Colombia?</p>
+                    </div>
+                    <div class="form-ap__radio-right">
+                        <div class="form-ap__radio">
+                            <input class="form-ap__radio-input" type="radio" id="resideSi" name="resideColombia" value="resideSi">
+                            <label class="form-ap__radio-label" id="form_label-si" for="resideSi">Si</label>
+                        </div>
+                        <div class="form-ap__radio">
+                            <input class="form-ap__radio-input" type="radio" id="resideNo" name="resideColombia" value="resideNo">
+                            <label class="form-ap__radio-label" id="form_label-no" for="resideNo">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BLOQUE MENSAJE -->
+
+                <div class="form-ap__bloque form-ap__bloque-mensaje">
+                    <label for="mensaje" class="form-ap__label">Mensaje*</label>
+                    <div class="form-ap__contenedor">
+                        <input type="text" id="mensaje" name="mensaje" class="form-ap__input form-ap__input--mensaje">
+                        <i class="fas fa-check-circle form-ap__icono"></i>
+                    </div>
+                    <p class="form-ap__validacion">El correo solo puede contener, letras, numeros, puntos y guin bajo</p>
+                </div>
+
+                <!-- MENSAJE PARA ENVIAR EL FORM -->
+
+                <div class="form-ap__mensaje">
+                    <i class="fas fa-exclamation-triangle form-ap__mensaje-icono"></i>
+                    <p class="form-ap__mensaje-contenido">Por favor escriba el mensaje</p>
+                </div>
+                
+                <div class="form-ap__enviado">
+                    <p class="form-ap__mensaje-contenido form-ap__mensaje-contenido--verde">Formulario enviado exitosamente</p>
+                </div>
+
+                <!-- SUBMIT -->
+
+                <div class="form-ap__enviar">
+                    <button type="submit" class="form-ap__submit">Enviar</button>
+                </div>
+
+            </form>
         </div>
     </div>
 </section>
@@ -605,8 +579,141 @@
             </button>
         </div>
         <div class="tab__contenedor">
-            <div class="tab-pasos">
-
+            <div class="tab-aliados__flex">
+                <div class="tab-aliados">
+                    <div class="tab-aliados__top">
+                        <img src="assets/images/icon_flag-col.svg" alt="" class="tab-aliados__imagen">
+                        <h3 class="tab-aliados__titulo">Unión Andina</h3>
+                    </div>
+                    <div class="tab-aliados__middle">
+                        <img src="assets/images/Logo_union_Ansdina.png" alt="" class="tab-aliados__logo">
+                    </div>
+                    <div class="tab-aliados__bottom">
+                        <p class="tab-aliados__direccion">Carrera 98 No. 25 G – 64 Torre A Oficina 102</p>
+                        <div class="tab-aliados__iconos">
+                            <img src="assets/images/icon_mail-line.svg" alt="" class="tab-aliados__email">
+                            <p class="tab-aliados__texto">contacto@unionandinacolombia.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-aliados">
+                    <div class="tab-aliados__top">
+                        <img src="assets/images/icon_flag-col.svg" alt="" class="tab-aliados__imagen">
+                        <h3 class="tab-aliados__titulo">Unión Andina</h3>
+                    </div>
+                    <div class="tab-aliados__middle">
+                        <img src="assets/images/Logo_union_Ansdina.png" alt="" class="tab-aliados__logo">
+                    </div>
+                    <div class="tab-aliados__bottom">
+                        <p class="tab-aliados__direccion">Carrera 98 No. 25 G – 64 Torre A Oficina 102</p>
+                        <div class="tab-aliados__iconos">
+                            <img src="assets/images/icon_mail-line.svg" alt="" class="tab-aliados__email">
+                            <p class="tab-aliados__texto">contacto@unionandinacolombia.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-aliados">
+                    <div class="tab-aliados__top">
+                        <img src="assets/images/icon_flag-col.svg" alt="" class="tab-aliados__imagen">
+                        <h3 class="tab-aliados__titulo">Unión Andina</h3>
+                    </div>
+                    <div class="tab-aliados__middle">
+                        <img src="assets/images/Logo_union_Ansdina.png" alt="" class="tab-aliados__logo">
+                    </div>
+                    <div class="tab-aliados__bottom">
+                        <p class="tab-aliados__direccion">Carrera 98 No. 25 G – 64 Torre A Oficina 102</p>
+                        <div class="tab-aliados__iconos">
+                            <img src="assets/images/icon_mail-line.svg" alt="" class="tab-aliados__email">
+                            <p class="tab-aliados__texto">contacto@unionandinacolombia.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-aliados">
+                    <div class="tab-aliados__top">
+                        <img src="assets/images/icon_flag-col.svg" alt="" class="tab-aliados__imagen">
+                        <h3 class="tab-aliados__titulo">Unión Andina</h3>
+                    </div>
+                    <div class="tab-aliados__middle">
+                        <img src="assets/images/Logo_union_Ansdina.png" alt="" class="tab-aliados__logo">
+                    </div>
+                    <div class="tab-aliados__bottom">
+                        <p class="tab-aliados__direccion">Carrera 98 No. 25 G – 64 Torre A Oficina 102</p>
+                        <div class="tab-aliados__iconos">
+                            <img src="assets/images/icon_mail-line.svg" alt="" class="tab-aliados__email">
+                            <p class="tab-aliados__texto">contacto@unionandinacolombia.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-aliados__flex">
+                <div class="tab-aliados">
+                    <div class="tab-aliados__top">
+                        <img src="assets/images/icon_flag-col.svg" alt="" class="tab-aliados__imagen">
+                        <h3 class="tab-aliados__titulo">Unión Andina</h3>
+                    </div>
+                    <div class="tab-aliados__middle">
+                        <img src="assets/images/Logo_union_Ansdina.png" alt="" class="tab-aliados__logo">
+                    </div>
+                    <div class="tab-aliados__bottom">
+                        <p class="tab-aliados__direccion">Carrera 98 No. 25 G – 64 Torre A Oficina 102</p>
+                        <div class="tab-aliados__iconos">
+                            <img src="assets/images/icon_mail-line.svg" alt="" class="tab-aliados__email">
+                            <p class="tab-aliados__texto">contacto@unionandinacolombia.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-aliados">
+                    <div class="tab-aliados__top">
+                        <img src="assets/images/icon_flag-col.svg" alt="" class="tab-aliados__imagen">
+                        <h3 class="tab-aliados__titulo">Unión Andina</h3>
+                    </div>
+                    <div class="tab-aliados__middle">
+                        <img src="assets/images/Logo_union_Ansdina.png" alt="" class="tab-aliados__logo">
+                    </div>
+                    <div class="tab-aliados__bottom">
+                        <p class="tab-aliados__direccion">Carrera 98 No. 25 G – 64 Torre A Oficina 102</p>
+                        <div class="tab-aliados__iconos">
+                            <img src="assets/images/icon_mail-line.svg" alt="" class="tab-aliados__email">
+                            <p class="tab-aliados__texto">contacto@unionandinacolombia.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-aliados">
+                    <div class="tab-aliados__top">
+                        <img src="assets/images/icon_flag-col.svg" alt="" class="tab-aliados__imagen">
+                        <h3 class="tab-aliados__titulo">Unión Andina</h3>
+                    </div>
+                    <div class="tab-aliados__middle">
+                        <img src="assets/images/Logo_union_Ansdina.png" alt="" class="tab-aliados__logo">
+                    </div>
+                    <div class="tab-aliados__bottom">
+                        <p class="tab-aliados__direccion">Carrera 98 No. 25 G – 64 Torre A Oficina 102</p>
+                        <div class="tab-aliados__iconos">
+                            <img src="assets/images/icon_mail-line.svg" alt="" class="tab-aliados__email">
+                            <p class="tab-aliados__texto">contacto@unionandinacolombia.com</p>
+                        </div>
+                        <div class="tab-aliados__iconos">
+                            <img src="assets/images/icon_mail-line.svg" alt="" class="tab-aliados__email">
+                            <p class="tab-aliados__texto">contacto@unionandinacolombia.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-aliados">
+                    <div class="tab-aliados__top">
+                        <img src="assets/images/icon_flag-col.svg" alt="" class="tab-aliados__imagen">
+                        <h3 class="tab-aliados__titulo">Unión Andina</h3>
+                    </div>
+                    <div class="tab-aliados__middle">
+                        <img src="assets/images/Logo_union_Ansdina.png" alt="" class="tab-aliados__logo">
+                    </div>
+                    <div class="tab-aliados__bottom">
+                        <p class="tab-aliados__direccion">Carrera 98 No. 25 G – 64 Torre A Oficina 102</p>
+                        <div class="tab-aliados__iconos">
+                            <img src="assets/images/icon_mail-line.svg" alt="" class="tab-aliados__email">
+                            <p class="tab-aliados__texto">contacto@unionandinacolombia.com</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -727,44 +834,4 @@
 <?php 
     include 'template-parts/footer.php';
 ?>
-
-
-<script>
-    const buttonTab = document.querySelectorAll('.tab__controls button');
-
-    buttonTab.forEach((button) =>{
-        button.addEventListener('click', ()=>{
-            const parent = button.parentNode;
-            const grantParent = parent.parentNode;
-            const container = grantParent.querySelector('.tab__contenedor');
-
-            const childrenList = Array.from(parent.children);
-            const index = childrenList.indexOf(button);
-            container.style.transform =  `translatex(-${index * 100}%)`;
-
-            parent.querySelectorAll('button.active').forEach(activeBtn => activeBtn.classList.remove('active'));
-
-            button.classList.add('active');
-        });
-    });
-
-     //MOSTRAR VIDEO REEUTILIZABLE
-    const video = document.getElementsByClassName("ver-video");
-    const traerVideo = document.getElementById('traerVideo');
-
-    for (i = 0; i < video.length; i++) {
-        video[i].addEventListener("click", function() {
-            var obternetVideoAttribute = this.getAttribute('src');
-            traerVideo.setAttribute('src', obternetVideoAttribute);
-
-            const traerModal = document.querySelector('.pop-up');
-            const closeModal = document.querySelector('.pop-up__close');
-            traerModal.classList.add('active');
-            closeModal.addEventListener('click', () =>{
-                traerModal.classList.remove('active');
-            });
-
-        });
-
-    }
-</script>
+<script src="assets/js/validacion-form.js"></script>
