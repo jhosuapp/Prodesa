@@ -43,13 +43,13 @@ const form_inputs = document.querySelectorAll('#form-ap input');
 const form_label = document.querySelector('#form_label-si');
 const form_label_two = document.querySelector('#form_label-no');
 const form_bloque = document.querySelectorAll('.form-ap__bloque');
+const form_mensaje = document.querySelector('#mensaje');
 
 const expresionesRegulares = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{3,40}$/, // Letras y espacios, pueden llevar acentos.
     apellido: /^[a-zA-ZÀ-ÿ\s]{3,40}$/,
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 	telefono: /^\d{7,14}$/, // 7 a 14 numeros.
-    mensaje: /^[a-zA-Z0-9?$@#()'!,+\-=_:.&€£*%\s]+$/
 }
 
 const validarEnvio = {
@@ -57,6 +57,7 @@ const validarEnvio = {
     apellido: false,
     email: false,
     telefono: false,
+    mensaje: false
 }
 
 
@@ -74,9 +75,6 @@ const validarInput = (e) =>{
         case "email":
             validarCampo(expresionesRegulares.correo, e.target, 'email')
         break;
-        case "mensaje":
-            validarCampo(expresionesRegulares.mensaje, e.target, 'mensaje')
-        break;
     }
 }
 
@@ -92,6 +90,26 @@ const validarCampo = (exp, tar, clas) => {
     }
 }
 
+
+const validar_mensaje = () =>{
+    if(form_mensaje.value < 10){
+        document.querySelector('.form-ap__bloque-mensaje').classList.remove('form-ap__bloque-bien');
+        document.querySelector('.form-ap__bloque-mensaje').classList.add('form-ap__bloque-mal');
+        validarEnvio.mensaje = false;
+    }else{
+        document.querySelector('.form-ap__bloque-mensaje').classList.add('form-ap__bloque-bien');
+        document.querySelector('.form-ap__bloque-mensaje').classList.remove('form-ap__bloque-mal');
+        validarEnvio.mensaje = true;
+    }
+}
+
+form_mensaje.addEventListener('blur', ()=>{
+    validar_mensaje();
+});
+form_mensaje.addEventListener('keyup', ()=>{
+    validar_mensaje();
+});
+
 form_inputs.forEach( (input) =>{
     input.addEventListener('blur', validarInput);
     input.addEventListener('keyup', validarInput);
@@ -99,7 +117,7 @@ form_inputs.forEach( (input) =>{
 
 form_ap.addEventListener('submit', (e)=>{
     e.preventDefault();
-    if(validarEnvio.nombre && validarEnvio.apellido  && validarEnvio.telefono && validarEnvio.email && (resideSi.checked || resideNo.checked)){
+    if(validarEnvio.nombre && validarEnvio.apellido  && validarEnvio.telefono && validarEnvio.email && (resideSi.checked || resideNo.checked) && validarEnvio.mensaje){
         form_ap.reset();
         document.querySelector('.form-ap__mensaje-contenido--verde').classList.add('active');
 

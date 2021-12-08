@@ -465,17 +465,17 @@
                 <div class="form-ap__bloque form-ap__bloque-mensaje">
                     <label for="mensaje" class="form-ap__label">Mensaje*</label>
                     <div class="form-ap__contenedor">
-                        <input type="text" id="mensaje" name="mensaje" class="form-ap__input form-ap__input--mensaje">
+                        <textarea id="mensaje" name="mensaje" class="form-ap__input form-ap__input--mensaje"></textarea>
                         <i class="fas fa-check-circle form-ap__icono"></i>
                     </div>
-                    <p class="form-ap__validacion">El correo solo puede contener, letras, numeros, puntos y guin bajo</p>
+                    <p class="form-ap__validacion">Por favor escriba el mensaje</p>
                 </div>
 
                 <!-- MENSAJE PARA ENVIAR EL FORM -->
 
                 <div class="form-ap__mensaje">
                     <i class="fas fa-exclamation-triangle form-ap__mensaje-icono"></i>
-                    <p class="form-ap__mensaje-contenido">Por favor escriba el mensaje</p>
+                    <p class="form-ap__mensaje-contenido">Por favor llene los campos correctamente</p>
                 </div>
                 
                 <div class="form-ap__enviado">
