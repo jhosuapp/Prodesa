@@ -1,0 +1,69 @@
+.custom-select{
+    opacity: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 93%;
+    display: flex;
+    flex-direction: column;
+    max-height: 100px;
+    background: color('primario');
+    width: 100%;
+    overflow: auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    &.active{
+        @include transition;
+        max-height: 100px;
+        height: 100px;
+        opacity: 1;
+
+
+    }
+    &__opciones{
+        font-size: 13px;
+        color: color('gris-oscuro');
+        font-weight: bolder;
+        padding: 8px;
+        border-top: 1px solid color('gris-claro');
+        &:hover{
+            background: color('gris-claro');
+        }
+    }
+    &__hidden{
+        display: none;
+    }
+    &__contenedor{
+        position: relative;
+        height: 33px;
+        background: color('primario');
+        border-radius: 5px;
+        width: 100%;
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        cursor: pointer;
+        &::after{
+            content: "";
+            height: 17px;
+            position: absolute;
+            right: 0.5em;
+            width: 17px;
+            transition: all .3s ease;
+            background: url('../images/downTwo.svg') no-repeat center;
+            background-size: contain;
+            background-attachment: initial;
+            position: absolute;
+            right: 10px;
+            top: 8px;
+        }
+        &.active::after{
+            transform: rotateX(180deg);
+        }
+    }
+    &__seleccionado{
+        font-size: font('comprar-lugar');
+        color: color('gris-oscuro');
+        font-weight: bolder;
+    }
+}

@@ -18,7 +18,7 @@
                         Nombre categoría
                     </li>
                 </ul>
-                <h2 class="mi-content--imagen-titulo-blog"><b class="white__light">Pagos en </b><b class="orange">linea</b></h2>
+                <h2 class="mi-content--imagen-titulo-blog"><b class="white__light">Quienes </b><b class="orange">somos</b></h2>
             </div>
         </div>
     </div>

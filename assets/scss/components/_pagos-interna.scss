@@ -1,0 +1,69 @@
+.pagos-header{
+    &__contenedor{
+        position: absolute;
+        z-index: 99;
+        display: flex;
+        gap: 20px;
+        width: 80%;
+        margin-top: 90px;
+    }
+    &__right{
+
+    }
+    &__titulo{
+        font-size: font('header-titulo');
+        color: color('primario');
+        font-weight: lighter;
+    }
+    &__descripcion{
+        color: color('primario');
+        font-size: font('comprar-lugar');
+        margin: 15px 0;
+    }
+}
+.form__pagos{
+    display: flex;
+    gap: 10px;
+    &-left{
+        width: 40%;
+    }
+    &-rigth{
+        width: 60%;
+        display: flex;
+        gap: 10px;
+    }
+    &-rigth--flex{
+        flex: 1;
+    }
+    &-input{
+        height: 33px;
+        border-radius: 5px;
+        width: 100%;
+        background: color('primario');
+        outline: inherit;
+        font-size: font('blog-leer');
+        color: color('gris-oscuro');
+        border: none;
+        padding: 10px;
+        font-weight: bolder;
+        transition:  .2s all ease;
+        &:focus{
+            border: 2px solid color('naranja');
+        }
+    }
+    &-button{
+        width: 100%;
+        background: color('naranja');
+        border-radius: 5px;
+        color: color('primario');
+        font-weight: bolder;
+        font-size: font('comprar-lugar');
+        cursor: pointer;
+        outline: inherit;
+        border: none;
+        @include transition;
+        &:hover{
+            background: colorDarken('naranja', 8);
+        }
+    }
+}

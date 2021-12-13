@@ -5680,5 +5680,138 @@ html {
     left: inherit;
   }
 }
+.pagos-header__contenedor {
+  position: absolute;
+  z-index: 99;
+  display: flex;
+  gap: 20px;
+  width: 80%;
+  margin-top: 90px;
+}
+.pagos-header__titulo {
+  font-size: 42px;
+  color: #fff;
+  font-weight: lighter;
+}
+.pagos-header__descripcion {
+  color: #fff;
+  font-size: 16px;
+  margin: 15px 0;
+}
+
+.form__pagos {
+  display: flex;
+  gap: 10px;
+}
+.form__pagos-left {
+  width: 40%;
+}
+.form__pagos-rigth {
+  width: 60%;
+  display: flex;
+  gap: 10px;
+}
+.form__pagos-rigth--flex {
+  flex: 1;
+}
+.form__pagos-input {
+  height: 33px;
+  border-radius: 5px;
+  width: 100%;
+  background: #fff;
+  outline: inherit;
+  font-size: 14px;
+  color: #58595b;
+  border: none;
+  padding: 10px;
+  font-weight: bolder;
+  transition: 0.2s all ease;
+}
+.form__pagos-input:focus {
+  border: 2px solid #f47920;
+}
+.form__pagos-button {
+  width: 100%;
+  background: #f47920;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 16px;
+  cursor: pointer;
+  outline: inherit;
+  border: none;
+  transition: 0.4s all ease;
+}
+.form__pagos-button:hover {
+  background: #e0650b;
+}
+
+.custom-select {
+  opacity: 0;
+  height: 0;
+  position: absolute;
+  left: 0;
+  top: 93%;
+  display: flex;
+  flex-direction: column;
+  max-height: 100px;
+  background: #fff;
+  width: 100%;
+  overflow: auto;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.custom-select.active {
+  transition: 0.4s all ease;
+  max-height: 100px;
+  height: 100px;
+  opacity: 1;
+}
+.custom-select__opciones {
+  font-size: 13px;
+  color: #58595b;
+  font-weight: bolder;
+  padding: 8px;
+  border-top: 1px solid #e6e7e8;
+}
+.custom-select__opciones:hover {
+  background: #e6e7e8;
+}
+.custom-select__hidden {
+  display: none;
+}
+.custom-select__contenedor {
+  position: relative;
+  height: 33px;
+  background: #fff;
+  border-radius: 5px;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+.custom-select__contenedor::after {
+  content: "";
+  height: 17px;
+  position: absolute;
+  right: 0.5em;
+  width: 17px;
+  transition: all 0.3s ease;
+  background: url("../images/downTwo.svg") no-repeat center;
+  background-size: contain;
+  background-attachment: initial;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+.custom-select__contenedor.active::after {
+  transform: rotateX(180deg);
+}
+.custom-select__seleccionado {
+  font-size: 16px;
+  color: #58595b;
+  font-weight: bolder;
+}
 
 /*# sourceMappingURL=main.css.map */
