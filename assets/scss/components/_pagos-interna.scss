@@ -67,3 +67,185 @@
         }
     }
 }
+.card-filtro{
+    background: color('primario');
+    border: 1px solid color('gris-clarito');
+    border-radius: 5px;
+    max-width: 265px;
+    width: 100%;
+    padding: 20px 15px 15px 15px;
+    cursor: pointer;
+    transition: .2s all ease;
+    position: relative;
+    margin: auto;
+    &:hover{
+        box-shadow: 4px 4px 5px 0px #e6e7e8;
+    }
+    &__titulo{
+        font-size: font('card-precio');
+        color: color('gris-oscuro');
+        font-weight: bolder;
+        text-align: center;
+        &--color{
+            color: color('primario');
+            position: absolute;
+            top: 20px;
+        }
+    }
+    &__middle{
+        margin: 25px auto;
+        padding: 0 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    &__imagen{
+        width: 100%;
+        object-fit: cover;
+        min-height: 100px;
+        max-height: 100px;
+        border-radius: 5px;
+    }
+    &__bottom{
+        border-top: 2px solid color('gris-clarito');
+        padding-top: 10px;
+    }
+    &__focus{
+        position: absolute;
+        left: 0;
+        top: 0px;
+        width: calc(100% + 1px);
+        height: calc(100% + 1px);
+        background: rgb(0, 0, 0, 0.75);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        pointer-events: none; 
+        @include transition;
+    }
+    &.active .card-filtro__focus{
+        opacity: 1;
+        pointer-events: all;
+    }
+    &.active .card-filtro__pop-up{
+        opacity: 1;
+        pointer-events: all;
+    }
+    &__pop-up{
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        top: calc(50% - 20px);
+        max-width: 200px;
+        text-align: center;
+    }
+    &__focus-contenedor{
+        display: flex;
+        justify-content: center;
+    }
+    &__link{
+        padding: 12px 10px;
+        width: 90%;
+        background: color('primario');
+        color: color('gris-oscuro');
+        font-size: font('lanzamiento-descripcion');
+        font-weight: bolder;
+        border-radius: 5px;
+        @include transition;
+        &:hover{
+            color: color('primario');
+            background: color('gris-oscuro');
+            border: 1px solid color('primario');
+        }
+    }
+}
+.filtro{
+    width: 90%;
+    max-width: 1450px;
+    margin: auto;
+    &__contenedor{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+    &__titulo{
+        font-size: font('subitulos');
+        color: color('gris-oscuro');
+        font-weight: lighter;
+        padding: 60px 0;
+    }
+}
+.card-pop-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+    &__titulo{
+        font-size: font('subitulos');
+        color: color('gris-oscuro');
+        font-weight: lighter;
+        margin-bottom: 35px;
+        text-align: center;
+    }
+    &__descripcion{
+        color: color('gris-oscuro');
+        font-size: font('comprar-lugar');
+        font-weight: lighter;
+        margin: 20px 0;
+        text-align: center;
+    }
+    &__cerrar{
+        font-weight: bolder;
+        color: color('gris-oscuro');
+        font-size: font('invertir-areas');
+        margin-top: 35px;
+        text-align: center;
+    }
+    &__line{
+        cursor: pointer;
+        text-decoration: underline;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+@media (max-width: breakpoint('ipad-grande')){
+    .filtro{
+        &__contenedor{
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+@media (max-width: breakpoint('ipad-pequeña')){
+    .pagos-header{
+        &__contenedor{
+            flex-direction: column;
+            align-items: center;
+            margin-top: 45px;
+            max-width: 90%;
+        }
+        &__left,
+        &__right{
+            width: 100%;
+        }
+        &__left{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .filtro{
+        &__contenedor{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+@media (max-width: breakpoint('celular')){
+    .filtro{
+        &__contenedor{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

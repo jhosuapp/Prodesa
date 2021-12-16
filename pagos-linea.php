@@ -69,9 +69,9 @@
                 <input class="formulario__checkbox" id="terms-pagos" type="checkbox">
             </label>
         </form>
-        <button class="button card__button-top pop-up__terminos" id="pop-up__terminos">
-            <a href="./pagos-linea-interna.php" class="button__link">Continuar</a>
-        </button>
+        <a href="./pagos-linea-interna.php" class="button card__button-top pop-up__terminos" id="pop-up__terminos">
+            <span class="button__link">Continuar</span>
+        </a>
     </div>
 
     <!--Pop up -->

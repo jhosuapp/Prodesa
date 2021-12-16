@@ -31,3 +31,40 @@ desplegarSelect.addEventListener('click', () =>{
 
 
 
+//filtros
+
+const cardFiltro = document.getElementsByClassName('card-filtro');
+var i;
+for (i = 0; i < cardFiltro.length; i++) {
+    cardFiltro[i].addEventListener("click", function() {
+      this.classList.add('active');
+    });
+}
+
+//MODAL
+
+const popUpFiltro = document.getElementsByClassName('card-filtro__pop-up');
+const getPopUp = document.querySelector('.pop-up');
+
+for (i = 0; i < popUpFiltro.length; i++) {
+    popUpFiltro[i].addEventListener("click", function() {
+        getPopUp.classList.add('active');
+        var getImage = this.nextElementSibling;
+        var getImageAndAtributte = getImage.getAttribute('src');
+        var getImageDom = document.querySelector('#get-atributte');
+        getImageDom.setAttribute('src', getImageAndAtributte);
+        
+        for (i = 0; i < cardFiltro.length; i++) {
+            cardFiltro[i].classList.remove('active');
+        }
+    });
+  }
+    
+
+  const closeModal = document.querySelectorAll('#pop-up__close');
+
+  closeModal.forEach( (btn)=>{
+      btn.addEventListener('click', ()=>{
+        getPopUp.classList.remove('active');
+      });
+  });

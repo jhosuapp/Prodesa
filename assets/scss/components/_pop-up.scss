@@ -113,5 +113,16 @@
             padding: 30px;
             background: color('primario')
         }
+        &__bloque--pagos{
+            max-height: 80vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        &__close--pagos{
+            top: 0;
+            right: 0px;
+            background: color('gris-oscuro');
+            border-bottom-left-radius: 5px;
+        }
     }
 }

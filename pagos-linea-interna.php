@@ -41,6 +41,169 @@
     </div>
 </div>
 
+<!-- todos los proyectos -->
+
+<section class="titulo--grey">
+    <div class="filtro">
+        <h2 class="filtro__titulo">¡Tenemos xx proyectos de vivienda!</h2>
+        <div class="filtro__contenedor">
+            <div class="card-filtro">
+                <h2 class="card-filtro__titulo">Nombre del proyecto</h2>
+                <div class="card-filtro__middle">
+                    <div class="card-filtro__focus">
+                        <div class="card-filtro__focus-contenedor">
+                            <h2 class="card-filtro__titulo card-filtro__titulo--color">Nombre del proyecto</h2>
+                        </div>
+                    </div>
+                    <a class="card-filtro__link card-filtro__pop-up">seleccionar este proyecto</a>
+                    <img src="assets/images/picture__pagos.png" alt="" class="card-filtro__imagen">
+                </div>
+                <div class="card-filtro__bottom">
+                    <div class="card__contenedor-ubicacion">
+                        <img src="assets/images/ubicacion.svg" alt="" class="card__ubicacion-imagen">
+                        <p class="card__ubicacion">Bogotá</p>
+                    </div>
+                    <div class="card__contenedor-ubicacion">
+                        <img src="assets/images/icon_building-black.svg" alt="">
+                        <p class="card__ubicacion">En construcción</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-filtro">
+                <h2 class="card-filtro__titulo">Nombre del proyecto</h2>
+                <div class="card-filtro__middle">
+                    <div class="card-filtro__focus">
+                        <div class="card-filtro__focus-contenedor">
+                            <h2 class="card-filtro__titulo card-filtro__titulo--color">Nombre del proyecto</h2>
+                        </div>
+                    </div>
+                    <a class="card-filtro__link card-filtro__pop-up">seleccionar este proyecto</a>
+                    <img src="assets/images/picture__pagos.png" alt="" class="card-filtro__imagen">
+                </div>
+                <div class="card-filtro__bottom">
+                    <div class="card__contenedor-ubicacion">
+                        <img src="assets/images/ubicacion.svg" alt="" class="card__ubicacion-imagen">
+                        <p class="card__ubicacion">Bogotá</p>
+                    </div>
+                    <div class="card__contenedor-ubicacion">
+                        <img src="assets/images/icon_building-black.svg" alt="">
+                        <p class="card__ubicacion">En construcción</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-filtro">
+                <h2 class="card-filtro__titulo">Nombre del proyecto</h2>
+                <div class="card-filtro__middle">
+                    <div class="card-filtro__focus">
+                        <div class="card-filtro__focus-contenedor">
+                            <h2 class="card-filtro__titulo card-filtro__titulo--color">Nombre del proyecto</h2>
+                        </div>
+                    </div>
+                    <a class="card-filtro__link card-filtro__pop-up">seleccionar este proyecto</a>
+                    <img src="assets/images/banner-home.png" alt="" class="card-filtro__imagen">
+                </div>
+                <div class="card-filtro__bottom">
+                    <div class="card__contenedor-ubicacion">
+                        <img src="assets/images/ubicacion.svg" alt="" class="card__ubicacion-imagen">
+                        <p class="card__ubicacion">Bogotá</p>
+                    </div>
+                    <div class="card__contenedor-ubicacion">
+                        <img src="assets/images/icon_building-black.svg" alt="">
+                        <p class="card__ubicacion">En construcción</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-filtro">
+                <h2 class="card-filtro__titulo">Nombre del proyecto</h2>
+                <div class="card-filtro__middle">
+                    <div class="card-filtro__focus">
+                        <div class="card-filtro__focus-contenedor">
+                            <h2 class="card-filtro__titulo card-filtro__titulo--color">Nombre del proyecto</h2>
+                        </div>
+                    </div>
+                    <a class="card-filtro__link card-filtro__pop-up">seleccionar este proyecto</a>
+                    <img src="assets/images/banner-home.png" alt="" class="card-filtro__imagen">
+                </div>
+                <div class="card-filtro__bottom">
+                    <div class="card__contenedor-ubicacion">
+                        <img src="assets/images/ubicacion.svg" alt="" class="card__ubicacion-imagen">
+                        <p class="card__ubicacion">Bogotá</p>
+                    </div>
+                    <div class="card__contenedor-ubicacion">
+                        <img src="assets/images/icon_building-black.svg" alt="">
+                        <p class="card__ubicacion">En construcción</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-filtro">
+                <h2 class="card-filtro__titulo">Nombre del proyecto</h2>
+                <div class="card-filtro__middle">
+                    <div class="card-filtro__focus">
+                        <div class="card-filtro__focus-contenedor">
+                            <h2 class="card-filtro__titulo card-filtro__titulo--color">Nombre del proyecto</h2>
+                        </div>
+                    </div>
+                    <a class="card-filtro__link card-filtro__pop-up">seleccionar este proyecto</a>
+                    <img src="assets/images/banner-home.png" alt="" class="card-filtro__imagen">
+                </div>
+                <div class="card-filtro__bottom">
+                    <div class="card__contenedor-ubicacion">
+                        <img src="assets/images/ubicacion.svg" alt="" class="card__ubicacion-imagen">
+                        <p class="card__ubicacion">Bogotá</p>
+                    </div>
+                    <div class="card__contenedor-ubicacion">
+                        <img src="assets/images/icon_building-black.svg" alt="">
+                        <p class="card__ubicacion">En construcción</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="paginador__ctn">
+            <div class="paginador paginador__margin">
+                <p class="paginador__item active">1</p>
+                <p class="paginador__item">2</p>
+                <p class="paginador__item">3</p>
+                <p class="paginador__item">4</p>
+                <p class="paginador__siguiente">Página siguiente</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- Pop up para todos -->
+
+<div class="pop-up">
+    <div class="pop-up__bloque pop-up__bloque--pagos pop-up__bloque--macro">
+        <img src="assets/images/close-white-p.png" alt="" class="pop-up__close pop-up__close--pagos" id="pop-up__close">
+        <div class="pop-up__contenido card-pop-up" id="modal-imagen">
+            <h2 class="card-pop-up__titulo">Has seleccionado el proyecto</h2>
+            <div class="card-filtro">
+                <h2 class="card-filtro__titulo">Nombre del proyecto</h2>
+                <div class="card-filtro__middle">
+                    <img src="" alt="" class="card-filtro__imagen" id="get-atributte">
+                </div>
+                <div class="card-filtro__bottom">
+                    <div class="card__contenedor-ubicacion">
+                        <img src="assets/images/ubicacion.svg" alt="" class="card__ubicacion-imagen">
+                        <p class="card__ubicacion">Bogotá</p>
+                    </div>
+                    <div class="card__contenedor-ubicacion">
+                        <img src="assets/images/icon_building-black.svg" alt="">
+                        <p class="card__ubicacion">En construcción</p>
+                    </div>
+                </div>
+            </div>
+            <p class="card-pop-up__descripcion">Clic en continuar para ir a la página de la pasarela de pago</p>
+            <a href="./pagos-linea-interna.php" class="button card__button-top pop-up__terminos active validado" id="pop-up__terminos">
+                <span class="button__link">Continuar</span>
+            </a>
+            <p class="card-pop-up__cerrar" id="pop-up__close">Si quieres cambiar el proyecto <b class="orange card-pop-up__line">haz clic acá</b> o cierra esta ventana</p>
+        </div>
+    </div>
+</div>
+
 
 <?php
     include 'template-parts/footer.php'

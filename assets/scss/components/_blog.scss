@@ -589,6 +589,12 @@
     &__siguiente{
         font-size: font('card-metraje');
     }
+    &__margin{
+        margin: 0;
+    }
+    &__ctn{
+        padding: 40px 0;
+    }
 }
 
 @media (max-width: 1200px){
