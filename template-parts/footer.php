@@ -17,13 +17,13 @@
                 <p class="formulario__left--descripcion">Mantente informado de nuestros lanzamientos, promociones y articulos de interes</p>
             </div>
             <div class="formulario__rigth">
-                <form class="formulario" id="formulario">
+                <form class="formulario" id="formulario" method="post">
 
                     <!-- grupo correo -->
                     <div class="formulario__contenedor">
                         <div class="formulario__grupo" id="grupo__correo">
                             <div class="formulario__grupo-input">
-                                <input type="mail" class="formulario__input" name="correo" id="correo" placeholder="micorreo@email.com">
+                                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="micorreo@email.com">
                             </div>
                             <p class="formulario__input-error">El correo solo puede contener, letras, numeros, puntos y guin bajo</p>
                         </div>
@@ -38,12 +38,17 @@
                     </div>
 
                     <div class="formulario__grupo formulario__grupo-btn-enviar">
-                        <button type="submit" class="formulario__btn">Enviar</button>
+                        <input type="submit" class="formulario__btn" name="register" placeholder>
                     </div>
                     <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">¡Formulario enviado exitosamente!</p>
                     <p class="formulario__mensaje-exito formulario__mensaje-exito--color" id="formulario__mensaje-error">Rellene los campos correctamente</p>
 
                 </form>
+                <?php
+
+                    include("./conexiones/conec_newsletter.php");
+
+                ?>
             </div>
         </div>
     </div>
@@ -319,10 +324,8 @@ emmaForm.addEventListener('submit', (e) =>{
     inputs.addEventListener('keyup', validacionInput);
 
     formulario.addEventListener('submit', (e) =>{
-    e.preventDefault();
         if(campos.correo && terminos.checked ){
-            formulario.reset();
-
+            
             document.getElementById('formulario__mensaje-exito').classList.add('active');
             document.getElementById('formulario__mensaje-error').classList.remove('active');
 
@@ -334,13 +337,12 @@ emmaForm.addEventListener('submit', (e) =>{
             document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
                 icono.classList.remove('formulario__grupo-correcto');
             });
-
-            setTimeout( () => {window.location.href = "./gracias.php";}, 3000);
         } else {
             document.getElementById('formulario__mensaje-error').classList.add('active');
             setTimeout(() => {
                 document.getElementById('formulario__mensaje-error').classList.remove('active');
             }, 4000);
+            e.preventDefault();
         }
     });
 </script>
