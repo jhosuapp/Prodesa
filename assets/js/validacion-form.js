@@ -116,7 +116,6 @@ form_inputs.forEach( (input) =>{
 });
 
 form_ap.addEventListener('submit', (e)=>{
-    e.preventDefault();
     if(validarEnvio.nombre && validarEnvio.apellido  && validarEnvio.telefono && validarEnvio.email && (resideSi.checked || resideNo.checked) && validarEnvio.mensaje){
         form_ap.reset();
         document.querySelector('.form-ap__mensaje-contenido--verde').classList.add('active');
@@ -131,6 +130,7 @@ form_ap.addEventListener('submit', (e)=>{
         setTimeout( () =>{
             mensajeForm.classList.remove('active');
         },4000);
+        e.preventDefault();
     }
 });
 

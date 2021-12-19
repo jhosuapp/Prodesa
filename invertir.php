@@ -396,7 +396,7 @@
         </div>
         <div class="ap-recomendado__right">
             <h2 class="ap-recomendado__titulo">Contáctanos</h2>
-            <form action="" class="form-ap" id="form-ap">
+            <form method="post" class="form-ap" id="form-ap">
 
                 <!-- BLOQUE NOMBRE -->
 
@@ -454,7 +454,7 @@
                             <label class="form-ap__radio-label" id="form_label-si" for="resideSi">Si</label>
                         </div>
                         <div class="form-ap__radio">
-                            <input class="form-ap__radio-input" type="radio" id="resideNo" name="resideColombia" value="resideNo">
+                            <input class="form-ap__radio-input" type="radio" id="resideNo" name="resideColombiaTwo" value="resideNo">
                             <label class="form-ap__radio-label" id="form_label-no" for="resideNo">No</label>
                         </div>
                     </div>
@@ -465,7 +465,7 @@
                 <div class="form-ap__bloque form-ap__bloque-mensaje">
                     <label for="mensaje" class="form-ap__label">Mensaje*</label>
                     <div class="form-ap__contenedor">
-                        <textarea id="mensaje" name="mensaje" class="form-ap__input form-ap__input--mensaje"></textarea>
+                        <input id="mensaje" name="mensaje" class="form-ap__input form-ap__input--mensaje">
                         <i class="fas fa-check-circle form-ap__icono"></i>
                     </div>
                     <p class="form-ap__validacion">Por favor escriba el mensaje</p>
@@ -485,10 +485,13 @@
                 <!-- SUBMIT -->
 
                 <div class="form-ap__enviar">
-                    <button type="submit" class="form-ap__submit">Enviar</button>
+                    <input type="submit" name="enviar_inversionistas" class="form-ap__submit">
                 </div>
 
             </form>
+            <?php
+                include("./conexiones/conec_inversionistas.php");
+            ?>
         </div>
     </div>
 </section>
