@@ -50,6 +50,7 @@ const expresionesRegulares = {
     apellido: /^[a-zA-ZÀ-ÿ\s]{3,40}$/,
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 	telefono: /^\d{7,14}$/, // 7 a 14 numeros.
+    mensaje: /^[a-zA-ZÀ-ÿ\s]{10,1000}$/
 }
 
 const validarEnvio = {
@@ -75,6 +76,9 @@ const validarInput = (e) =>{
         case "email":
             validarCampo(expresionesRegulares.correo, e.target, 'email')
         break;
+        case "mensajeTwo":
+            validarCampo(expresionesRegulares.mensaje, e.target, 'mensaje')
+        break;
     }
 }
 
@@ -90,40 +94,18 @@ const validarCampo = (exp, tar, clas) => {
     }
 }
 
-
-const validar_mensaje = () =>{
-    if(form_mensaje.value < 10){
-        document.querySelector('.form-ap__bloque-mensaje').classList.remove('form-ap__bloque-bien');
-        document.querySelector('.form-ap__bloque-mensaje').classList.add('form-ap__bloque-mal');
-        validarEnvio.mensaje = false;
-    }else{
-        document.querySelector('.form-ap__bloque-mensaje').classList.add('form-ap__bloque-bien');
-        document.querySelector('.form-ap__bloque-mensaje').classList.remove('form-ap__bloque-mal');
-        validarEnvio.mensaje = true;
-    }
-}
-
-form_mensaje.addEventListener('blur', ()=>{
-    validar_mensaje();
-});
-form_mensaje.addEventListener('keyup', ()=>{
-    validar_mensaje();
-});
-
 form_inputs.forEach( (input) =>{
     input.addEventListener('blur', validarInput);
     input.addEventListener('keyup', validarInput);
 });
 
 form_ap.addEventListener('submit', (e)=>{
-    if(validarEnvio.nombre && validarEnvio.apellido  && validarEnvio.telefono && validarEnvio.email && (resideSi.checked || resideNo.checked) && validarEnvio.mensaje){
-        form_ap.reset();
+    if(validarEnvio.nombre && validarEnvio.apellido  && validarEnvio.telefono && validarEnvio.email && validarEnvio.mensaje){
         document.querySelector('.form-ap__mensaje-contenido--verde').classList.add('active');
 
         form_bloque.forEach( (b) =>{
             b.classList.remove('form-ap__bloque-bien');
         });
-        setTimeout( () => {window.location.href = "./gracias.php";}, 3000);
     }else{
         const mensajeForm = document.querySelector('.form-ap__mensaje')
         mensajeForm.classList.add('active');

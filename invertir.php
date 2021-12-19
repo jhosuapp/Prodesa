@@ -443,7 +443,7 @@
                 </div>
                 
                 <!-- RADIO BUTTON RESIDE EN COLOMBIA -->
-
+                
                 <div class="form-ap__radio-contenedor">
                     <div class="form-ap__radio-left">
                         <p class="form-ap__radio-texto">¿Reside fuera de Colombia?</p>
@@ -454,7 +454,7 @@
                             <label class="form-ap__radio-label" id="form_label-si" for="resideSi">Si</label>
                         </div>
                         <div class="form-ap__radio">
-                            <input class="form-ap__radio-input" type="radio" id="resideNo" name="resideColombiaTwo" value="resideNo">
+                            <input class="form-ap__radio-input" type="radio" id="resideNo" name="resideColombia" value="resideNo">
                             <label class="form-ap__radio-label" id="form_label-no" for="resideNo">No</label>
                         </div>
                     </div>
@@ -465,7 +465,7 @@
                 <div class="form-ap__bloque form-ap__bloque-mensaje">
                     <label for="mensaje" class="form-ap__label">Mensaje*</label>
                     <div class="form-ap__contenedor">
-                        <input id="mensaje" name="mensaje" class="form-ap__input form-ap__input--mensaje">
+                        <input id="mensaje" name="mensajeTwo" class="form-ap__input form-ap__input--mensaje">
                         <i class="fas fa-check-circle form-ap__icono"></i>
                     </div>
                     <p class="form-ap__validacion">Por favor escriba el mensaje</p>
